@@ -28,3 +28,17 @@ Train Dataset & Validation Dataset size:  4811 1604
 [ Start ]
   0%|          | 0/40 [00:00<?, ?it/s]
 Epoch   1: training
+Epoch: 1, duration for training: 74.00 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [1:50:29<71:49:03, 6629.32s/it]    Epoch  1: training mse loss = 52.172 / validation mse loss = 27.651
+    Epoch  1: training mae loss = 5.678 / validation mae loss = 4.226
+
+Epoch   2: training
+Epoch: 2, duration for training: 83.86 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [2:54:09<52:32:03, 4976.94s/it]    Epoch  2: training mse loss = 58.553 / validation mse loss = 55.107
+    Epoch  2: training mae loss = 6.386 / validation mae loss = 6.242
+
+Epoch   3: training
