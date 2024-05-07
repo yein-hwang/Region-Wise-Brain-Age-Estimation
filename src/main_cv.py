@@ -52,6 +52,7 @@ REGIONS = config.regions
 ROI = config.roi
 MODEL_LOAD_FOLDER = config.model_load_folder
 MODEL_LOAD = config.model_load
+MODEL_LOAD_EPOCH = config.model_load_epoch
 # DATA_SIZE = config.data_size
 DATA_SIZE = len(dataset_df)
 MODE = config.mode
@@ -73,6 +74,7 @@ print("Early Stopping Patience :", PATIENCE)
 print("# of Workers  :          ", N_WORKERS)
 print("Region of Interest :     ", ROI)
 print("Model Save Path:         ", MODEL_SAVE_FOLDER)
+print("Loaded Model Epoch:      ", MODEL_LOAD_EPOCH)
 print("="* 50)
 
 wandb_path = "/media/leelabsg-storage1/yein/research/wandb/RegionBAE"
@@ -96,7 +98,6 @@ for train_indices, valid_indices in kf.split(dataset_indices):
     # create a new dataset for this fold
     train_dataset = Region_Dataset(config, train_indices, ROI)
     valid_dataset = Region_Dataset(config, valid_indices, ROI)
-    # test_dataset = Region_Dataset(config, dataset_indices, ROI)
     
     dataloader_train = DataLoader(train_dataset, 
                                 batch_size=BATCH_SIZE, 
@@ -135,6 +136,8 @@ for train_indices, valid_indices in kf.split(dataset_indices):
     
     # ------------------------ Train the model
     if MODE == 'train': 
+
+        # Early Stopping
         if PATIENCE == 0:
             EARLY_STOPPING = None
         else:
@@ -153,7 +156,10 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                             scheduler=scheduler,
                             cv_num=cv_num,
                             model_load=MODEL_LOAD)
-        
+        # Model Loading
+        if MODEL_LOAD == 1:
+            trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
+            
         train_start = time.time()
         trainer.train() # This will create the lists as instance variables
 
@@ -217,7 +223,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                                 cv_num=cv_num,
                                 model_load=MODEL_LOAD)
 
-            trainer.load(cv_num) # pre-trained model load
+            trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
             pred_ages, true_ages, features = trainer.test() # test
 
             pred_age_data.setdefault(v, [])

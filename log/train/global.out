@@ -42,3 +42,20 @@ Epoch   2: validation
     Epoch  2: training mae loss = 6.386 / validation mae loss = 6.242
 
 Epoch   3: training
+Epoch: 3, duration for training: 66.58 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [4:06:22<48:07:40, 4682.70s/it]    Epoch  3: training mse loss = 11616584.351 / validation mse loss = 55.587
+    Epoch  3: training mae loss = 95.403 / validation mae loss = 6.333
+
+Epoch   4: training
+Epoch: 4, duration for training: 90.21 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [5:37:22<49:53:54, 4989.86s/it]    Epoch  4: training mse loss = 63.410 / validation mse loss = 53.247
+    Epoch  4: training mae loss = 6.619 / validation mae loss = 6.194
+
+Epoch   5: training
+Epoch: 5, duration for training: 101.51 minutes
+
+Epoch   5: validation

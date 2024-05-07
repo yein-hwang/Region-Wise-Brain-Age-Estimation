@@ -59,10 +59,6 @@ class CNN_Trainer():
 
     def train(self):
         print("[ Start ]")
-        
-        if self.model_load == 1:
-            # Load the model
-            self.load(self.cv_num)
 
         self.model.train()        
         start = time.time()  # Start time
@@ -232,8 +228,8 @@ class CNN_Trainer():
                     "valid_mae_list": self.valid_mae_list},  
                     f"{self.model_save_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
         
-    def load(self, cv_num):
-        model_path = f'{self.model_load_folder}/cv-{cv_num}-40.pth.tar'
+    def load(self, cv_num, epoch):
+        model_path = f'{self.model_load_folder}/cv-{cv_num}-{epoch}.pth.tar'
         checkpoint = torch.load(model_path)
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
