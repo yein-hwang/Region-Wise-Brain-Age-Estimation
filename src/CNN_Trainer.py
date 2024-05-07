@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 import wandb
 from tqdm import tqdm
 from pathlib import Path
@@ -15,12 +16,15 @@ class CNN_Trainer():
     def __init__(
             self, 
             model, 
+            model_load_folder,
             model_save_folder,
+            results_folder,
             dataloader_train, 
             dataloader_valid, 
             dataloader_test, 
             epochs, 
             optimizer,
+            early_stopping,
             scheduler,
             cv_num,
             model_load):
@@ -34,13 +38,17 @@ class CNN_Trainer():
         self.epochs = epochs
         self.optimizer = optimizer
         self.scheduler = scheduler
+        self.early_stopping = early_stopping
         self.mse_loss_fn = nn.MSELoss()
         self.mae_loss_fn = nn.L1Loss()
 
         self.cv_num = cv_num
         self.model_load = model_load
+        self.model_load_folder = model_load_folder
         self.model_save_folder = Path(model_save_folder)
         self.model_save_folder.mkdir(parents=True, exist_ok=True)
+        self.results_folder = Path(results_folder)
+        self.results_folder.mkdir(parents=True, exist_ok=True)
 
         self.train_mse_list, self.train_mae_list = [], []
         self.valid_mse_list, self.valid_mae_list = [], []
@@ -78,7 +86,8 @@ class CNN_Trainer():
                 
                 mse_loss.backward() # loss_fn should be the one used for backpropagation
                 self.optimizer.step()
-                self.scheduler.step()
+                if self.scheduler:
+                    self.scheduler.step()
                 
                 wandb.log({
                 "Learning rate": self.optimizer.param_groups[0]['lr'],
@@ -106,13 +115,16 @@ class CNN_Trainer():
             duration = (end - start) / 60
             print(f"Epoch: {self.epoch+1}, duration for training: {duration:.2f} minutes")
 
+
+
+
             # ==================== validation step
             print(f"\nEpoch {self.epoch+1:3d}: validation")
             start = time.time()  # Start time
             self.model.eval()
             with torch.no_grad():
                 valid_mse_sum, valid_mae_sum = 0, 0
-                for _, (input, target) in enumerate(tqdm(self.dataloader_valid)):
+                for _, (input, target) in enumerate(self.dataloader_valid):
                     input = input.cuda(non_blocking=True)
                     target = target.reshape(-1, 1)
                     target = target.cuda(non_blocking=True)
@@ -132,21 +144,33 @@ class CNN_Trainer():
 
                 self.valid_mse_list.append(valid_mse_avg)
                 self.valid_mae_list.append(valid_mae_avg)
-                
-                self.scheduler.step(valid_mse_avg)
-                print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
-                print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
-                
 
-                # Save each model in every epoch
-                self.save(self.epoch)
-                    
+                # learning rate scheduler update
+                if self.scheduler:
+                    self.scheduler.step(valid_mse_avg)
+
+                # early stopping related
+                if self.early_stopping is None:
+                    # Save each model in every epoch
+                    self.save(self.epoch)
+                else:
+                    save_path = f"{self.model_save_folder}/early_stop/cv-{self.cv_num}-{self.epoch+1}.pth.tar"
+                    self.early_stopping(valid_mae_avg, self.model, self.epoch, save_path)
+                    if self.early_stopping.early_stop:
+                        break
+
+
                 wandb.log({
                     "Epoch": self.epoch+1,
                     "Learning rate": self.optimizer.param_groups[0]['lr'],
                     "Validation MSE Loss": valid_mse_avg,
                     "Validation MAE Loss": valid_mae_avg
                 })
+
+
+                print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
+                print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
+                    
                 
             self.epoch += 1
             
@@ -207,10 +231,9 @@ class CNN_Trainer():
                     "valid_mse_list": self.valid_mse_list,
                     "valid_mae_list": self.valid_mae_list},  
                     f"{self.model_save_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
-        # self.save_features(milestone)
         
     def load(self, cv_num):
-        model_path = f'{self.model_save_folder}/cv-{cv_num}-40.pth.tar'
+        model_path = f'{self.model_load_folder}/cv-{cv_num}-40.pth.tar'
         checkpoint = torch.load(model_path)
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
@@ -222,3 +245,21 @@ class CNN_Trainer():
         print(f"============== Loaded model: {model_path}")
 
     
+    def age_data_extraction(self, pred_age_data, true_age_data, feature_data):
+
+        pred_ages_filename = os.path.join(self.results_folder, 'pred_ages.pkl')
+        true_ages_filename = os.path.join(self.results_folder, 'true_ages.pkl')
+        features_filename = os.path.join(self.results_folder, 'features.pkl')
+        print(self.results_folder)
+
+        try:
+            with open(pred_ages_filename, 'wb') as file:
+                pickle.dump(pred_age_data, file)
+            with open(true_ages_filename, 'wb') as file:
+                pickle.dump(true_age_data, file)
+            print(f"Ages saved")
+            with open(features_filename, 'wb') as file:
+                pickle.dump(feature_data, file)
+            print(f"Features saved")
+        except Exception as e:
+            print("Error saving data:", e)
