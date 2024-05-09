@@ -126,9 +126,9 @@ for train_indices, valid_indices in kf.split(dataset_indices):
         optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=config.weight_decay)
         scheduler = None
     else:
-        optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=config.weight_decay)
+        optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
         t_0 = int(len(train_indices) // BATCH_SIZE // 6)
-        scheduler = lr.CustomCosineAnnealingWarmUpRestarts(optimizer, T_0= t_0, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
+        scheduler = lr.CustomCosineAnnealingWarmUpRestarts(optimizer,T_0= t_0, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
 
     # Loss function
     mse_criterion = torch.nn.MSELoss()

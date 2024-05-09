@@ -1,0 +1,7 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/main_cv.py", line 37, in <module>
+    config = Config(args)
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/config.py", line 44, in __init__
+    self.roi = self.regions[args.roi]
+KeyError: 0

@@ -99,8 +99,6 @@ class CNN_Trainer():
             self.train_mae_list.append(train_mae_avg)
             
             wandb.log({
-                "Epoch": self.epoch+1,
-                "Learning rate": self.optimizer.param_groups[0]['lr'],
                 "Train MSE Loss": train_mse_avg,
                 "Train MAE Loss": train_mae_avg,
                 "CV Split Number": self.cv_num
@@ -157,7 +155,6 @@ class CNN_Trainer():
 
 
                 wandb.log({
-                    "Epoch": self.epoch+1,
                     "Learning rate": self.optimizer.param_groups[0]['lr'],
                     "Validation MSE Loss": valid_mse_avg,
                     "Validation MAE Loss": valid_mae_avg
