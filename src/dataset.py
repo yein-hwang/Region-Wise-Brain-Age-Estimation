@@ -90,11 +90,10 @@ class ADNI_Dataset(Dataset):
 
 
 class Region_Dataset(Dataset):
-    def __init__(self, config, indices=None, roi=None):
+    def __init__(self, root, mri_csv, indices=None, roi=None):
         super(Region_Dataset, self).__init__()
-        self.config = config
-        self.data_dir = config.root
-        self.data_csv = pd.read_csv(config.mri_csv)
+        self.data_dir = root
+        self.data_csv = mri_csv
         self.roi = roi
         
         self.image_paths = [self.data_csv[self.roi][i] for i in indices]

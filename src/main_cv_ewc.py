@@ -102,6 +102,32 @@ for _, ROI in REGIONS.items():
         # ------------------------ Train the model
         if MODE == 'train': 
 
+            # create a old train dataset for this fold
+            train_dataset_old = Region_Dataset(config.old_root, dataset_df_o, train_indices_old[cv_num], ROI)
+            dataloader_train_old = DataLoader(train_dataset_old, 
+                                        batch_size=BATCH_SIZE, 
+                                        sampler=RandomSampler(train_dataset_old),
+                                        collate_fn=train_dataset_old.collate_fn,
+                                        pin_memory=True,
+                                        num_workers=N_WORKERS)
+
+            # create a new dataset for this fold
+            train_dataset = Region_Dataset(config.new_root, dataset_df_n, train_indices_new[cv_num], ROI)
+            valid_dataset = Region_Dataset(config.new_root, dataset_df_n, valid_indices_new[cv_num], ROI)
+            
+            dataloader_train = DataLoader(train_dataset, 
+                                        batch_size=BATCH_SIZE, 
+                                        sampler=RandomSampler(train_dataset),
+                                        collate_fn=train_dataset.collate_fn,
+                                        pin_memory=True,
+                                        num_workers=N_WORKERS)
+            dataloader_valid = DataLoader(valid_dataset, 
+                                        batch_size=BATCH_SIZE, 
+                                        sampler=SequentialSampler(valid_dataset),
+                                        collate_fn=valid_dataset.collate_fn,
+                                        pin_memory=True,
+                                        num_workers=N_WORKERS)
+
             # Define model and optimizer
             model = CNN(in_channels=1).cuda()
             # Apply the weight_initialiation
@@ -117,32 +143,6 @@ for _, ROI in REGIONS.items():
                 EARLY_STOPPING = None
             else:
                 EARLY_STOPPING = EarlyStopping(patience=config.patience, verbose=True)
-
-            # create a old train dataset for this fold
-            train_dataset_old = Region_Dataset(config, train_indices_old[cv_num], ROI)
-            dataloader_train_old = DataLoader(train_dataset_old, 
-                                        batch_size=BATCH_SIZE, 
-                                        sampler=RandomSampler(train_dataset_old),
-                                        collate_fn=train_dataset_old.collate_fn,
-                                        pin_memory=True,
-                                        num_workers=N_WORKERS)
-
-            # create a new dataset for this fold
-            train_dataset = Region_Dataset(config, train_indices_new[cv_num], ROI)
-            valid_dataset = Region_Dataset(config, valid_indices_new[cv_num], ROI)
-            
-            dataloader_train = DataLoader(train_dataset, 
-                                        batch_size=BATCH_SIZE, 
-                                        sampler=RandomSampler(train_dataset),
-                                        collate_fn=train_dataset.collate_fn,
-                                        pin_memory=True,
-                                        num_workers=N_WORKERS)
-            dataloader_valid = DataLoader(valid_dataset, 
-                                        batch_size=BATCH_SIZE, 
-                                        sampler=SequentialSampler(valid_dataset),
-                                        collate_fn=valid_dataset.collate_fn,
-                                        pin_memory=True,
-                                        num_workers=N_WORKERS)
 
             trainer = CNN_Trainer(model=model, 
                                 model_load_folder=MODEL_LOAD_FOLDER,

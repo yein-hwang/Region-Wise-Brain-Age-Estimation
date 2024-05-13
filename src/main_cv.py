@@ -97,8 +97,8 @@ for train_indices, valid_indices in kf.split(dataset_indices):
     print('\n<<< StratifiedKFold: {0}/{1} >>>'.format(cv_num+1, 4))
     
     # create a new dataset for this fold
-    train_dataset = Region_Dataset(config, train_indices, ROI)
-    valid_dataset = Region_Dataset(config, valid_indices, ROI)
+    train_dataset = Region_Dataset(config.root, dataset_df, train_indices, ROI)
+    valid_dataset = Region_Dataset(config.root, dataset_df, valid_indices, ROI)
     
     dataloader_train = DataLoader(train_dataset, 
                                 batch_size=BATCH_SIZE, 
