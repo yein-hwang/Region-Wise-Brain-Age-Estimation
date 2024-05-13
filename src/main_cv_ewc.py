@@ -71,7 +71,6 @@ print("Data B size:             ", DATA_SIZE_n)
 print("Epochs :                 ", EPOCHS)
 print("Early Stopping Patience :", PATIENCE)
 print("# of Workers  :          ", N_WORKERS)
-print("Model Save Path:         ", MODEL_SAVE_FOLDER)
 print("="* 50)
 
 wandb_path = "/media/leelabsg-storage1/yein/research/wandb/RegionBAE"
@@ -97,8 +96,11 @@ for _, ROI in REGIONS.items():
     wandb.run.name = proj_n
     MODEL_LOAD_FOLDER = os.path.join(MODEL_LOAD_FOLDER, ROI)
     MODEL_SAVE_FOLDER = os.path.join(MODEL_SAVE_FOLDER, ROI)
-
+    print("Model Load Path:         ", MODEL_LOAD_FOLDER)
+    print("Model Save Path:         ", MODEL_SAVE_FOLDER)
+    
     for cv_num in range(4):
+        print('\n<<< StratifiedKFold: {0}/{1} >>>'.format(cv_num+1, 4))
         # ------------------------ Train the model
         if MODE == 'train': 
 
@@ -135,7 +137,7 @@ for _, ROI in REGIONS.items():
             model = torch.nn.DataParallel(model) # use with multi-gpu environment
             # summary(model, input_size=INPUT_SIZE, device="cuda") # model-summary
             optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
-            t_0 = int(len(train_indices) // BATCH_SIZE // 6)
+            t_0 = int(len(train_indices_new[cv_num]) // BATCH_SIZE // 6)
             scheduler = lr.CustomCosineAnnealingWarmUpRestarts(optimizer,T_0= t_0, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
             
             # Early Stopping

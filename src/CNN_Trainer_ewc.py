@@ -45,7 +45,6 @@ class CNN_Trainer():
         self.mae_loss_fn = nn.L1Loss()
 
         self.cv_num = cv_num
-        self.ewc = ewc
         self.model_load_folder = model_load_folder
         self.model_save_folder = Path(model_save_folder)
         self.model_save_folder.mkdir(parents=True, exist_ok=True)
@@ -60,15 +59,22 @@ class CNN_Trainer():
         wandb.watch(self.model, log="all")
 
     def train_ewc(self):
-        print("[ Start ]")
 
         # Load the fully trained model on the old dataset
-        self.model.load(self.cv_num, self.model_load_folder) 
+        self.load(self.cv_num, 40) 
         # Initialize EWC with the fully trained model and the old data dataloader
-        ewc = EWC(self.model, self.dataloader_train_old, device)
+        print("[ Initialize EWC ]")
+        start = time.time()
+        ewc = EWC(self.model, self.dataloader_train_old)
+        end = time.time()  # End time
+        # Compute the duration
+        duration = (end - start) / 60
+        print(f"Duration for Initialize EWC: {duration:.2f} minutes")
+
 
         self.model.train()        
         start = time.time()  # Start time
+        print("[ Start ]")
 
         for i in tqdm(range(self.epochs)):
             print(f"\nEpoch {self.epoch+1:3d}: training")

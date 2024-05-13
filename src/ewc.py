@@ -3,17 +3,16 @@ import torch.nn as nn
 import numpy as np
 
 class EWC(object):
-    def __init__(self, model_A, valid_dataloader_A):
+    def __init__(self, model_A, train_dataloader_A):
         self.model = model_A # model on Task A
-        self.dataloader = valid_dataloader_A
+        self.dataloader = train_dataloader_A
         self.mse_loss_fn = nn.MSELoss()
         self.mae_loss_fn = nn.L1Loss()
         self.params = {n: p for n, p in self.model.named_parameters() if p.requires_grad}
         self.fisher = {n: torch.zeros_like(p) for n, p in self.params.items()}
 
-        # test
         self.model.eval()
-        for input, _ in self.dataloader:
+        for _, (input, target) in enumerate(self.dataloader):
             input = input.cuda(non_blocking=True)
             target = target.reshape(-1, 1)
             target = target.cuda(non_blocking=True)
