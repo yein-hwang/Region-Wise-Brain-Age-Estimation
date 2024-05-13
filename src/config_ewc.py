@@ -37,13 +37,12 @@ class Config:
         # learning rate
         self.lr = args.lr
         # training
-        self.ensemble_number = args.ensemble_number
         self.regions = {0: 'imgs', 1: 'caudate', 2: 'cerebellum', 3: 'frontal_lobe', 4: 'insula', 5: 'occipital_lobe', 6: 'parietal_lobe', 7: 'putamen', 8: 'temporal_lobe', 9: 'thalamus'}
         # self.roi = self.regions[args.roi]
         self.proj_n = args.proj_n
         self.results_folder = os.path.join('../../test/ewc/', args.results_path)
-        self.model_load_folder = os.path.join('../../model/region_BAE/ukb', self.roi)
-        self.model_save_folder = os.path.join('../../model/region_BAE/ewc/', self.dataset, self.roi, self.model_save_path)
+        self.model_load_folder = os.path.join('../../model/region_BAE/ukb')
+        self.model_save_folder = os.path.join('../../model/region_BAE/ewc/')
         self.model_load_epoch = args.load_epoch
         mode = {
             0: 'train',

@@ -63,16 +63,15 @@ print("="* 20, " Setting ", "="* 20)
 # Check the number of gpus
 ngpus = torch.cuda.device_count()
 
-print("Dataset :                 ", DATASET)
-print("Mode :                    ", MODE)
-print("Number of gpus :          ", ngpus)
+print("Mode :                   ", MODE)
+print("Number of gpus :         ", ngpus)
 print("Batch size :             ", BATCH_SIZE)
-print("Data size:               ", DATA_SIZE)
+print("Data A size:             ", DATA_SIZE_o)
+print("Data B size:             ", DATA_SIZE_n)
 print("Epochs :                 ", EPOCHS)
 print("Early Stopping Patience :", PATIENCE)
 print("# of Workers  :          ", N_WORKERS)
 print("Model Save Path:         ", MODEL_SAVE_FOLDER)
-print("Loaded Model Epoch:      ", MODEL_LOAD_EPOCH)
 print("="* 50)
 
 wandb_path = "/media/leelabsg-storage1/yein/research/wandb/RegionBAE"
@@ -96,7 +95,9 @@ for _, ROI in REGIONS.items():
     #add wandb run name
     proj_n = f"ewc_{ROI}"
     wandb.run.name = proj_n
-    
+    MODEL_LOAD_FOLDER = os.path.join(MODEL_LOAD_FOLDER, ROI)
+    MODEL_SAVE_FOLDER = os.path.join(MODEL_SAVE_FOLDER, ROI)
+
     for cv_num in range(4):
         # ------------------------ Train the model
         if MODE == 'train': 

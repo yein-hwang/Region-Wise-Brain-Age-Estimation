@@ -1,1 +1,29 @@
 nohup: ignoring input
+wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240513_215907-vizc01zr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run olive-star-252
+wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/vizc01zr
+====================  Setting  ====================
+Mode :                    train
+Number of gpus :          1
+Batch size :              4
+Data A size:              25656
+Data B size:              630
+Epochs :                  40
+Early Stopping Patience : 5
+# of Workers  :           16
+Model Save Path:          ../../model/region_BAE/ewc/
+==================================================
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/main_cv_ewc.py", line 112, in <module>
+    t_0 = int(len(train_indices) // BATCH_SIZE // 6)
+NameError: name 'train_indices' is not defined
+wandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: 🚀 View run olive-star-252 at: https://wandb.ai/yein-hwang/reg_trial/runs/vizc01zr
+wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDExNzQzOQ==/version_details/v0
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240513_215907-vizc01zr/logs
