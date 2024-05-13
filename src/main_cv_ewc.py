@@ -56,7 +56,8 @@ MODEL_LOAD_FOLDER = config.model_load_folder
 MODEL_LOAD = 1
 MODEL_LOAD_EPOCH = config.model_load_epoch
 MODE = config.mode
-PATIENCE = config.patience
+PATIENCE = 0
+# PATIENCE = config.patience
 
 # setting log
 print("="* 20, " Setting ", "="* 20)

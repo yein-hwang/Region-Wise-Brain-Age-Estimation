@@ -1,13 +1,13 @@
 nohup: ignoring input
 wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
-wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.17.0 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.1
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240513_225254-yn77ms9n
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240514_004428-5elhcwid
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run lyric-thunder-263
+wandb: Syncing run lilac-tree-266
 wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/yn77ms9n
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/5elhcwid
 ====================  Setting  ====================
 Mode :                    train
 Number of gpus :          1
@@ -15,7 +15,7 @@ Batch size :              4
 Data A size:              25656
 Data B size:              630
 Epochs :                  40
-Early Stopping Patience : 5
+Early Stopping Patience : 0
 # of Workers  :           16
 ==================================================
 Model Load Path:          ../../model/region_BAE/ukb/imgs

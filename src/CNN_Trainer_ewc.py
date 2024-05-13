@@ -69,7 +69,7 @@ class CNN_Trainer():
         end = time.time()  # End time
         # Compute the duration
         duration = (end - start) / 60
-        print(f"Duration for Initialize EWC: {duration:.2f} minutes")
+        print(f"Duration for Initialize EWC: {duration:.2f} minutes\n")
 
 
         self.model.train()        
@@ -91,7 +91,7 @@ class CNN_Trainer():
                 self.optimizer.zero_grad()
 
                 mse_loss = self.mse_loss_fn(output, target)
-                ewc_loss = ewc.penalty(model)
+                ewc_loss = ewc.penalty(self.model)
                 total_loss = mse_loss + ewc_loss
 
                 mae_loss = self.mae_loss_fn(output, target)
@@ -240,6 +240,8 @@ class CNN_Trainer():
             
     
     def save(self, milestone):
+        save_path = Path(f"{self.model_save_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
+        save_path.mkdir(parents=True, exist_ok=True)
         torch.save({"epoch": milestone+1, 
                     "state_dict": self.model.state_dict(), 
                     "optimizer" : self.optimizer.state_dict(),  
@@ -247,7 +249,7 @@ class CNN_Trainer():
                     "train_mae_list": self.train_mae_list,
                     "valid_mse_list": self.valid_mse_list,
                     "valid_mae_list": self.valid_mae_list},  
-                    f"{self.model_save_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
+                    save_path)
         
     def load(self, cv_num, epoch):
         model_path = f'{self.model_load_folder}/cv-{cv_num}-{epoch}.pth.tar'
