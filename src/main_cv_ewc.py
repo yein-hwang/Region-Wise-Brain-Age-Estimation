@@ -95,7 +95,7 @@ for train_idx_n, valid_idx_n in kf.split(dataset_indices_new):
 
 for _, ROI in REGIONS.items():  
     #add wandb run name
-    proj_n = f"ewc_{ROI}"
+    proj_n = f"ewc_{ROI}_{IMPORTANCE}"
     wandb.run.name = proj_n
     MODEL_LOAD_FOLDER = os.path.join(MODEL_LOAD_FOLDER, ROI)
     MODEL_SAVE_FOLDER = os.path.join(MODEL_SAVE_FOLDER, ROI)

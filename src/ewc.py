@@ -44,7 +44,7 @@ class EWC(object):
         for n in self.fisher:
             self.fisher[n] /= len(self.dataloader.dataset)
         
-        print("After: ", self.fisher)
+        # print("After: ", self.fisher)
 
     # 1. '.data'를 사용해서 tensor에서 데이터를 직접 추출
     # def penalty(self, model):
@@ -67,7 +67,7 @@ class EWC(object):
             if n in self.fisher:
                 diff = (self.params[n] - p)
                 fisher_effect = self.fisher[n] * diff.pow(2)
-                print(f"Param: {n}, Diff: {diff.norm().item()}, Fisher Effect: {fisher_effect.sum().item()}")
+                # print(f"Param: {n}, Diff: {diff.norm().item()}, Fisher Effect: {fisher_effect.sum().item()}")
                 loss += fisher_effect.sum()
         print(f"Total EWC Loss: {loss.item()}")
         return loss
