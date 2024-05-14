@@ -58,6 +58,7 @@ MODEL_LOAD_EPOCH = config.model_load_epoch
 MODE = config.mode
 PATIENCE = 0
 # PATIENCE = config.patience
+IMPORTANCE = config.importance
 
 # setting log
 print("="* 20, " Setting ", "="* 20)
@@ -70,6 +71,7 @@ print("Batch size :             ", BATCH_SIZE)
 print("Data A size:             ", DATA_SIZE_o)
 print("Data B size:             ", DATA_SIZE_n)
 print("Epochs :                 ", EPOCHS)
+print("Importance(Lambda) :     ", IMPORTANCE)
 print("Early Stopping Patience :", PATIENCE)
 print("# of Workers  :          ", N_WORKERS)
 print("="* 50)
@@ -159,7 +161,8 @@ for _, ROI in REGIONS.items():
                                 optimizer=optimizer, 
                                 early_stopping=EARLY_STOPPING,
                                 scheduler=scheduler,
-                                cv_num=cv_num)
+                                cv_num=cv_num,
+                                importance=IMPORTANCE)
         
             train_start = time.time()
             trainer.train_ewc() # This will create the lists as instance variables

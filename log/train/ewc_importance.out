@@ -3,11 +3,11 @@ wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force 
 wandb: wandb version 0.17.0 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.1
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240514_161429-dzem9pdo
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240514_161538-hlioultt
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run helpful-microwave-272
+wandb: Syncing run zesty-cloud-273
 wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/dzem9pdo
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/hlioultt
 ====================  Setting  ====================
 Mode :                    train
 Number of gpus :          1
@@ -15,12 +15,12 @@ Batch size :              4
 Data A size:              25656
 Data B size:              630
 Epochs :                  40
-Importance(Lambda) :      0.2
+Importance(Lambda) :      0.5
 Early Stopping Patience : 0
 # of Workers  :           16
 ==================================================
 Model Load Path:          ../../model/region_BAE/ukb/imgs
-Model Save Path:          ../../model/region_BAE/ewc/ipt_2/imgs
+Model Save Path:          ../../model/region_BAE/ewc/ipt_5/imgs
 
 <<< StratifiedKFold: 1/4 >>>
 ============== Loaded model: ../../model/region_BAE/ukb/imgs/cv-0-40.pth.tar

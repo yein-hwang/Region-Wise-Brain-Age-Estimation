@@ -42,7 +42,7 @@ class Config:
         self.proj_n = args.proj_n
         self.results_folder = os.path.join('../../test/ewc/', args.results_path)
         self.model_load_folder = os.path.join('../../model/region_BAE/ukb')
-        self.model_save_folder = os.path.join('../../model/region_BAE/ewc/')
+        self.model_save_folder = os.path.join('../../model/region_BAE/ewc/', args.model_save_path)
         self.model_load_epoch = args.load_epoch
         mode = {
             0: 'train',
@@ -50,6 +50,7 @@ class Config:
             2: 'test_tf'
         }
         self.mode = mode[args.mode]
+        self.importance = args.importance
         
 
 def parse_args():
@@ -67,5 +68,5 @@ def parse_args():
     parser.add_argument('--results_path', type=str, default='')
     parser.add_argument('--model_save_path', type=str, default='')
     parser.add_argument('--load_epoch', type=int, default=40)
-
+    parser.add_argument('--importance', type=float, default=0.5)
     return parser.parse_args()

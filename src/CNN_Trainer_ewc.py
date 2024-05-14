@@ -28,7 +28,8 @@ class CNN_Trainer():
             optimizer,
             early_stopping,
             scheduler,
-            cv_num):
+            cv_num,
+            importance):
         super(CNN_Trainer, self).__init__()
 
         self.model = model
@@ -41,6 +42,7 @@ class CNN_Trainer():
         self.optimizer = optimizer
         self.scheduler = scheduler
         self.early_stopping = early_stopping
+        self.importance = importance
         self.mse_loss_fn = nn.MSELoss()
         self.mae_loss_fn = nn.L1Loss()
 
@@ -92,7 +94,7 @@ class CNN_Trainer():
 
                 mse_loss = self.mse_loss_fn(output, target)
                 ewc_loss = ewc.penalty(self.model)
-                total_loss = mse_loss + ewc_loss
+                total_loss = mse_loss + self.importance * ewc_loss
 
                 mae_loss = self.mae_loss_fn(output, target)
                 
@@ -127,10 +129,10 @@ class CNN_Trainer():
             wandb.log({
                 "Epoch": self.epoch + 1,
                 "Learning rate": self.optimizer.param_groups[0]['lr'],
-                "Train MSE Loss_avg": train_mse_avg,
-                "Train MAE Loss_avg": train_mae_avg,
-                "EWC Loss_avg": ewc_loss_avg,
-                "Total Loss_avg": total_loss_avg,
+                "Train MSE Loss": train_mse_avg,
+                "Train MAE Loss": train_mae_avg,
+                "EWC Loss": ewc_loss_avg,
+                "Total Loss": total_loss_avg,
                 "CV Split Number": self.cv_num
             })
             

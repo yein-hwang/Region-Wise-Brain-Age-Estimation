@@ -20,8 +20,6 @@ class EWC(object):
 
             self.model.zero_grad()
             mse_loss = self.mse_loss_fn(output, target)
-            mae_loss = self.mae_loss_fn(output, target)
-
             mse_loss.backward()
 
             # Fihser Information Matrix를 계산하고 업데이트 하는 과정의 일부
@@ -29,8 +27,9 @@ class EWC(object):
             for n, p in self.model.named_parameters(): # model.named_parameters() -> 모델의 모든 파라미터와 그 이름을 반환
                 if p.grad is not None: # 해당 파라미터가 그래디언트를 가지고 있는지 확인 (훈련 중에 사용되지 않는 파라미터(예: 학습 과정에서 고정된 파라미터)는 그래디언트가 없을 수 있음)
                     # p.grad.pow(2) -> "Emprical Fisher Information Matrix(loss function의 gradient의 제곱을 사용)"를 사용하여 근사 
+                    # input.size(0) -> 각 배치 사이즈
                     # self.fisher[n] += ... -> Fisher information의 각 파라미터 항목 업데이트
-                    self.fisher[n] += p.grad.pow(2) * len(self.dataloader) 
+                    self.fisher[n] += input.size(0) / len(self.dataloader.dataset)
 
     # 1. '.data'를 사용해서 tensor에서 데이터를 직접 추출
     # def penalty(self, model):
@@ -51,5 +50,10 @@ class EWC(object):
         loss = 0
         for n, p in model.named_parameters():
             if n in self.fisher:
-                loss += (self.fisher[n] * (self.params[n] - p.data) ** 2).sum()
+                diff = (self.params[n] - p.data)
+                fisher_effect = self.fisher[n] * diff.pow(2)
+                print(f"Param: {n}, Diff: {diff.norm().item()}, Fisher Effect: {fisher_effect.sum().item()}")
+                loss += fisher_effect.sum()
+        print(f"Total EWC Loss: {loss.item()}")
         return loss
+
