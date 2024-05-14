@@ -9,6 +9,15 @@ class EWC(object):
         self.mse_loss_fn = nn.MSELoss()
         self.mae_loss_fn = nn.L1Loss()
         self.params = {n: p for n, p in self.model.named_parameters() if p.requires_grad}
+        ''' model.named_parameters() -> 모델의 각 파라미터에 대한 이름과 해당 파라미터 객체를 포함하는 튜플을 제너레이터로 반환
+        z.B) named_parameters를 사용하여 파라미터 출력
+        for name, param in model.named_parameters():
+            print(f"Layer Name: {name}, Parameter Size: {param.size()}")
+        Layer Name: conv1.weight, Parameter Size: torch.Size([20, 1, 5, 5])
+        Layer Name: conv1.bias, Parameter Size: torch.Size([20])
+        Layer Name: conv2.weight, Parameter Size: torch.Size([20, 20, 5, 5])
+        Layer Name: conv2.bias, Parameter Size: torch.Size([20])
+        '''
         self.fisher = {n: torch.zeros_like(p) for n, p in self.params.items()}
 
         self.model.eval()
