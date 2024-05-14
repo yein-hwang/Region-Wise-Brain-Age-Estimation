@@ -32,15 +32,24 @@ class EWC(object):
                     # self.fisher[n] += ... -> Fisher information의 각 파라미터 항목 업데이트
                     self.fisher[n] += p.grad.pow(2) * len(self.dataloader) 
 
+    # 1. '.data'를 사용해서 tensor에서 데이터를 직접 추출
+    # def penalty(self, model):
+    #     loss = 0
+    #     for n, p in model.named_parameters():
+    #         if n in self.params:
+    #             # pow(2) -> 모델 파라미터 변화에 대한 "패널티" 또는 "cost"를 계산하기 위함
+    #             # self.params[n].data -> Task A에서의 파라미터 값
+    #             # p.data -> Current Task 에서의 파라미터 값
+    #             # self.fisher[n] -> 해당 파라미터의 중요도를 나타내느 Fisher Information
+    #             # 즉, 파라미터 변화의 크기에 그 중요도를 곱하여, 최종적인 패널티 값을 계산 -> 중요도가 높은 파라미터는 더 큰 패널티를 받게 됨
+    #             loss += (self.fisher[n] * (self.params[n].data - p.data).pow(2)).sum()
+            
+    #     return loss
+
+    # 2. 텐서에서 데이터 추출 안하고 바로 텐서 연산을 수행
     def penalty(self, model):
         loss = 0
         for n, p in model.named_parameters():
-            if n in self.params:
-                # pow(2) -> 모델 파라미터 변화에 대한 "패널티" 또는 "cost"를 계산하기 위함
-                # self.params[n].data -> Task A에서의 파라미터 값
-                # p.data -> Current Task 에서의 파라미터 값
-                # self.fisher[n] -> 해당 파라미터의 중요도를 나타내느 Fisher Information
-                # 즉, 파라미터 변화의 크기에 그 중요도를 곱하여, 최종적인 패널티 값을 계산 -> 중요도가 높은 파라미터는 더 큰 패널티를 받게 됨
-                loss += (self.fisher[n] * (self.params[n].data - p.data).pow(2)).sum()
-            
+            if n in self.fisher:
+                loss += (self.fisher[n] * (self.params[n] - p.data) ** 2).sum()
         return loss

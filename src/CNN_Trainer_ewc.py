@@ -78,7 +78,7 @@ class CNN_Trainer():
 
         for i in tqdm(range(self.epochs)):
             print(f"\nEpoch {self.epoch+1:3d}: training")
-            train_mse_sum, train_mae_sum = 0, 0
+            train_mse_sum, train_mae_sum, ewc_loss_sum, total_loss_sum = 0, 0, 0, 0
    
             for _, (input, target) in enumerate(self.dataloader_train):
                 input = input.cuda(non_blocking=True)
@@ -98,34 +98,39 @@ class CNN_Trainer():
                 
                 total_loss.backward() # loss_fn should be the one used for backpropagation
                 self.optimizer.step()
-                if self.scheduler:
-                    self.scheduler.step()
+                self.scheduler.step()
                 
                 # Logging to wandb
                 wandb.log({
                     "Learning rate": self.optimizer.param_groups[0]['lr'],
-                    "Epoch": self.epoch+1,
-                    "Train MSE Loss": mse_loss.item(),
-                    "Train MAE Loss": mae_loss.item(),
-                    "EWC Loss": ewc_loss.item(),
-                    "Total Loss": total_loss.item(),
-                    "CV Split Number": self.cv_num
+                    # "Epoch": self.epoch+1,
+                    # # "Train MSE Loss": mse_loss.item(),
+                    # # "Train MAE Loss": mae_loss.item(),
+                    # # "EWC Loss": ewc_loss.item(),
+                    # # "Total Loss": total_loss.item(),
+                    # "CV Split Number": self.cv_num
                 })
 
-                train_mse_sum += mse_loss.item()*input.size(0)
-                train_mae_sum += mae_loss.item()*input.size(0)
+                train_mse_sum += mse_loss.item() * input.size(0)
+                train_mae_sum += mae_loss.item() * input.size(0)
+                ewc_loss_sum += ewc_loss.item() * input.size(0)
+                total_loss_sum += total_loss.item() * input.size(0)
 
             train_mse_avg = train_mse_sum / len(self.dataloader_train.dataset)
             train_mae_avg = train_mae_sum / len(self.dataloader_train.dataset)
+            ewc_loss_avg = ewc_loss_sum / len(self.dataloader_train.dataset)
+            total_loss_avg = total_loss_sum / len(self.dataloader_train.dataset)
 
             self.train_mse_list.append(train_mse_avg)
             self.train_mae_list.append(train_mae_avg)
             
             wandb.log({
-                "Epoch": self.epoch+1,
+                "Epoch": self.epoch + 1,
                 "Learning rate": self.optimizer.param_groups[0]['lr'],
                 "Train MSE Loss_avg": train_mse_avg,
                 "Train MAE Loss_avg": train_mae_avg,
+                "EWC Loss_avg": ewc_loss_avg,
+                "Total Loss_avg": total_loss_avg,
                 "CV Split Number": self.cv_num
             })
             
@@ -240,16 +245,18 @@ class CNN_Trainer():
             
     
     def save(self, milestone):
-        save_path = Path(f"{self.model_save_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
-        save_path.mkdir(parents=True, exist_ok=True)
-        torch.save({"epoch": milestone+1, 
-                    "state_dict": self.model.state_dict(), 
-                    "optimizer" : self.optimizer.state_dict(),  
-                    "train_mse_list": self.train_mse_list,
-                    "train_mae_list": self.train_mae_list,
-                    "valid_mse_list": self.valid_mse_list,
-                    "valid_mae_list": self.valid_mae_list},  
-                    save_path)
+        model_save_directory = Path(f"{self.model_save_folder}/cv-{self.cv_num}")
+        model_save_directory.mkdir(parents=True, exist_ok=True)
+        save_path = model_save_directory / f"model_epoch_{milestone+1}.pth.tar"
+        torch.save({
+            "epoch": milestone + 1, 
+            "state_dict": self.model.state_dict(), 
+            "optimizer": self.optimizer.state_dict(),  
+            "train_mse_list": self.train_mse_list,
+            "train_mae_list": self.train_mae_list,
+            "valid_mse_list": self.valid_mse_list,
+            "valid_mae_list": self.valid_mae_list
+        }, save_path)
         
     def load(self, cv_num, epoch):
         model_path = f'{self.model_load_folder}/cv-{cv_num}-{epoch}.pth.tar'

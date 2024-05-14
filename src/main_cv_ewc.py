@@ -176,86 +176,86 @@ for _, ROI in REGIONS.items():
             print("valid_mae_list: ", valid_mae_list)
             train_end = time.time()
 
-            print(f"\nElapsed time for one epoch in cv: {(train_end - train_start) / 60:.0f} minutes")
+            print(f"\nElapsed time for one split in cv: {(train_end - train_start) / 60:.0f} minutes")
     
-    # ------------------------ Test the model
-    else:
+    # # ------------------------ Test the model
+    # else:
         
-        pred_age_data = dict()
-        true_age_data = dict()
-        feature_data = dict()
+    #     pred_age_data = dict()
+    #     true_age_data = dict()
+    #     feature_data = dict()
 
-        results_folder = ''
+    #     results_folder = ''
     
-        for _, v in REGIONS.items():      
+    #     for _, v in REGIONS.items():      
 
-            # model_save folder & results folder related
-            if MODE == 'test':
-                model_save_folder = os.path.join(MODEL_SAVE_FOLDER, v)  
-                results_folder = os.path.join(RESULTS_FOLDER, str(cv_num))
-            else: # MODE == 'test_tf'
-                model_save_folder = os.path.dirname(MODEL_SAVE_FOLDER)
-                model_save_folder = os.path.join(model_save_folder, 'transfer_adni', v)
-                results_folder = os.path.join(RESULTS_FOLDER + '_tf', str(cv_num))
+    #         # model_save folder & results folder related
+    #         if MODE == 'test':
+    #             model_save_folder = os.path.join(MODEL_SAVE_FOLDER, v)  
+    #             results_folder = os.path.join(RESULTS_FOLDER, str(cv_num))
+    #         else: # MODE == 'test_tf'
+    #             model_save_folder = os.path.dirname(MODEL_SAVE_FOLDER)
+    #             model_save_folder = os.path.join(model_save_folder, 'transfer_adni', v)
+    #             results_folder = os.path.join(RESULTS_FOLDER + '_tf', str(cv_num))
 
-            # test_dataset related
-            if DATASET == 'adni' and MODE == 'test':
-                test_dataset = Region_Dataset(config, dataset_indices, v)
-            else:
-                test_dataset = Region_Dataset(config, valid_indices, v)
-            dataloader_test = DataLoader(test_dataset, 
-                                        batch_size=BATCH_SIZE, 
-                                        sampler=SequentialSampler(test_dataset),
-                                        collate_fn=test_dataset.collate_fn,
-                                        pin_memory=True,
-                                        num_workers=N_WORKERS)
+    #         # test_dataset related
+    #         if DATASET == 'adni' and MODE == 'test':
+    #             test_dataset = Region_Dataset(config, dataset_indices, v)
+    #         else:
+    #             test_dataset = Region_Dataset(config, valid_indices, v)
+    #         dataloader_test = DataLoader(test_dataset, 
+    #                                     batch_size=BATCH_SIZE, 
+    #                                     sampler=SequentialSampler(test_dataset),
+    #                                     collate_fn=test_dataset.collate_fn,
+    #                                     pin_memory=True,
+    #                                     num_workers=N_WORKERS)
 
-            trainer = CNN_Trainer(model=model, 
-                                model_load_folder = MODEL_LOAD_FOLDER,
-                                model_save_folder=model_save_folder,
-                                results_folder=results_folder,
-                                dataloader_train=None, 
-                                dataloader_valid=None, 
-                                dataloader_test=dataloader_test,
-                                epochs=EPOCHS, 
-                                optimizer=optimizer, 
-                                early_stopping=None,
-                                scheduler=scheduler,
-                                cv_num=cv_num,
-                                model_load=MODEL_LOAD)
+    #         trainer = CNN_Trainer(model=model, 
+    #                             model_load_folder = MODEL_LOAD_FOLDER,
+    #                             model_save_folder=model_save_folder,
+    #                             results_folder=results_folder,
+    #                             dataloader_train=None, 
+    #                             dataloader_valid=None, 
+    #                             dataloader_test=dataloader_test,
+    #                             epochs=EPOCHS, 
+    #                             optimizer=optimizer, 
+    #                             early_stopping=None,
+    #                             scheduler=scheduler,
+    #                             cv_num=cv_num,
+    #                             model_load=MODEL_LOAD)
 
-            trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
-            pred_ages, true_ages, features = trainer.test() # test
+    #         trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
+    #         pred_ages, true_ages, features = trainer.test() # test
 
-            pred_age_data.setdefault(v, [])
-            true_age_data.setdefault(v, [])
-            feature_data.setdefault(v, [])
+    #         pred_age_data.setdefault(v, [])
+    #         true_age_data.setdefault(v, [])
+    #         feature_data.setdefault(v, [])
 
-            pred_age_data[v].extend(pred_ages)
-            true_age_data[v].extend(true_ages)
-            feature_data[v].extend(features)
+    #         pred_age_data[v].extend(pred_ages)
+    #         true_age_data[v].extend(true_ages)
+    #         feature_data[v].extend(features)
 
-        # save the data
-        trainer.age_data_extraction(pred_age_data,
-                                    true_age_data,
-                                    feature_data)
+    #     # save the data
+    #     trainer.age_data_extraction(pred_age_data,
+    #                                 true_age_data,
+    #                                 feature_data)
 
-        # pred_ages_filename = os.path.join(results_folder, 'pred_ages.pkl')
-        # true_ages_filename = os.path.join(results_folder, 'true_ages.pkl')
-        # features_filename = os.path.join(results_folder, 'features.pkl')
-        # print(results_folder)
+    #     # pred_ages_filename = os.path.join(results_folder, 'pred_ages.pkl')
+    #     # true_ages_filename = os.path.join(results_folder, 'true_ages.pkl')
+    #     # features_filename = os.path.join(results_folder, 'features.pkl')
+    #     # print(results_folder)
 
-        # try:
-        #     with open(pred_ages_filename, 'wb') as file:
-        #         pickle.dump(pred_age_data, file)
-        #     with open(true_ages_filename, 'wb') as file:
-        #         pickle.dump(true_age_data, file)
-        #     print(f"Ages saved")
-        #     with open(features_filename, 'wb') as file:
-        #         pickle.dump(feature_data, file)
-        #     print(f"Features saved")
-        # except Exception as e:
-        #     print("Error saving data:", e)
+    #     # try:
+    #     #     with open(pred_ages_filename, 'wb') as file:
+    #     #         pickle.dump(pred_age_data, file)
+    #     #     with open(true_ages_filename, 'wb') as file:
+    #     #         pickle.dump(true_age_data, file)
+    #     #     print(f"Ages saved")
+    #     #     with open(features_filename, 'wb') as file:
+    #     #         pickle.dump(feature_data, file)
+    #     #     print(f"Features saved")
+    #     # except Exception as e:
+    #     #     print("Error saving data:", e)
 
 
 
