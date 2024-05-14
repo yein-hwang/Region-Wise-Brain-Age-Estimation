@@ -271,6 +271,8 @@ class CNN_Trainer():
         self.valid_mae_list = checkpoint.get("valid_mae_list", [])
 
         print(f"============== Loaded model: {model_path}")
+        for name, param in self.model.named_parameters():
+            print(f"{name}: mean = {param.mean().item()}, std = {param.std().item()}")
 
     
     def age_data_extraction(self, pred_age_data, true_age_data, feature_data):

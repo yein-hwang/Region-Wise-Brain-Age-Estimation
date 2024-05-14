@@ -7,8 +7,7 @@ class EWC(object):
         self.model = model_A # model on Task A
         self.dataloader = train_dataloader_A
         self.mse_loss_fn = nn.MSELoss()
-        self.mae_loss_fn = nn.L1Loss()
-        self.params = {n: p for n, p in self.model.named_parameters() if p.requires_grad}
+        self.params = {n: p.clone().detach() for n, p in model_A.named_parameters() if p.requires_grad}
         ''' model.named_parameters() -> 모델의 각 파라미터에 대한 이름과 해당 파라미터 객체를 포함하는 튜플을 제너레이터로 반환
         z.B) named_parameters를 사용하여 파라미터 출력
         for name, param in model.named_parameters():
@@ -19,7 +18,7 @@ class EWC(object):
         Layer Name: conv2.bias, Parameter Size: torch.Size([20])
         '''
         self.fisher = {n: torch.zeros_like(p) for n, p in self.params.items()}
-
+        
         self.model.eval()
         for _, (input, target) in enumerate(self.dataloader):
             input = input.cuda(non_blocking=True)
@@ -32,13 +31,20 @@ class EWC(object):
             mse_loss.backward()
 
             # Fihser Information Matrix를 계산하고 업데이트 하는 과정의 일부
-                # Fisher Information Matrix  -> 파라미터의 중요도 측정에 사용
+                # Fisher Information Matrix  -> 파라미터의 중요도 측정에 사용, 각 파라미터의 그래디언트 제곱을 누적
             for n, p in self.model.named_parameters(): # model.named_parameters() -> 모델의 모든 파라미터와 그 이름을 반환
                 if p.grad is not None: # 해당 파라미터가 그래디언트를 가지고 있는지 확인 (훈련 중에 사용되지 않는 파라미터(예: 학습 과정에서 고정된 파라미터)는 그래디언트가 없을 수 있음)
                     # p.grad.pow(2) -> "Emprical Fisher Information Matrix(loss function의 gradient의 제곱을 사용)"를 사용하여 근사 
                     # input.size(0) -> 각 배치 사이즈
                     # self.fisher[n] += ... -> Fisher information의 각 파라미터 항목 업데이트
-                    self.fisher[n] += input.size(0) / len(self.dataloader.dataset)
+                    self.fisher[n] += p.grad.pow(2)
+                else:
+                    print(f"{n}: p.grad is None")
+        # 데이터셋 전체에 대한 평균을 계산하여 Fisher 정보를 최종적으로 업데이트
+        for n in self.fisher:
+            self.fisher[n] /= len(self.dataloader.dataset)
+        
+        print("After: ", self.fisher)
 
     # 1. '.data'를 사용해서 tensor에서 데이터를 직접 추출
     # def penalty(self, model):
@@ -59,7 +65,7 @@ class EWC(object):
         loss = 0
         for n, p in model.named_parameters():
             if n in self.fisher:
-                diff = (self.params[n] - p.data)
+                diff = (self.params[n] - p)
                 fisher_effect = self.fisher[n] * diff.pow(2)
                 print(f"Param: {n}, Diff: {diff.norm().item()}, Fisher Effect: {fisher_effect.sum().item()}")
                 loss += fisher_effect.sum()

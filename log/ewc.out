@@ -3,11 +3,11 @@ wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force 
 wandb: wandb version 0.17.0 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.1
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240514_161429-dzem9pdo
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240514_181333-fxgw9tmy
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run helpful-microwave-272
+wandb: Syncing run lively-violet-276
 wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/dzem9pdo
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/fxgw9tmy
 ====================  Setting  ====================
 Mode :                    train
 Number of gpus :          1
@@ -24,4 +24,78 @@ Model Save Path:          ../../model/region_BAE/ewc/ipt_2/imgs
 
 <<< StratifiedKFold: 1/4 >>>
 ============== Loaded model: ../../model/region_BAE/ukb/imgs/cv-0-40.pth.tar
+module.conv1.0.weight: mean = -0.016821779310703278, std = 0.2731159031391144
+module.conv1.0.bias: mean = 0.022982727736234665, std = 0.11812999099493027
+module.conv1.2.weight: mean = 0.9870858788490295, std = 0.03600181266665459
+module.conv1.2.bias: mean = 0.008022092282772064, std = 0.022801600396633148
+module.conv1.3.weight: mean = -0.0023865955881774426, std = 0.052472103387117386
+module.conv1.3.bias: mean = -0.02741389349102974, std = 0.026982642710208893
+module.conv2.0.weight: mean = -0.004715791903436184, std = 0.053061868995428085
+module.conv2.0.bias: mean = -0.00290631502866745, std = 0.026181142777204514
+module.conv2.2.weight: mean = 0.9861776828765869, std = 0.028445599600672722
+module.conv2.2.bias: mean = 0.02101408876478672, std = 0.016838788986206055
+module.conv2.3.weight: mean = -0.000878647668287158, std = 0.04001676291227341
+module.conv2.3.bias: mean = -0.010709048248827457, std = 0.021479811519384384
+module.conv3.0.weight: mean = -0.0027033532969653606, std = 0.039961639791727066
+module.conv3.0.bias: mean = 0.0010972432792186737, std = 0.024984266608953476
+module.conv3.2.weight: mean = 0.9822824597358704, std = 0.031110135838389397
+module.conv3.2.bias: mean = 0.01827709563076496, std = 0.02618432603776455
+module.conv3.3.weight: mean = -0.0012708967551589012, std = 0.03907209262251854
+module.conv3.3.bias: mean = -0.0042687635868787766, std = 0.01939668133854866
+module.conv3.5.weight: mean = 0.9950281381607056, std = 0.02138439193367958
+module.conv3.5.bias: mean = -0.0014042817056179047, std = 0.01668762043118477
+module.conv4.0.weight: mean = -0.002785275923088193, std = 0.03953791782259941
+module.conv4.0.bias: mean = -0.013107100501656532, std = 0.024633778259158134
+module.conv4.2.weight: mean = 0.9777294397354126, std = 0.02153756655752659
+module.conv4.2.bias: mean = 0.016517430543899536, std = 0.015558366663753986
+module.conv4.3.weight: mean = -0.0029247133061289787, std = 0.039195749908685684
+module.conv4.3.bias: mean = -0.006552373059093952, std = 0.023968568071722984
+module.conv4.5.weight: mean = 0.9764785766601562, std = 0.01984245888888836
+module.conv4.5.bias: mean = 0.017995135858654976, std = 0.015589072369039059
+module.conv4.6.weight: mean = -0.0024717762134969234, std = 0.0390448123216629
+module.conv4.6.bias: mean = -0.01578715071082115, std = 0.02154436893761158
+module.conv4.8.weight: mean = 0.9486904144287109, std = 0.02207125909626484
+module.conv4.8.bias: mean = 0.041808806359767914, std = 0.02408112958073616
+module.conv5.0.weight: mean = -0.0005912609049119055, std = 0.038704123347997665
+module.conv5.0.bias: mean = -0.0023956901859492064, std = 0.026309682056307793
+module.conv5.2.weight: mean = 0.9736530184745789, std = 0.020318930968642235
+module.conv5.2.bias: mean = 0.011480100452899933, std = 0.020920636132359505
+module.conv5.3.weight: mean = -0.001988265896216035, std = 0.033839188516139984
+module.conv5.3.bias: mean = -0.011737070977687836, std = 0.02288217656314373
+module.conv5.5.weight: mean = 0.9682799577713013, std = 0.02095792256295681
+module.conv5.5.bias: mean = 0.023636188358068466, std = 0.014820664189755917
+module.conv5.6.weight: mean = 0.0009736193460412323, std = 0.033822689205408096
+module.conv5.6.bias: mean = -0.013128927908837795, std = 0.022242696955800056
+module.conv5.8.weight: mean = 0.9755585193634033, std = 0.01677960716187954
+module.conv5.8.bias: mean = 0.007044367492198944, std = 0.0167135838419199
+module.conv6.0.weight: mean = -2.6129921025130898e-05, std = 0.03276224434375763
+module.conv6.0.bias: mean = 0.0038354285061359406, std = 0.019809527322649956
+module.conv6.2.weight: mean = 0.9873377084732056, std = 0.02336634136736393
+module.conv6.2.bias: mean = 0.010294623672962189, std = 0.016934875398874283
+module.conv6.3.weight: mean = -0.0012622651411220431, std = 0.032988570630550385
+module.conv6.3.bias: mean = -0.005124338902533054, std = 0.0209986362606287
+module.conv6.5.weight: mean = 0.97638338804245, std = 0.015492432750761509
+module.conv6.5.bias: mean = -0.007102068047970533, std = 0.01676216721534729
+module.conv6.6.weight: mean = -0.0056157661601901054, std = 0.032282765954732895
+module.conv6.6.bias: mean = 0.00705364253371954, std = 0.021299252286553383
+module.conv6.8.weight: mean = 0.9653555154800415, std = 0.01814739964902401
+module.conv6.8.bias: mean = 0.03420835733413696, std = 0.01936263218522072
+module.conv7.0.weight: mean = -0.0006900868029333651, std = 0.031231213361024857
+module.conv7.0.bias: mean = 0.008204134181141853, std = 0.024308402091264725
+module.conv7.2.weight: mean = 0.9566439390182495, std = 0.024637451395392418
+module.conv7.2.bias: mean = 0.01883203163743019, std = 0.021673861891031265
+module.conv7.3.weight: mean = 0.003770579816773534, std = 0.032876890152692795
+module.conv7.3.bias: mean = -0.018338507041335106, std = 0.02290518209338188
+module.conv7.5.weight: mean = 0.9498927593231201, std = 0.018507178872823715
+module.conv7.5.bias: mean = 0.015031016431748867, std = 0.01696123741567135
+module.conv7.6.weight: mean = 0.003001899691298604, std = 0.03156603127717972
+module.conv7.6.bias: mean = -0.01653270423412323, std = 0.024826228618621826
+module.conv7.8.weight: mean = 1.001363754272461, std = 0.012082463130354881
+module.conv7.8.bias: mean = -0.019597940146923065, std = 0.021815460175275803
+module.fc.0.weight: mean = -0.00487231882289052, std = 0.055538758635520935
+module.fc.0.bias: mean = 0.009016781114041805, std = 0.03872941806912422
+module.fc.2.weight: mean = -0.006765816360712051, std = 0.14480024576187134
+module.fc.2.bias: mean = -0.013139983639121056, std = 0.06651671975851059
+module.fc.4.weight: mean = -0.07973003387451172, std = 0.22860142588615417
+module.fc.4.bias: mean = 0.10375313460826874, std = nan
 [ Initialize EWC ]
