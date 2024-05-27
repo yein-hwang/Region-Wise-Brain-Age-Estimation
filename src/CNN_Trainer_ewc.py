@@ -60,6 +60,7 @@ class CNN_Trainer():
 
         wandb.watch(self.model, log="all")
 
+
     def train_ewc(self):
 
         # Load the fully trained model on the old dataset
@@ -91,26 +92,18 @@ class CNN_Trainer():
 
                 # ----------- update -----------
                 self.optimizer.zero_grad()
-
+                
+                mae_loss = self.mae_loss_fn(output, target)
                 mse_loss = self.mse_loss_fn(output, target)
                 ewc_loss = ewc.penalty(self.model)
                 total_loss = mse_loss + self.importance * ewc_loss
-
-                mae_loss = self.mae_loss_fn(output, target)
-                
-                total_loss.backward() # loss_fn should be the one used for backpropagation
+                total_loss.backward() 
                 self.optimizer.step()
                 self.scheduler.step()
                 
                 # Logging to wandb
                 wandb.log({
                     "Learning rate": self.optimizer.param_groups[0]['lr'],
-                    # "Epoch": self.epoch+1,
-                    # # "Train MSE Loss": mse_loss.item(),
-                    # # "Train MAE Loss": mae_loss.item(),
-                    # # "EWC Loss": ewc_loss.item(),
-                    # # "Total Loss": total_loss.item(),
-                    # "CV Split Number": self.cv_num
                 })
 
                 train_mse_sum += mse_loss.item() * input.size(0)
@@ -208,7 +201,9 @@ class CNN_Trainer():
     
     
     def test(self):
-        print("[ Start test ]", self.dataloader_test)
+        print("[ Start test ]")
+
+        self.load(self.cv_num, 40, True) # pre-trained model load
         self.model.eval()
         with torch.no_grad():
             test_mse_sum, test_mae_sum = 0, 0
@@ -260,8 +255,11 @@ class CNN_Trainer():
             "valid_mae_list": self.valid_mae_list
         }, save_path)
         
-    def load(self, cv_num, epoch):
-        model_path = f'{self.model_load_folder}/cv-{cv_num}-{epoch}.pth.tar'
+    def load(self, cv_num, epoch, test=False):
+        if test:
+            model_path = f'{self.model_load_folder}/model_epoch_{epoch}.pth.tar'
+        else:
+            model_path = f'{self.model_load_folder}/cv-{cv_num}-{epoch}.pth.tar'
         checkpoint = torch.load(model_path)
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])

@@ -41,13 +41,12 @@ class Config:
         # self.roi = self.regions[args.roi]
         self.proj_n = args.proj_n
         self.results_folder = os.path.join('../../test/ewc/', args.results_path)
-        self.model_load_folder = os.path.join('../../model/region_BAE/ukb')
+        self.model_load_folder = '/media/leelabsg-storage1/yein/research/model/region_BAE/ewc/ipt_5/imgs/'
         self.model_save_folder = os.path.join('../../model/region_BAE/ewc/', args.model_save_path)
         self.model_load_epoch = args.load_epoch
         mode = {
             0: 'train',
-            1: 'test',
-            2: 'test_tf'
+            1: 'test'
         }
         self.mode = mode[args.mode]
         self.importance = args.importance
@@ -64,7 +63,7 @@ def parse_args():
     #                     help='0: global, 1: caudate, 2: cerebellum, 3: frontal_lobe, 4: insula, 5: occipital_lobe, 6: parietal_lobe, 7: putamen, 8: temporal_lobe, 9: thalasmus')
     parser.add_argument('--proj_n', type=str, default='region-wise')
     parser.add_argument('--patience', type=int, default=5)
-    parser.add_argument('--mode', type=int, default=0, help='0: train, 1: test, 2: test_tf')
+    parser.add_argument('--mode', type=int, default=0, help='0: train, 1: test')
     parser.add_argument('--results_path', type=str, default='')
     parser.add_argument('--model_save_path', type=str, default='')
     parser.add_argument('--load_epoch', type=int, default=40)

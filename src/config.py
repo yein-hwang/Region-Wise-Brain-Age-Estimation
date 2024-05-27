@@ -44,7 +44,7 @@ class Config:
         self.proj_n = args.proj_n
         self.results_folder = os.path.join('../../test/', args.results_path)
         self.model_load_folder = os.path.join('../../model/region_BAE/ukb', self.roi)
-        self.model_save_folder = os.path.join('../../model/region_BAE/', self.dataset, self.roi, self.model_save_path)
+        self.model_save_folder = os.path.join('../../model/region_BAE/pre', self.dataset, self.roi, self.model_save_path)
         self.model_load = args.model_load
         self.model_load_epoch = args.load_epoch
         mode = {
@@ -72,7 +72,7 @@ def parse_args():
     parser.add_argument('--proj_n', type=str, default='region-wise')
     parser.add_argument('--model_load', type=int, default=0)
     parser.add_argument('--mode', type=int, default=0, help='0: train, 1: test, 2: test_tf')
-    parser.add_argument('--patience', type=int, default=5)
+    parser.add_argument('--patience', type=int, default=0)
     parser.add_argument('--results_path', type=str, default='')
     parser.add_argument('--model_save_path', type=str, default='')
     parser.add_argument('--load_epoch', type=int, default=40)
