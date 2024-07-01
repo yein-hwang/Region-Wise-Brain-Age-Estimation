@@ -90,9 +90,8 @@ class ADNI_Dataset(Dataset):
 
 
 class Region_Dataset(Dataset):
-    def __init__(self, root, mri_csv, indices=None, roi=None):
+    def __init__(self, mri_csv, indices=None, roi=None):
         super(Region_Dataset, self).__init__()
-        self.data_dir = root
         self.data_csv = mri_csv
         self.roi = roi
         

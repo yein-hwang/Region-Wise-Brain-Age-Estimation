@@ -97,9 +97,10 @@ for train_indices, valid_indices in kf.split(dataset_indices):
     print('\n<<< StratifiedKFold: {0}/{1} >>>'.format(cv_num+1, 4))
     
     # create a new dataset for this fold
-    train_dataset = Region_Dataset(config.root, dataset_df, train_indices, ROI)
-    valid_dataset = Region_Dataset(config.root, dataset_df, valid_indices, ROI)
-    
+    # train_dataset = Region_Dataset(config.root, dataset_df, train_indices, ROI)
+    # valid_dataset = Region_Dataset(config.root, dataset_df, valid_indices, ROI)
+    train_dataset = Region_Dataset(dataset_df, train_indices, ROI)
+    valid_dataset = Region_Dataset(dataset_df, valid_indices, ROI)    
     dataloader_train = DataLoader(train_dataset, 
                                 batch_size=BATCH_SIZE, 
                                 sampler=RandomSampler(train_dataset),
@@ -156,6 +157,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                             early_stopping=EARLY_STOPPING,
                             scheduler=scheduler,
                             cv_num=cv_num,
+                            region=ROI,
                             model_load=MODEL_LOAD)
         # Model Loading
         if MODEL_LOAD == 1:
@@ -189,30 +191,28 @@ for train_indices, valid_indices in kf.split(dataset_indices):
     
         for _, v in REGIONS.items():      
 
+            model_load_folder = os.path.join(MODEL_LOAD_FOLDER, v)
+
             # model_save folder & results folder related
             if MODE == 'test':
-                model_save_folder = os.path.join(MODEL_SAVE_FOLDER, v)  
                 results_folder = os.path.join(RESULTS_FOLDER, str(cv_num))
             else: # MODE == 'test_tf'
-                model_save_folder = os.path.dirname(MODEL_SAVE_FOLDER)
-                model_save_folder = os.path.join(model_save_folder, 'transfer_adni', v)
                 results_folder = os.path.join(RESULTS_FOLDER + '_tf', str(cv_num))
 
             # test_dataset related
-            if DATASET == 'adni' and MODE == 'test':
-                test_dataset = Region_Dataset(config, dataset_indices, v)
-            else:
-                test_dataset = Region_Dataset(config, valid_indices, v)
+            test_dataset = Region_Dataset(dataset_df, dataset_indices, v)
             dataloader_test = DataLoader(test_dataset, 
                                         batch_size=BATCH_SIZE, 
                                         sampler=SequentialSampler(test_dataset),
                                         collate_fn=test_dataset.collate_fn,
                                         pin_memory=True,
                                         num_workers=N_WORKERS)
+            if (DATASET == 'ukbb' and MODE == 'test') or (DATASET == 'adni' and MODE == 'test_tf'):
+                dataloader_test = dataloader_valid
 
             trainer = CNN_Trainer(model=model, 
-                                model_load_folder = MODEL_LOAD_FOLDER,
-                                model_save_folder=model_save_folder,
+                                model_load_folder = model_load_folder,
+                                model_save_folder=MODEL_SAVE_FOLDER,
                                 results_folder=results_folder,
                                 dataloader_train=None, 
                                 dataloader_valid=None, 
@@ -222,6 +222,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                                 early_stopping=None,
                                 scheduler=scheduler,
                                 cv_num=cv_num,
+                                region=ROI,
                                 model_load=MODEL_LOAD)
 
             trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
@@ -236,7 +237,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
             feature_data[v].extend(features)
 
         # save the data
-        trainer.age_data_extraction(pred_age_data,
+        trainer.test_age_data_extraction(pred_age_data,
                                     true_age_data,
                                     feature_data)
 

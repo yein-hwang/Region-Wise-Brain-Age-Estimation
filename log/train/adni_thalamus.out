@@ -1,0 +1,1698 @@
+====================  Setting  ====================
+Dataset :                  adni
+Mode :                     train
+Number of gpus :           1
+Batch size :              4
+Data size:                630
+Epochs :                  40
+Learning Rate :           0.0001
+Early Stopping Patience : 0
+# of Workers  :           16
+Region of Interest :      thalamus
+Model Save Path:          ../../model/region_BAE/adni/thalamus/
+Loaded Model Epoch:       40
+==================================================
+
+<<< StratifiedKFold: 1/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  3  10  13  17  22  23  30  32  38  46  50  51  52  53  55  57  60  70
+  82  97  98  99 101 108 109 110 115 132 134 140 141 142 146 154 155 159
+ 168 187 191 192 193 200 202 204 213 214 220 222 228 229 232 235 236 239
+ 240 242 243 244 245 249 252 258 261 262 270 271 272 273 284 289 294 305
+ 308 313 319 320 321 333 335 336 337 339 342 343 351 357 367 370 378 382
+ 384 387 388 390 392 395 401 406 408 411 422 430 433 437 439 442 452 453
+ 454 458 459 464 465 468 471 478 480 484 487 493 496 500 503 509 513 515
+ 531 534 544 545 546 551 565 566 567 568 569 572 577 582 585 589 592 593
+ 596 597 598 600 604 607 609 614 618 625 626 627 628 629]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.75 minutes
+
+Epoch   1: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 754.636 / validation mse loss = 51.882
+    Epoch  1: training mae loss = 18.373 / validation mae loss = 5.458
+
+Epoch   2: training
+Epoch: 2, duration for training: 1.07 minutes
+
+Epoch   2: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 62.319 / validation mse loss = 83.413
+    Epoch  2: training mae loss = 6.343 / validation mae loss = 7.831
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.72 minutes
+
+Epoch   3: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 49.924 / validation mse loss = 45.365
+    Epoch  3: training mae loss = 5.699 / validation mae loss = 5.148
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.70 minutes
+
+Epoch   4: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 44.863 / validation mse loss = 42.087
+    Epoch  4: training mae loss = 5.370 / validation mae loss = 5.120
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.71 minutes
+
+Epoch   5: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 44.179 / validation mse loss = 48.527
+    Epoch  5: training mae loss = 5.340 / validation mae loss = 5.713
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.77 minutes
+
+Epoch   6: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 38.573 / validation mse loss = 45.303
+    Epoch  6: training mae loss = 4.954 / validation mae loss = 5.457
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.73 minutes
+
+Epoch   7: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 40.958 / validation mse loss = 52.386
+    Epoch  7: training mae loss = 5.115 / validation mae loss = 5.965
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.89 minutes
+
+Epoch   8: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 38.697 / validation mse loss = 49.884
+    Epoch  8: training mae loss = 4.974 / validation mae loss = 5.667
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.73 minutes
+
+Epoch   9: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 29.233 / validation mse loss = 49.876
+    Epoch  9: training mae loss = 4.239 / validation mae loss = 5.605
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.74 minutes
+
+Epoch  10: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 39.652 / validation mse loss = 40.693
+    Epoch 10: training mae loss = 4.924 / validation mae loss = 5.121
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.74 minutes
+
+Epoch  11: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 38.596 / validation mse loss = 54.843
+    Epoch 11: training mae loss = 4.934 / validation mae loss = 6.124
+
+Epoch  12: training
+Epoch: 12, duration for training: 1.06 minutes
+
+Epoch  12: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 44.817 / validation mse loss = 66.524
+    Epoch 12: training mae loss = 5.142 / validation mae loss = 6.294
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.80 minutes
+
+Epoch  13: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 54.268 / validation mse loss = 53.549
+    Epoch 13: training mae loss = 5.927 / validation mae loss = 5.542
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.80 minutes
+
+Epoch  14: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 54.711 / validation mse loss = 50.199
+    Epoch 14: training mae loss = 5.934 / validation mae loss = 5.772
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.74 minutes
+
+Epoch  15: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 49.818 / validation mse loss = 48.008
+    Epoch 15: training mae loss = 5.690 / validation mae loss = 5.307
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.73 minutes
+
+Epoch  16: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 51.356 / validation mse loss = 46.825
+    Epoch 16: training mae loss = 5.722 / validation mae loss = 5.224
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.75 minutes
+
+Epoch  17: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 44.842 / validation mse loss = 66.767
+    Epoch 17: training mae loss = 5.357 / validation mae loss = 6.899
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.76 minutes
+
+Epoch  18: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 44.109 / validation mse loss = 43.816
+    Epoch 18: training mae loss = 5.242 / validation mae loss = 5.250
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.75 minutes
+
+Epoch  19: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 45.296 / validation mse loss = 42.454
+    Epoch 19: training mae loss = 5.366 / validation mae loss = 5.171
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.78 minutes
+
+Epoch  20: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 42.566 / validation mse loss = 49.613
+    Epoch 20: training mae loss = 5.265 / validation mae loss = 5.765
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.72 minutes
+
+Epoch  21: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 38.150 / validation mse loss = 41.404
+    Epoch 21: training mae loss = 4.893 / validation mae loss = 5.234
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.77 minutes
+
+Epoch  22: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 35.369 / validation mse loss = 45.896
+    Epoch 22: training mae loss = 4.711 / validation mae loss = 5.202
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.73 minutes
+
+Epoch  23: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 35.541 / validation mse loss = 53.962
+    Epoch 23: training mae loss = 4.713 / validation mae loss = 5.966
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.86 minutes
+
+Epoch  24: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 36.563 / validation mse loss = 52.285
+    Epoch 24: training mae loss = 4.740 / validation mae loss = 5.968
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.72 minutes
+
+Epoch  25: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 26.365 / validation mse loss = 44.976
+    Epoch 25: training mae loss = 4.029 / validation mae loss = 5.392
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.76 minutes
+
+Epoch  26: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 28.101 / validation mse loss = 38.932
+    Epoch 26: training mae loss = 4.151 / validation mae loss = 4.972
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.71 minutes
+
+Epoch  27: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 21.443 / validation mse loss = 59.131
+    Epoch 27: training mae loss = 3.699 / validation mae loss = 6.071
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.75 minutes
+
+Epoch  28: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 24.530 / validation mse loss = 46.322
+    Epoch 28: training mae loss = 3.871 / validation mae loss = 5.524
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.76 minutes
+
+Epoch  29: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 17.069 / validation mse loss = 43.070
+    Epoch 29: training mae loss = 3.156 / validation mae loss = 5.063
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.79 minutes
+
+Epoch  30: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 16.117 / validation mse loss = 48.133
+    Epoch 30: training mae loss = 3.145 / validation mae loss = 5.288
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.74 minutes
+
+Epoch  31: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 9.125 / validation mse loss = 44.948
+    Epoch 31: training mae loss = 2.390 / validation mae loss = 5.339
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.83 minutes
+
+Epoch  32: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 7.802 / validation mse loss = 44.746
+    Epoch 32: training mae loss = 2.187 / validation mae loss = 5.064
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.76 minutes
+
+Epoch  33: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 7.321 / validation mse loss = 46.519
+    Epoch 33: training mae loss = 2.155 / validation mae loss = 5.588
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.74 minutes
+
+Epoch  34: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 8.521 / validation mse loss = 42.878
+    Epoch 34: training mae loss = 2.250 / validation mae loss = 5.115
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.98 minutes
+
+Epoch  35: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 8.324 / validation mse loss = 43.713
+    Epoch 35: training mae loss = 2.228 / validation mae loss = 5.248
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.75 minutes
+
+Epoch  36: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 6.205 / validation mse loss = 48.949
+    Epoch 36: training mae loss = 1.986 / validation mae loss = 5.458
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.76 minutes
+
+Epoch  37: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 5.886 / validation mse loss = 40.403
+    Epoch 37: training mae loss = 1.934 / validation mae loss = 5.035
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.75 minutes
+
+Epoch  38: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 5.255 / validation mse loss = 42.048
+    Epoch 38: training mae loss = 1.852 / validation mae loss = 5.154
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.83 minutes
+
+Epoch  39: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 4.803 / validation mse loss = 40.625
+    Epoch 39: training mae loss = 1.710 / validation mae loss = 5.113
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.74 minutes
+
+Epoch  40: validation
+../../test/adni_cn/thalamus/0/thalamus
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 4.141 / validation mse loss = 40.060
+    Epoch 40: training mae loss = 1.604 / validation mae loss = 5.035
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.27 minutes
+train_mse_list:  [754.6356008739795, 62.31909417904029, 49.92421131214853, 44.86301168344789, 44.1794482328124, 38.57265588489629, 40.957544031789745, 38.69715274491553, 29.23262505410081, 39.6524274147163, 38.5963074989238, 44.817068178774946, 54.26812958919396, 54.71070417307191, 49.81768126204862, 51.35630802178787, 44.84153199599961, 44.10908932099908, 45.29581758329424, 42.565931497994114, 38.14998734401444, 35.3689293942209, 35.54113835803533, 36.562781761258336, 26.365451996609316, 28.10130186732543, 21.443319557076794, 24.529974376751206, 17.06894355961832, 16.116866284507815, 9.124910000017135, 7.802215445344731, 7.321176001833657, 8.520684374843613, 8.32381422691426, 6.20456878184262, 5.885880415217351, 5.254847068402727, 4.802758674500352, 4.1406193201319645]
+train_mae_list:  [18.373407032530185, 6.342780468827587, 5.699231285159871, 5.370241609670348, 5.3396942736738815, 4.953842284315724, 5.1146127894773326, 4.973657818163856, 4.2390157812732765, 4.923542935969466, 4.933617915137339, 5.141959473238153, 5.926592624793618, 5.933929095833989, 5.6901881411924204, 5.722276679540085, 5.357387550806595, 5.2424957065259, 5.366264512983419, 5.265059608524129, 4.892995470661228, 4.710652310969466, 4.713485281346208, 4.739561654753604, 4.028861821708032, 4.150863138295836, 3.6988586005517994, 3.8706719188366905, 3.1555110640444997, 3.145249188956568, 2.39013605602717, 2.1870394157151045, 2.1546889887017717, 2.2504346330287093, 2.227847689289158, 1.9859020507941811, 1.9341933121115475, 1.8521195589485815, 1.7101988065040719, 1.6036261542368744]
+valid_mse_list:  [51.88162017170387, 83.41299993177003, 45.36490997483459, 42.0865195552005, 48.527488240712806, 45.303325954871845, 52.38640289065204, 49.88419397722317, 49.8759655650658, 40.69312637063521, 54.84305071378056, 66.5244356469263, 53.548556581328185, 50.19885293743278, 48.008349648004845, 46.825398185585115, 66.76671739771396, 43.81635806530337, 42.453721034375924, 49.61286148240295, 41.404072248483004, 45.89593959760062, 53.96184419680245, 52.285155429115775, 44.975610838660714, 38.93236764473251, 59.13138999214655, 46.322034147721304, 43.06985332392439, 48.1331409925147, 44.94808288163777, 44.74634290043312, 46.518771062923385, 42.87807003455826, 43.71336129345471, 48.94944148878508, 40.403394246403174, 42.04764002184324, 40.62517461897452, 40.059948447384414]
+valid_mae_list:  [5.458148207845567, 7.831402573404433, 5.148246161545379, 5.119950089273574, 5.7126353541507, 5.456983373134951, 5.964660620387597, 5.666624262363096, 5.604792655268802, 5.121140516256984, 6.123629871802994, 6.294306139402751, 5.541930162453953, 5.77154480656491, 5.307250710982311, 5.22359787663327, 6.89921504636354, 5.250459477871279, 5.171100350874889, 5.765118586866161, 5.233688958083527, 5.202286659916745, 5.966310114800176, 5.9681078995330425, 5.391794156424607, 4.972313434262819, 6.071386144131044, 5.523804362816147, 5.0633055047143865, 5.287535148330882, 5.33939916876298, 5.064005115364171, 5.588336389276046, 5.115306492093243, 5.248229811463175, 5.458156440831438, 5.034700441964065, 5.15390429919279, 5.112673892250544, 5.034795809395706]
+
+Elapsed time for one epoch in cv: 31 minutes
+
+<<< StratifiedKFold: 2/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  0   2   4  14  20  25  26  28  31  40  41  43  54  56  58  59  62  65
+  66  71  74  79  80  81  84  86  87  89  90  96 103 111 113 114 118 119
+ 120 124 129 136 138 145 147 148 150 158 162 164 165 166 170 172 173 174
+ 177 179 188 194 209 216 217 218 221 226 227 248 256 259 264 275 277 278
+ 280 281 283 285 291 292 293 300 301 304 306 307 316 318 323 324 327 328
+ 329 330 340 344 346 354 355 360 371 372 376 377 379 383 385 386 403 404
+ 407 409 410 414 418 419 425 426 441 446 451 461 463 467 477 489 490 492
+ 498 504 506 507 518 523 527 529 532 533 536 538 541 547 548 552 557 558
+ 560 562 571 574 576 587 590 591 594 601 603 608 617 621]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.64 minutes
+
+Epoch   1: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 546.973 / validation mse loss = 72.902
+    Epoch  1: training mae loss = 14.914 / validation mae loss = 6.668
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.97 minutes
+
+Epoch   2: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 54.749 / validation mse loss = 64.128
+    Epoch  2: training mae loss = 5.938 / validation mae loss = 6.244
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.74 minutes
+
+Epoch   3: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 50.800 / validation mse loss = 48.959
+    Epoch  3: training mae loss = 5.587 / validation mae loss = 5.598
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.74 minutes
+
+Epoch   4: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 50.510 / validation mse loss = 73.118
+    Epoch  4: training mae loss = 5.685 / validation mae loss = 6.674
+
+Epoch   5: training
+Epoch: 5, duration for training: 1.15 minutes
+
+Epoch   5: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 45.831 / validation mse loss = 45.989
+    Epoch  5: training mae loss = 5.310 / validation mae loss = 5.454
+
+Epoch   6: training
+Epoch: 6, duration for training: 1.06 minutes
+
+Epoch   6: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 92.272 / validation mse loss = 49.846
+    Epoch  6: training mae loss = 6.028 / validation mae loss = 5.724
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.81 minutes
+
+Epoch   7: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 44.569 / validation mse loss = 45.615
+    Epoch  7: training mae loss = 5.276 / validation mae loss = 5.456
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.74 minutes
+
+Epoch   8: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 41.229 / validation mse loss = 47.257
+    Epoch  8: training mae loss = 5.078 / validation mae loss = 5.650
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.74 minutes
+
+Epoch   9: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 37.958 / validation mse loss = 41.987
+    Epoch  9: training mae loss = 4.925 / validation mae loss = 5.134
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.76 minutes
+
+Epoch  10: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 44.695 / validation mse loss = 48.531
+    Epoch 10: training mae loss = 5.372 / validation mae loss = 5.476
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.79 minutes
+
+Epoch  11: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 34.010 / validation mse loss = 47.081
+    Epoch 11: training mae loss = 4.507 / validation mae loss = 5.390
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.83 minutes
+
+Epoch  12: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 31.090 / validation mse loss = 43.068
+    Epoch 12: training mae loss = 4.348 / validation mae loss = 5.247
+
+Epoch  13: training
+Epoch: 13, duration for training: 1.08 minutes
+
+Epoch  13: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 32.958 / validation mse loss = 48.268
+    Epoch 13: training mae loss = 4.557 / validation mae loss = 5.514
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.83 minutes
+
+Epoch  14: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 30.394 / validation mse loss = 45.533
+    Epoch 14: training mae loss = 4.474 / validation mae loss = 5.353
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.73 minutes
+
+Epoch  15: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 24.951 / validation mse loss = 47.338
+    Epoch 15: training mae loss = 3.916 / validation mae loss = 5.414
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.73 minutes
+
+Epoch  16: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 23.057 / validation mse loss = 60.060
+    Epoch 16: training mae loss = 3.757 / validation mae loss = 6.095
+
+Epoch  17: training
+Epoch: 17, duration for training: 1.07 minutes
+
+Epoch  17: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 17.559 / validation mse loss = 71.725
+    Epoch 17: training mae loss = 3.294 / validation mae loss = 6.895
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.73 minutes
+
+Epoch  18: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 19.841 / validation mse loss = 52.264
+    Epoch 18: training mae loss = 3.448 / validation mae loss = 5.689
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.92 minutes
+
+Epoch  19: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 14.607 / validation mse loss = 48.477
+    Epoch 19: training mae loss = 3.045 / validation mae loss = 5.493
+
+Epoch  20: training
+Epoch: 20, duration for training: 1.83 minutes
+
+Epoch  20: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 15.696 / validation mse loss = 44.077
+    Epoch 20: training mae loss = 3.179 / validation mae loss = 5.389
+
+Epoch  21: training
+Epoch: 21, duration for training: 1.02 minutes
+
+Epoch  21: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 11.735 / validation mse loss = 46.615
+    Epoch 21: training mae loss = 2.738 / validation mae loss = 5.481
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.72 minutes
+
+Epoch  22: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 11.296 / validation mse loss = 55.715
+    Epoch 22: training mae loss = 2.696 / validation mae loss = 6.002
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.78 minutes
+
+Epoch  23: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 11.445 / validation mse loss = 49.716
+    Epoch 23: training mae loss = 2.709 / validation mae loss = 5.560
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.73 minutes
+
+Epoch  24: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 9.419 / validation mse loss = 57.946
+    Epoch 24: training mae loss = 2.407 / validation mae loss = 5.985
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.76 minutes
+
+Epoch  25: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 8.596 / validation mse loss = 48.440
+    Epoch 25: training mae loss = 2.315 / validation mae loss = 5.469
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.75 minutes
+
+Epoch  26: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 5.714 / validation mse loss = 55.154
+    Epoch 26: training mae loss = 1.879 / validation mae loss = 5.826
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.93 minutes
+
+Epoch  27: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 5.772 / validation mse loss = 56.192
+    Epoch 27: training mae loss = 1.936 / validation mae loss = 5.929
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.75 minutes
+
+Epoch  28: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 5.544 / validation mse loss = 43.691
+    Epoch 28: training mae loss = 1.884 / validation mae loss = 5.295
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.82 minutes
+
+Epoch  29: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 5.812 / validation mse loss = 46.866
+    Epoch 29: training mae loss = 1.859 / validation mae loss = 5.476
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.73 minutes
+
+Epoch  30: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 5.041 / validation mse loss = 45.443
+    Epoch 30: training mae loss = 1.786 / validation mae loss = 5.398
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.79 minutes
+
+Epoch  31: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 3.932 / validation mse loss = 55.559
+    Epoch 31: training mae loss = 1.583 / validation mae loss = 5.856
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.87 minutes
+
+Epoch  32: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 5.376 / validation mse loss = 44.050
+    Epoch 32: training mae loss = 1.858 / validation mae loss = 5.346
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.72 minutes
+
+Epoch  33: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 6.739 / validation mse loss = 44.694
+    Epoch 33: training mae loss = 2.044 / validation mae loss = 5.442
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.74 minutes
+
+Epoch  34: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 9.880 / validation mse loss = 44.637
+    Epoch 34: training mae loss = 2.524 / validation mae loss = 5.355
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.73 minutes
+
+Epoch  35: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 5.728 / validation mse loss = 51.155
+    Epoch 35: training mae loss = 1.943 / validation mae loss = 5.610
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.70 minutes
+
+Epoch  36: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 5.993 / validation mse loss = 42.736
+    Epoch 36: training mae loss = 1.954 / validation mae loss = 5.329
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.71 minutes
+
+Epoch  37: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 9.112 / validation mse loss = 47.049
+    Epoch 37: training mae loss = 2.357 / validation mae loss = 5.460
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.75 minutes
+
+Epoch  38: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 9.649 / validation mse loss = 43.646
+    Epoch 38: training mae loss = 2.499 / validation mae loss = 5.318
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.74 minutes
+
+Epoch  39: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 7.306 / validation mse loss = 50.220
+    Epoch 39: training mae loss = 2.112 / validation mae loss = 5.646
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.75 minutes
+
+Epoch  40: validation
+../../test/adni_cn/thalamus/1/thalamus
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 6.484 / validation mse loss = 46.681
+    Epoch 40: training mae loss = 2.039 / validation mae loss = 5.382
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.18 minutes
+train_mse_list:  [546.9731915507276, 54.74905400357004, 50.79957929304091, 50.510061904535455, 45.83072925018052, 92.27159365557007, 44.568808222221115, 41.229108613426405, 37.95842759993117, 44.69459020788387, 34.01043300861019, 31.089842489210227, 32.95807586686086, 30.394049287852596, 24.950511916209077, 23.057207966760053, 17.558548984891278, 19.84123982110266, 14.607011340432248, 15.696179653880959, 11.73515605471902, 11.295663360822, 11.44485552129099, 9.419260462461892, 8.596145228056585, 5.713559394165621, 5.77193024602987, 5.544260482161732, 5.812385565901207, 5.04120817824693, 3.9319095889390527, 5.375845776523574, 6.738605291661569, 9.879833126345934, 5.7275239072613795, 5.992667977082527, 9.112068193696313, 9.648523679350392, 7.306450125808685, 6.484266272161976]
+train_mae_list:  [14.913735842300675, 5.93819439613213, 5.586695776147358, 5.684901972948494, 5.310186911437471, 6.0275299993611995, 5.27597719127849, 5.07751978049844, 4.925267462003029, 5.372158349570581, 4.50653975696887, 4.348334069979393, 4.556889210717153, 4.473849716833082, 3.915727041535458, 3.7571868573204945, 3.2939695099652826, 3.447506233797235, 3.0451848628157276, 3.179224967956543, 2.737729007914915, 2.696298534587278, 2.708847417669781, 2.406511112795038, 2.314580788046627, 1.8790331695039393, 1.936026702492924, 1.884213471816758, 1.8593669503422108, 1.7863317748247567, 1.583175610687773, 1.857901072098037, 2.04449390960952, 2.5238796411934548, 1.9428780442577298, 1.9540280730037365, 2.3569268776198564, 2.499454150765629, 2.1123046470900713, 2.038684747986874]
+valid_mse_list:  [72.90239900275122, 64.1281245750717, 48.95941871329199, 73.11751177341124, 45.989223951025856, 49.845569013040276, 45.615485692326025, 47.25699212279501, 41.98677105239675, 48.53064914896518, 47.08097830301599, 43.0683065607578, 48.26812621007992, 45.532602841341046, 47.338380210007294, 60.060052171538146, 71.72532948361167, 52.26357087002525, 48.476518238647074, 44.07720524751687, 46.61478028719938, 55.715206906765324, 49.716228043731256, 57.94569059565097, 48.44002518170996, 55.153547760806504, 56.19231763368921, 43.69050696529919, 46.86628765395925, 45.44335160074355, 55.559445698050006, 44.04993735687642, 44.69420285768147, 44.6365891106521, 51.15511652185947, 42.73623579966871, 47.04884647417672, 43.64574693124506, 50.2198865745641, 46.68053785155091]
+valid_mae_list:  [6.668431173397016, 6.2435457978067515, 5.598105925547926, 6.6743097667452655, 5.454247028012819, 5.724000737636904, 5.456172001512745, 5.649827474280249, 5.134474524968787, 5.4762083367456365, 5.3902304202695435, 5.2467412586453595, 5.513623515261879, 5.3528212776666955, 5.414130512672134, 6.0948444559604305, 6.894900382319583, 5.689411139186425, 5.493161841283871, 5.388765962818001, 5.481152425838422, 6.002048323426066, 5.559562441668933, 5.984504675563378, 5.46927881844436, 5.825659667389302, 5.929267666007899, 5.294888484327099, 5.476155582862564, 5.397502971600883, 5.856292386598225, 5.345762614962421, 5.4420006184638305, 5.355497794815257, 5.609874846060065, 5.329040454912789, 5.4595534409148785, 5.318069965024538, 5.646452263940739, 5.382017835786071]
+
+Elapsed time for one epoch in cv: 34 minutes
+
+<<< StratifiedKFold: 3/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  1   7   8   9  11  15  16  18  24  27  34  36  37  48  61  64  67  69
+  73  78  88  91  93  94 102 104 105 122 125 126 127 128 133 135 139 143
+ 144 149 153 156 157 160 163 171 176 178 181 184 198 205 206 207 208 210
+ 212 223 231 237 238 241 246 251 253 254 255 263 265 266 267 268 269 274
+ 287 295 296 298 302 303 310 311 314 322 326 334 341 347 350 353 358 359
+ 362 363 364 369 375 380 381 394 397 405 416 417 423 427 428 429 431 435
+ 436 440 445 447 449 450 455 457 466 470 472 473 482 491 499 501 505 508
+ 510 517 520 521 525 526 528 530 539 540 542 543 549 555 556 561 563 564
+ 570 573 578 580 581 606 610 612 613 616 619 622 624]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.57 minutes
+
+Epoch   1: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 410.179 / validation mse loss = 76.021
+    Epoch  1: training mae loss = 12.152 / validation mae loss = 6.765
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.80 minutes
+
+Epoch   2: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 63.032 / validation mse loss = 40.859
+    Epoch  2: training mae loss = 6.284 / validation mae loss = 5.148
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.76 minutes
+
+Epoch   3: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 50.593 / validation mse loss = 36.292
+    Epoch  3: training mae loss = 5.776 / validation mae loss = 4.681
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.80 minutes
+
+Epoch   4: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 52.244 / validation mse loss = 37.116
+    Epoch  4: training mae loss = 5.793 / validation mae loss = 4.684
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.73 minutes
+
+Epoch   5: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 48.530 / validation mse loss = 45.239
+    Epoch  5: training mae loss = 5.566 / validation mae loss = 5.175
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.71 minutes
+
+Epoch   6: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 48.585 / validation mse loss = 36.761
+    Epoch  6: training mae loss = 5.554 / validation mae loss = 4.731
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.71 minutes
+
+Epoch   7: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 46.234 / validation mse loss = 41.264
+    Epoch  7: training mae loss = 5.449 / validation mae loss = 4.971
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.77 minutes
+
+Epoch   8: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 40.478 / validation mse loss = 122.895
+    Epoch  8: training mae loss = 5.158 / validation mae loss = 9.759
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.78 minutes
+
+Epoch   9: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 43.714 / validation mse loss = 36.600
+    Epoch  9: training mae loss = 5.225 / validation mae loss = 4.696
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.75 minutes
+
+Epoch  10: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 38.472 / validation mse loss = 71.048
+    Epoch 10: training mae loss = 4.984 / validation mae loss = 6.930
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.76 minutes
+
+Epoch  11: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 41.111 / validation mse loss = 47.269
+    Epoch 11: training mae loss = 5.136 / validation mae loss = 5.337
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.78 minutes
+
+Epoch  12: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 32.371 / validation mse loss = 48.165
+    Epoch 12: training mae loss = 4.499 / validation mae loss = 5.577
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.74 minutes
+
+Epoch  13: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 30.084 / validation mse loss = 42.058
+    Epoch 13: training mae loss = 4.365 / validation mae loss = 5.034
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.78 minutes
+
+Epoch  14: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 30.840 / validation mse loss = 36.002
+    Epoch 14: training mae loss = 4.386 / validation mae loss = 4.605
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.74 minutes
+
+Epoch  15: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 27.033 / validation mse loss = 34.923
+    Epoch 15: training mae loss = 4.178 / validation mae loss = 4.457
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.73 minutes
+
+Epoch  16: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 21.937 / validation mse loss = 52.353
+    Epoch 16: training mae loss = 3.734 / validation mae loss = 5.709
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.81 minutes
+
+Epoch  17: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 31.812 / validation mse loss = 52.358
+    Epoch 17: training mae loss = 4.421 / validation mae loss = 5.573
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.73 minutes
+
+Epoch  18: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 26.764 / validation mse loss = 103.269
+    Epoch 18: training mae loss = 3.983 / validation mae loss = 8.592
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.71 minutes
+
+Epoch  19: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 11.277 / validation mse loss = 51.724
+    Epoch 19: training mae loss = 2.648 / validation mae loss = 5.673
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.74 minutes
+
+Epoch  20: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 9.375 / validation mse loss = 37.188
+    Epoch 20: training mae loss = 2.455 / validation mae loss = 4.747
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.71 minutes
+
+Epoch  21: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 13.804 / validation mse loss = 36.003
+    Epoch 21: training mae loss = 2.996 / validation mae loss = 4.687
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.75 minutes
+
+Epoch  22: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 11.657 / validation mse loss = 72.067
+    Epoch 22: training mae loss = 2.735 / validation mae loss = 6.757
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.77 minutes
+
+Epoch  23: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 11.883 / validation mse loss = 35.983
+    Epoch 23: training mae loss = 2.735 / validation mae loss = 4.677
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.80 minutes
+
+Epoch  24: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 23.865 / validation mse loss = 72.801
+    Epoch 24: training mae loss = 3.326 / validation mae loss = 6.562
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.72 minutes
+
+Epoch  25: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 74.954 / validation mse loss = 51.561
+    Epoch 25: training mae loss = 6.947 / validation mae loss = 5.522
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.74 minutes
+
+Epoch  26: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 55.130 / validation mse loss = 60.327
+    Epoch 26: training mae loss = 5.977 / validation mae loss = 6.481
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.74 minutes
+
+Epoch  27: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 55.057 / validation mse loss = 49.153
+    Epoch 27: training mae loss = 6.023 / validation mae loss = 5.450
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.77 minutes
+
+Epoch  28: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 55.574 / validation mse loss = 46.002
+    Epoch 28: training mae loss = 5.992 / validation mae loss = 5.405
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.74 minutes
+
+Epoch  29: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 50.524 / validation mse loss = 43.333
+    Epoch 29: training mae loss = 5.728 / validation mae loss = 5.199
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.74 minutes
+
+Epoch  30: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 51.415 / validation mse loss = 43.911
+    Epoch 30: training mae loss = 5.775 / validation mae loss = 5.381
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.75 minutes
+
+Epoch  31: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 50.432 / validation mse loss = 40.598
+    Epoch 31: training mae loss = 5.662 / validation mae loss = 5.046
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.77 minutes
+
+Epoch  32: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 51.175 / validation mse loss = 55.712
+    Epoch 32: training mae loss = 5.715 / validation mae loss = 6.134
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.72 minutes
+
+Epoch  33: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 55.687 / validation mse loss = 55.139
+    Epoch 33: training mae loss = 5.990 / validation mae loss = 6.182
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.75 minutes
+
+Epoch  34: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 48.156 / validation mse loss = 40.796
+    Epoch 34: training mae loss = 5.594 / validation mae loss = 4.897
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.73 minutes
+
+Epoch  35: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 48.629 / validation mse loss = 42.857
+    Epoch 35: training mae loss = 5.556 / validation mae loss = 5.152
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.71 minutes
+
+Epoch  36: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 50.820 / validation mse loss = 54.398
+    Epoch 36: training mae loss = 5.662 / validation mae loss = 6.005
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.74 minutes
+
+Epoch  37: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 47.029 / validation mse loss = 37.986
+    Epoch 37: training mae loss = 5.431 / validation mae loss = 4.813
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.81 minutes
+
+Epoch  38: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 48.358 / validation mse loss = 46.707
+    Epoch 38: training mae loss = 5.536 / validation mae loss = 5.502
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.78 minutes
+
+Epoch  39: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 42.800 / validation mse loss = 47.453
+    Epoch 39: training mae loss = 5.231 / validation mae loss = 5.494
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.73 minutes
+
+Epoch  40: validation
+../../test/adni_cn/thalamus/2/thalamus
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 46.808 / validation mse loss = 41.690
+    Epoch 40: training mae loss = 5.482 / validation mae loss = 5.044
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.26 minutes
+train_mse_list:  [410.17895060613847, 63.03218886615358, 50.593222283409716, 52.24356008962143, 48.53017030558677, 48.58499702389094, 46.23428316045765, 40.477935512776604, 43.71375078177099, 38.472051672905245, 41.11056653238502, 32.37056874926448, 30.08399403271665, 30.839963447215947, 27.03343316062056, 21.93746740571036, 31.811547716878685, 26.764379444195402, 11.276852582429731, 9.37542656939831, 13.803983940508603, 11.65727142501331, 11.88335289461164, 23.865060479393975, 74.95368056025073, 55.129997969177765, 55.0566819092184, 55.5736598162016, 50.52390482864219, 51.41539360151231, 50.431726665375855, 51.17534971419903, 55.68669550413813, 48.156465524346835, 48.62901329137306, 50.81995801441765, 47.029037533048346, 48.35834012071879, 42.800056229686135, 46.80802805983239]
+train_mae_list:  [12.152029815738347, 6.284399544713865, 5.776304910349292, 5.793336388424637, 5.566028393348226, 5.554472054285933, 5.448776220922491, 5.157951088838799, 5.224885041315511, 4.983984787922833, 5.1358297158497335, 4.498641870994649, 4.364930820263465, 4.386241388623357, 4.178312547615164, 3.734099148191811, 4.421368113027818, 3.9833752670449383, 2.6475109398743064, 2.4545252922977503, 2.996496720747514, 2.7351999988515585, 2.735424041748047, 3.3261350990601874, 6.947182790421532, 5.977324729742006, 6.023096645105213, 5.991870501076696, 5.727608646449276, 5.77497383101546, 5.661733631351786, 5.714624787989933, 5.989767514121961, 5.594313107383679, 5.556345691640583, 5.661883961070668, 5.430861692851996, 5.535624449651286, 5.231256456758205, 5.482150095965848]
+valid_mse_list:  [76.02126738675841, 40.85934798125249, 36.292480541642306, 37.116364199644444, 45.23896218561063, 36.76083970525462, 41.26390082972824, 122.8950382402748, 36.599778327212974, 71.04779502236919, 47.26911955426453, 48.164869906796014, 42.057602876310895, 36.00220376215163, 34.92265785120095, 52.352956978378785, 52.358240971899335, 103.26897523965046, 51.72434616240726, 37.18820571899414, 36.003397838325256, 72.06694622404257, 35.983210956974396, 72.80090060507416, 51.561295163099935, 60.32691395510534, 49.15305892677064, 46.001820163362346, 43.33250181842002, 43.91060515725689, 40.59764928574775, 55.71159334850919, 55.13932077444283, 40.79616320664716, 42.857381602001794, 54.39781848336481, 37.98563472480531, 46.70676073450951, 47.45285663179531, 41.68974688098689]
+valid_mae_list:  [6.765298952722246, 5.14782846049898, 4.680859462470766, 4.6838646178032945, 5.175498962402344, 4.731402257445511, 4.971056215322701, 9.759466717956931, 4.695561402922223, 6.930336508781287, 5.336705541914435, 5.577432231538615, 5.034368235594148, 4.605387596567725, 4.456796585374577, 5.709072914852459, 5.573062240697776, 8.591796972189739, 5.673243431528663, 4.747425370914921, 4.686973571777344, 6.756940635146608, 4.676557407257663, 6.561991989232932, 5.521853890388635, 6.480537365955912, 5.450473372343999, 5.405151124213152, 5.198551882604125, 5.380551089147094, 5.045820637113729, 6.134170920985519, 6.18167969527518, 4.897232444423019, 5.151538290035952, 6.005498655282768, 4.812935507221586, 5.502244305458798, 5.494490945415133, 5.044435586139655]
+
+Elapsed time for one epoch in cv: 30 minutes
+
+<<< StratifiedKFold: 4/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  5   6  12  19  21  29  33  35  39  42  44  45  47  49  63  68  72  75
+  76  77  83  85  92  95 100 106 107 112 116 117 121 123 130 131 137 151
+ 152 161 167 169 175 180 182 183 185 186 189 190 195 196 197 199 201 203
+ 211 215 219 224 225 230 233 234 247 250 257 260 276 279 282 286 288 290
+ 297 299 309 312 315 317 325 331 332 338 345 348 349 352 356 361 365 366
+ 368 373 374 389 391 393 396 398 399 400 402 412 413 415 420 421 424 432
+ 434 438 443 444 448 456 460 462 469 474 475 476 479 481 483 485 486 488
+ 494 495 497 502 511 512 514 516 519 522 524 535 537 550 553 554 559 575
+ 579 583 584 586 588 595 599 602 605 611 615 620 623]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.60 minutes
+
+Epoch   1: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 375.733 / validation mse loss = 77.925
+    Epoch  1: training mae loss = 10.811 / validation mae loss = 6.795
+
+Epoch   2: training
+Epoch: 2, duration for training: 1.11 minutes
+
+Epoch   2: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 66.627 / validation mse loss = 199.200
+    Epoch  2: training mae loss = 6.374 / validation mae loss = 12.096
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.83 minutes
+
+Epoch   3: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 88.551 / validation mse loss = 75.092
+    Epoch  3: training mae loss = 7.453 / validation mae loss = 6.860
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.80 minutes
+
+Epoch   4: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 62.997 / validation mse loss = 44.781
+    Epoch  4: training mae loss = 6.281 / validation mae loss = 5.518
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.88 minutes
+
+Epoch   5: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 52.581 / validation mse loss = 43.245
+    Epoch  5: training mae loss = 5.880 / validation mae loss = 5.458
+
+Epoch   6: training
+Epoch: 6, duration for training: 1.12 minutes
+
+Epoch   6: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 51.079 / validation mse loss = 41.303
+    Epoch  6: training mae loss = 5.732 / validation mae loss = 5.238
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.85 minutes
+
+Epoch   7: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 51.665 / validation mse loss = 40.768
+    Epoch  7: training mae loss = 5.756 / validation mae loss = 5.208
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.82 minutes
+
+Epoch   8: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 45.045 / validation mse loss = 38.352
+    Epoch  8: training mae loss = 5.313 / validation mae loss = 4.952
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.78 minutes
+
+Epoch   9: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 47.355 / validation mse loss = 35.609
+    Epoch  9: training mae loss = 5.480 / validation mae loss = 4.847
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.83 minutes
+
+Epoch  10: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 41.652 / validation mse loss = 54.454
+    Epoch 10: training mae loss = 5.184 / validation mae loss = 6.060
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.86 minutes
+
+Epoch  11: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 35.686 / validation mse loss = 40.957
+    Epoch 11: training mae loss = 4.690 / validation mae loss = 5.246
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.75 minutes
+
+Epoch  12: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 56.416 / validation mse loss = 37.249
+    Epoch 12: training mae loss = 5.987 / validation mae loss = 4.939
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.79 minutes
+
+Epoch  13: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 41.659 / validation mse loss = 41.280
+    Epoch 13: training mae loss = 5.002 / validation mae loss = 5.068
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.80 minutes
+
+Epoch  14: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 48.764 / validation mse loss = 48.857
+    Epoch 14: training mae loss = 5.536 / validation mae loss = 5.810
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.75 minutes
+
+Epoch  15: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 46.253 / validation mse loss = 38.668
+    Epoch 15: training mae loss = 5.428 / validation mae loss = 5.090
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.72 minutes
+
+Epoch  16: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 39.209 / validation mse loss = 40.305
+    Epoch 16: training mae loss = 5.011 / validation mae loss = 5.009
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.76 minutes
+
+Epoch  17: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 35.147 / validation mse loss = 40.628
+    Epoch 17: training mae loss = 4.634 / validation mae loss = 4.983
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.85 minutes
+
+Epoch  18: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 34.427 / validation mse loss = 43.842
+    Epoch 18: training mae loss = 4.637 / validation mae loss = 5.451
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.86 minutes
+
+Epoch  19: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 30.526 / validation mse loss = 38.051
+    Epoch 19: training mae loss = 4.346 / validation mae loss = 4.928
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.86 minutes
+
+Epoch  20: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 34.377 / validation mse loss = 39.212
+    Epoch 20: training mae loss = 4.593 / validation mae loss = 4.761
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.77 minutes
+
+Epoch  21: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 52.040 / validation mse loss = 58.011
+    Epoch 21: training mae loss = 5.628 / validation mae loss = 6.334
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.86 minutes
+
+Epoch  22: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 597.167 / validation mse loss = 50.133
+    Epoch 22: training mae loss = 12.685 / validation mae loss = 5.868
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.75 minutes
+
+Epoch  23: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 56.128 / validation mse loss = 47.094
+    Epoch 23: training mae loss = 5.965 / validation mae loss = 5.621
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.77 minutes
+
+Epoch  24: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 51.913 / validation mse loss = 46.814
+    Epoch 24: training mae loss = 5.827 / validation mae loss = 5.528
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.78 minutes
+
+Epoch  25: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 51.846 / validation mse loss = 45.908
+    Epoch 25: training mae loss = 5.743 / validation mae loss = 5.538
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.75 minutes
+
+Epoch  26: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 53.968 / validation mse loss = 47.968
+    Epoch 26: training mae loss = 5.876 / validation mae loss = 5.734
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.80 minutes
+
+Epoch  27: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 50.325 / validation mse loss = 44.585
+    Epoch 27: training mae loss = 5.676 / validation mae loss = 5.399
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.77 minutes
+
+Epoch  28: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 49.467 / validation mse loss = 44.192
+    Epoch 28: training mae loss = 5.641 / validation mae loss = 5.299
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.84 minutes
+
+Epoch  29: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 50.459 / validation mse loss = 42.364
+    Epoch 29: training mae loss = 5.691 / validation mae loss = 5.244
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.78 minutes
+
+Epoch  30: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 52.145 / validation mse loss = 51.251
+    Epoch 30: training mae loss = 5.852 / validation mae loss = 5.601
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.93 minutes
+
+Epoch  31: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 51.853 / validation mse loss = 50.095
+    Epoch 31: training mae loss = 5.760 / validation mae loss = 5.857
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.80 minutes
+
+Epoch  32: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 49.144 / validation mse loss = 40.148
+    Epoch 32: training mae loss = 5.623 / validation mae loss = 5.055
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.91 minutes
+
+Epoch  33: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 44.938 / validation mse loss = 41.671
+    Epoch 33: training mae loss = 5.274 / validation mae loss = 5.120
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.86 minutes
+
+Epoch  34: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 49.739 / validation mse loss = 40.925
+    Epoch 34: training mae loss = 5.587 / validation mae loss = 5.190
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.82 minutes
+
+Epoch  35: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 52.197 / validation mse loss = 76.692
+    Epoch 35: training mae loss = 5.831 / validation mae loss = 7.096
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.76 minutes
+
+Epoch  36: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 61.149 / validation mse loss = 47.453
+    Epoch 36: training mae loss = 6.262 / validation mae loss = 5.568
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.85 minutes
+
+Epoch  37: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 54.315 / validation mse loss = 46.759
+    Epoch 37: training mae loss = 5.814 / validation mae loss = 5.606
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.72 minutes
+
+Epoch  38: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 52.058 / validation mse loss = 46.254
+    Epoch 38: training mae loss = 5.779 / validation mae loss = 5.592
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.81 minutes
+
+Epoch  39: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 54.277 / validation mse loss = 50.570
+    Epoch 39: training mae loss = 5.968 / validation mae loss = 5.889
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.73 minutes
+
+Epoch  40: validation
+../../test/adni_cn/thalamus/3/thalamus
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 53.336 / validation mse loss = 46.072
+    Epoch 40: training mae loss = 5.872 / validation mae loss = 5.472
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.23 minutes
+train_mse_list:  [375.7332218968591, 66.62667273668607, 88.5511737444436, 62.99720366157386, 52.58084068338664, 51.0785681829644, 51.66495744572129, 45.045248710075846, 47.3550206138014, 41.65173512029345, 35.68606846428321, 56.41598348373086, 41.65872347392693, 48.76366158822122, 46.25332932542797, 39.20922784976677, 35.14719087326502, 34.42728784018793, 30.525657836276935, 34.37690091435552, 52.04045418894064, 597.1665990052717, 56.128490828056414, 51.913253957575016, 51.84632299717587, 53.96799218326996, 50.325118214081, 49.466849276681785, 50.45926299458074, 52.14495930661611, 51.85286655385701, 49.14431273458372, 44.937607374050145, 49.73867506305461, 52.19700138664649, 61.149131149872666, 54.314979156026375, 52.05843266977064, 54.276681514925485, 53.33565827101532]
+train_mae_list:  [10.811183897183763, 6.373844775790644, 7.4533737376174765, 6.281045070914335, 5.879824954913988, 5.732111811889906, 5.755992913598994, 5.313324732709889, 5.4803368566404185, 5.183680746066394, 4.6899383093287526, 5.987176883044253, 5.002054000757713, 5.535845226263647, 5.428444166768177, 5.01127894685838, 4.634477901660363, 4.636752590316546, 4.34554935156921, 4.592764412877927, 5.627782882142016, 12.684804275222358, 5.964927431392871, 5.827240377349531, 5.743185176405796, 5.8757038721322505, 5.67595645186765, 5.640533463395423, 5.690544628441712, 5.851775929489297, 5.760158433974671, 5.623162041758886, 5.273953314815465, 5.587499396745549, 5.831419422560968, 6.262214781618018, 5.814226888450961, 5.779347280619261, 5.968100678845137, 5.872253224411172]
+valid_mse_list:  [77.92459001966343, 199.19973988138187, 75.09210550101699, 44.78058427762074, 43.24549560182413, 41.30343469996361, 40.76771542980413, 38.35192838292213, 35.608750240058654, 54.45444887610758, 40.95728470869125, 37.249421818241196, 41.28005720551606, 48.85727370990689, 38.668435874258634, 40.3054473536789, 40.62785817103781, 43.84180333508048, 38.05086872076533, 39.211619598850326, 58.01101650098327, 50.133333640873055, 47.094452001486616, 46.81421527133626, 45.9076805722182, 47.96782496932206, 44.58488685462125, 44.191655614573484, 42.364128501551924, 51.25120199410019, 50.09510880376503, 40.14777773960381, 41.67092545624751, 40.92472703289834, 76.69183670335515, 47.45341995263555, 46.7586364412004, 46.25357657936728, 50.57018265971665, 46.07217102901191]
+valid_mae_list:  [6.795431440802896, 12.095636112674786, 6.860320583270614, 5.518144109446531, 5.45777922223328, 5.2378701374029655, 5.208141254011992, 4.952297186395924, 4.84701606118755, 6.059615505728752, 5.245561636177597, 4.9393414539896, 5.068096428160455, 5.810339569286176, 5.090391997319118, 5.009386536422049, 4.982927601808195, 5.451215221623706, 4.927795944699816, 4.761224297201558, 6.333882665937873, 5.8682729636028315, 5.620545891439839, 5.528045459917396, 5.537854431541103, 5.73433592972482, 5.398560493615023, 5.299397948441232, 5.244106025452826, 5.601224182517665, 5.856887525813595, 5.0551567806559765, 5.120081227296477, 5.190318696817775, 7.0956806012779285, 5.56836331118444, 5.606001106796751, 5.591927789578772, 5.889424949694591, 5.472014165987634]
+
+Elapsed time for one epoch in cv: 33 minutes

@@ -25,7 +25,7 @@ class Config:
 
         return parser.parse_args()
 
-def process_subject(root, subject, atlas_template_path, save_root, regions, cn, trial, tmp_path):
+def process_subject(root, subject, atlas_template_path, save_root, regions, df, trial, tmp_path):
     img_dir = os.path.join(root, subject, 'brain_to_MNI_nonlin.nii.gz')
     save_path = os.path.join(save_root, subject)
 
@@ -72,19 +72,19 @@ def main(config):
     gc.collect()
 
     root = '/media/leelabsg-storage1/DATA/ADNI/adni_t1s_baseline'
-    cn = pd.read_csv('/media/leelabsg-storage1/yein/research/data/csv/fsdat_baseline_cn.csv')
+    df = pd.read_csv('/media/leelabsg-storage1/yein/research/data/csv/fsdat_baseline_ad.csv')
 
     trial = config.trial
-    save_root = f'/media/leelabsg-storage1/yein/research/data/adni_region'
+    save_root = f'/media/leelabsg-storage1/yein/research/data/adni_region/disease'
     tmp_path = '/media/leelabsg-storage1/yein/research/tmp/tmp'
     os.makedirs(save_root, exist_ok=True)
 
     atlas_template_path = '/media/leelabsg-storage1/yein/research/data/template/MNI-maxprob-thr0-1mm.nii.gz'
     regions = ['caudate', 'cerebellum', 'frontal_lobe', 'insula', 'occipital_lobe', 'parietal_lobe', 'putamen', 'temporal_lobe', 'thalamus']
 
-    for i in tqdm(cn.index[config.start_index : config.end_index]):
-        subject = str(cn['File_name'][i])
-        process_subject(root, subject, atlas_template_path, save_root, regions, cn, trial, tmp_path)
+    for i in tqdm(range(len(df))):
+        subject = str(df['File_name'][i])
+        process_subject(root, subject, atlas_template_path, save_root, regions, df, trial, tmp_path)
         gc.collect()
 
 if __name__ == "__main__":

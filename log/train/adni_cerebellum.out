@@ -1,0 +1,1575 @@
+nohup: ignoring input
+wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: wandb version 0.17.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240612_053512-q1lbcv37
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run polished-bush-306
+wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/q1lbcv37
+====================  Setting  ====================
+Dataset :                  adni
+Mode :                     train
+Number of gpus :           1
+Batch size :              4
+Data size:                630
+Epochs :                  40
+Learning Rate :           0.0001
+Early Stopping Patience : 0
+# of Workers  :           16
+Region of Interest :      cerebellum
+Model Save Path:          ../../model/region_BAE/adni/cerebellum/
+Loaded Model Epoch:       40
+==================================================
+
+<<< StratifiedKFold: 1/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  3  10  13  17  22  23  30  32  38  46  50  51  52  53  55  57  60  70
+  82  97  98  99 101 108 109 110 115 132 134 140 141 142 146 154 155 159
+ 168 187 191 192 193 200 202 204 213 214 220 222 228 229 232 235 236 239
+ 240 242 243 244 245 249 252 258 261 262 270 271 272 273 284 289 294 305
+ 308 313 319 320 321 333 335 336 337 339 342 343 351 357 367 370 378 382
+ 384 387 388 390 392 395 401 406 408 411 422 430 433 437 439 442 452 453
+ 454 458 459 464 465 468 471 478 480 484 487 493 496 500 503 509 513 515
+ 531 534 544 545 546 551 565 566 567 568 569 572 577 582 585 589 592 593
+ 596 597 598 600 604 607 609 614 618 625 626 627 628 629]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 1.45 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [01:48<1:10:48, 108.94s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  1: training mse loss = 388.922 / validation mse loss = 72.796
+    Epoch  1: training mae loss = 11.963 / validation mae loss = 6.288
+
+Epoch   2: training
+Epoch: 2, duration for training: 1.01 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [02:36<46:07, 72.82s/it]   ../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  2: training mse loss = 147.329 / validation mse loss = 56.477
+    Epoch  2: training mae loss = 9.219 / validation mae loss = 5.975
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.69 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [03:20<36:53, 59.82s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  3: training mse loss = 71.630 / validation mse loss = 52.104
+    Epoch  3: training mae loss = 6.779 / validation mae loss = 5.769
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.76 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [04:04<32:01, 53.37s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  4: training mse loss = 59.468 / validation mse loss = 51.277
+    Epoch  4: training mae loss = 6.249 / validation mae loss = 5.764
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.71 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [04:47<29:00, 49.74s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  5: training mse loss = 54.753 / validation mse loss = 69.091
+    Epoch  5: training mae loss = 5.959 / validation mae loss = 7.005
+
+Epoch   6: training
+Epoch: 6, duration for training: 1.01 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [05:46<29:53, 52.76s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  6: training mse loss = 56.834 / validation mse loss = 63.297
+    Epoch  6: training mae loss = 5.972 / validation mae loss = 6.670
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.70 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [06:27<26:53, 48.89s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  7: training mse loss = 55.933 / validation mse loss = 53.100
+    Epoch  7: training mae loss = 6.006 / validation mae loss = 5.495
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.71 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [07:13<25:36, 48.01s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  8: training mse loss = 56.381 / validation mse loss = 50.332
+    Epoch  8: training mae loss = 6.177 / validation mae loss = 5.381
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.75 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [07:55<23:53, 46.24s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch  9: training mse loss = 53.792 / validation mse loss = 56.976
+    Epoch  9: training mae loss = 5.964 / validation mae loss = 5.696
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.69 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [08:40<22:55, 45.85s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 10: training mse loss = 48.950 / validation mse loss = 58.233
+    Epoch 10: training mae loss = 5.565 / validation mae loss = 5.808
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.78 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [09:24<21:53, 45.29s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 11: training mse loss = 50.758 / validation mse loss = 45.948
+    Epoch 11: training mae loss = 5.780 / validation mae loss = 5.303
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.72 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [10:07<20:46, 44.52s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 12: training mse loss = 45.924 / validation mse loss = 44.088
+    Epoch 12: training mae loss = 5.400 / validation mae loss = 5.215
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.77 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [10:54<20:21, 45.25s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 13: training mse loss = 45.008 / validation mse loss = 51.743
+    Epoch 13: training mae loss = 5.372 / validation mae loss = 5.855
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.77 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [11:42<19:57, 46.05s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 14: training mse loss = 45.307 / validation mse loss = 44.513
+    Epoch 14: training mae loss = 5.347 / validation mae loss = 5.294
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.74 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [12:24<18:44, 44.98s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 15: training mse loss = 43.398 / validation mse loss = 50.985
+    Epoch 15: training mae loss = 5.251 / validation mae loss = 5.548
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.73 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [13:11<18:10, 45.44s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 16: training mse loss = 42.288 / validation mse loss = 50.339
+    Epoch 16: training mae loss = 5.144 / validation mae loss = 5.630
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.76 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [13:52<16:55, 44.15s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 17: training mse loss = 49.461 / validation mse loss = 52.267
+    Epoch 17: training mae loss = 5.588 / validation mae loss = 5.474
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.69 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [14:37<16:16, 44.41s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 18: training mse loss = 45.743 / validation mse loss = 43.615
+    Epoch 18: training mae loss = 5.337 / validation mae loss = 5.249
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.75 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [15:20<15:22, 43.93s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 19: training mse loss = 42.768 / validation mse loss = 53.338
+    Epoch 19: training mae loss = 5.250 / validation mae loss = 5.724
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.86 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [16:13<15:34, 46.72s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 20: training mse loss = 44.063 / validation mse loss = 52.422
+    Epoch 20: training mae loss = 5.324 / validation mae loss = 5.597
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.74 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [16:54<14:16, 45.08s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 21: training mse loss = 33.093 / validation mse loss = 70.058
+    Epoch 21: training mae loss = 4.519 / validation mae loss = 6.670
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.68 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [17:37<13:21, 44.50s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 22: training mse loss = 31.786 / validation mse loss = 56.802
+    Epoch 22: training mae loss = 4.482 / validation mae loss = 6.110
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.73 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [18:19<12:19, 43.52s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 23: training mse loss = 38.977 / validation mse loss = 44.517
+    Epoch 23: training mae loss = 4.980 / validation mae loss = 5.357
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.68 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [19:01<11:31, 43.22s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 24: training mse loss = 26.807 / validation mse loss = 55.707
+    Epoch 24: training mae loss = 4.022 / validation mae loss = 5.989
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.71 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [19:44<10:47, 43.17s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 25: training mse loss = 22.012 / validation mse loss = 46.545
+    Epoch 25: training mae loss = 3.696 / validation mae loss = 5.435
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.72 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [20:28<10:06, 43.31s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 26: training mse loss = 18.869 / validation mse loss = 68.880
+    Epoch 26: training mae loss = 3.364 / validation mae loss = 6.618
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.76 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [21:13<09:31, 43.99s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 27: training mse loss = 22.667 / validation mse loss = 55.830
+    Epoch 27: training mae loss = 3.741 / validation mae loss = 5.916
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.76 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [22:10<09:32, 47.69s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 28: training mse loss = 15.873 / validation mse loss = 50.063
+    Epoch 28: training mae loss = 3.062 / validation mae loss = 5.589
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.94 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [22:55<08:36, 46.92s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 29: training mse loss = 17.864 / validation mse loss = 47.850
+    Epoch 29: training mae loss = 3.223 / validation mae loss = 5.582
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.76 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [23:49<08:10, 49.04s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 30: training mse loss = 8.330 / validation mse loss = 49.751
+    Epoch 30: training mae loss = 2.274 / validation mae loss = 5.625
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.86 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [24:33<07:09, 47.67s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 31: training mse loss = 7.976 / validation mse loss = 48.078
+    Epoch 31: training mae loss = 2.285 / validation mae loss = 5.531
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.74 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [25:20<06:19, 47.45s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 32: training mse loss = 5.651 / validation mse loss = 46.051
+    Epoch 32: training mae loss = 1.873 / validation mae loss = 5.526
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.78 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [26:01<05:19, 45.57s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 33: training mse loss = 7.356 / validation mse loss = 48.642
+    Epoch 33: training mae loss = 2.165 / validation mae loss = 5.671
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.70 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [26:47<04:32, 45.45s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 34: training mse loss = 8.071 / validation mse loss = 44.268
+    Epoch 34: training mae loss = 2.249 / validation mae loss = 5.345
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.82 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [27:32<03:47, 45.45s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 35: training mse loss = 6.835 / validation mse loss = 46.601
+    Epoch 35: training mae loss = 2.042 / validation mae loss = 5.452
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.69 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [28:17<03:01, 45.37s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 36: training mse loss = 5.559 / validation mse loss = 52.248
+    Epoch 36: training mae loss = 1.843 / validation mae loss = 5.849
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.73 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [28:59<02:12, 44.18s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 37: training mse loss = 5.119 / validation mse loss = 47.032
+    Epoch 37: training mae loss = 1.789 / validation mae loss = 5.550
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.70 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [29:42<01:27, 43.91s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 38: training mse loss = 3.821 / validation mse loss = 42.519
+    Epoch 38: training mae loss = 1.524 / validation mae loss = 5.269
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.72 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [30:25<00:43, 43.57s/it]../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 39: training mse loss = 5.509 / validation mse loss = 43.534
+    Epoch 39: training mae loss = 1.829 / validation mae loss = 5.400
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.74 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [31:09<00:00, 43.78s/it]100%|██████████| 40/40 [31:09<00:00, 46.74s/it]
+../../test/adni_cn/cerebellum/0/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/0/cerebellum/pred_ages.pkl'
+    Epoch 40: training mse loss = 3.791 / validation mse loss = 45.884
+    Epoch 40: training mae loss = 1.548 / validation mae loss = 5.441
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.15 minutes
+train_mse_list:  [388.9218587875366, 147.32881725440592, 71.63040712324239, 59.467760908401615, 54.75281887337313, 56.834452511900565, 55.93277642282389, 56.38135541091531, 53.79193784018695, 48.94950702634908, 50.75757367328062, 45.923608085866704, 45.00788705126714, 45.30680100695562, 43.39799122082985, 42.28768875235218, 49.460905452906076, 45.74307946027336, 42.76825466196416, 44.062722596576656, 33.09282040798058, 31.786028122497818, 38.97697716244196, 26.80668303522013, 22.012360516241042, 18.868932400972156, 22.666739889625777, 15.872645430140576, 17.864381206742788, 8.329841249827611, 7.976272298875502, 5.650578785498263, 7.3556444117073285, 8.071087936476125, 6.8347011403007025, 5.558973253530971, 5.118874485209837, 3.8211466832307437, 5.50904397136074, 3.791254245376183]
+train_mae_list:  [11.963097055079574, 9.219169770256947, 6.778619402545994, 6.249103554224564, 5.9586763786057295, 5.972143359103446, 6.005868289430262, 6.177438372272556, 5.963694822990288, 5.565336752746065, 5.779652134846833, 5.3997325654757224, 5.371524269297971, 5.346971794710321, 5.250854031514313, 5.144338114786956, 5.5877309007159734, 5.336573334063514, 5.250045792531159, 5.323640047493628, 4.518992771536617, 4.482422230607372, 4.980051428584729, 4.021685600280762, 3.6962999408527955, 3.3640976679527155, 3.7412754802380577, 3.0616653248415155, 3.223394191871255, 2.2743903499538614, 2.285425081091412, 1.872759479587361, 2.1652368771827826, 2.248747744802701, 2.042180934194791, 1.8428542007834225, 1.7891373715158236, 1.5240802845712436, 1.829019457606946, 1.5484662540888383]
+valid_mse_list:  [72.79632509207424, 56.47696342951135, 52.10414702982842, 51.27738533744329, 69.09123583684993, 63.297050276889074, 53.09962393362311, 50.33182666875139, 56.97601631019689, 58.23336353784875, 45.947756103322476, 44.087921770313116, 51.74255180358887, 44.51257138312617, 50.98506784439087, 50.339111871357204, 52.26748260063461, 43.61544054972975, 53.338124715829196, 52.42249095289013, 70.05820819999599, 56.802230907391895, 44.517052215865895, 55.70743481116959, 46.54453693462324, 68.88027039057091, 55.83037306387213, 50.06346411644658, 47.85046453113797, 49.750727255133135, 48.07754482800448, 46.05108292495148, 48.64168700689002, 44.267763777624204, 46.6014299754855, 52.24832750272147, 47.0321067435832, 42.51915480215338, 43.53445873984808, 45.88437059257604]
+valid_mae_list:  [6.288017731678637, 5.975232643417165, 5.768606861935386, 5.764034681682345, 7.004647629170478, 6.670175359218935, 5.495192346693594, 5.380661614333527, 5.695722386806826, 5.808359580703929, 5.302520196649093, 5.214945032626768, 5.855118160006366, 5.2939734881437275, 5.547667515428761, 5.629527200626422, 5.474002717416497, 5.248794193509259, 5.724498555630068, 5.597364715383023, 6.669591396669798, 6.110030186327198, 5.356628297250482, 5.989421240891082, 5.434873580932617, 6.617727617674236, 5.91638311555114, 5.589229269872738, 5.5818032856228985, 5.625350107120562, 5.530902138239221, 5.526315664943261, 5.671242895005625, 5.344887407520149, 5.45157760909841, 5.84867421886589, 5.549946845332278, 5.268846825708317, 5.399819869029371, 5.440660259391688]
+
+Elapsed time for one epoch in cv: 31 minutes
+
+<<< StratifiedKFold: 2/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  0   2   4  14  20  25  26  28  31  40  41  43  54  56  58  59  62  65
+  66  71  74  79  80  81  84  86  87  89  90  96 103 111 113 114 118 119
+ 120 124 129 136 138 145 147 148 150 158 162 164 165 166 170 172 173 174
+ 177 179 188 194 209 216 217 218 221 226 227 248 256 259 264 275 277 278
+ 280 281 283 285 291 292 293 300 301 304 306 307 316 318 323 324 327 328
+ 329 330 340 344 346 354 355 360 371 372 376 377 379 383 385 386 403 404
+ 407 409 410 414 418 419 425 426 441 446 451 461 463 467 477 489 490 492
+ 498 504 506 507 518 523 527 529 532 533 536 538 541 547 548 552 557 558
+ 560 562 571 574 576 587 590 591 594 601 603 608 617 621]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.58 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:48<31:21, 48.24s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  1: training mse loss = 315.275 / validation mse loss = 58.609
+    Epoch  1: training mae loss = 10.269 / validation mae loss = 6.120
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.77 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:30<28:24, 44.86s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  2: training mse loss = 58.988 / validation mse loss = 98.117
+    Epoch  2: training mae loss = 6.128 / validation mae loss = 7.779
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.74 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:16<27:56, 45.30s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  3: training mse loss = 53.870 / validation mse loss = 64.311
+    Epoch  3: training mae loss = 5.819 / validation mae loss = 6.193
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.76 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:58<26:28, 44.12s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  4: training mse loss = 51.642 / validation mse loss = 49.713
+    Epoch  4: training mae loss = 5.743 / validation mae loss = 5.777
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.70 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:41<25:26, 43.60s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  5: training mse loss = 42.861 / validation mse loss = 51.553
+    Epoch  5: training mae loss = 5.200 / validation mae loss = 5.701
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.72 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:25<24:43, 43.63s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  6: training mse loss = 44.704 / validation mse loss = 49.615
+    Epoch  6: training mae loss = 5.367 / validation mae loss = 5.680
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.70 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [05:06<23:29, 42.70s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  7: training mse loss = 44.375 / validation mse loss = 47.539
+    Epoch  7: training mae loss = 5.338 / validation mae loss = 5.682
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.69 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:48<22:44, 42.64s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  8: training mse loss = 44.841 / validation mse loss = 47.834
+    Epoch  8: training mae loss = 5.324 / validation mae loss = 5.729
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.72 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:31<22:01, 42.63s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch  9: training mse loss = 43.147 / validation mse loss = 57.841
+    Epoch  9: training mae loss = 5.208 / validation mae loss = 5.887
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.69 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [07:11<20:58, 41.97s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 10: training mse loss = 37.613 / validation mse loss = 47.291
+    Epoch 10: training mae loss = 4.879 / validation mae loss = 5.468
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.67 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:51<19:59, 41.37s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 11: training mse loss = 39.347 / validation mse loss = 46.958
+    Epoch 11: training mae loss = 4.952 / validation mae loss = 5.630
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.67 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:31<19:06, 40.94s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 12: training mse loss = 37.899 / validation mse loss = 84.973
+    Epoch 12: training mae loss = 4.997 / validation mae loss = 7.208
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.66 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [09:12<18:22, 40.82s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 13: training mse loss = 33.676 / validation mse loss = 67.838
+    Epoch 13: training mae loss = 4.653 / validation mae loss = 6.309
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.67 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:52<17:34, 40.57s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 14: training mse loss = 26.351 / validation mse loss = 50.855
+    Epoch 14: training mae loss = 4.068 / validation mae loss = 5.585
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.67 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:34<17:08, 41.13s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 15: training mse loss = 39.124 / validation mse loss = 62.961
+    Epoch 15: training mae loss = 4.916 / validation mae loss = 6.100
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.72 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [11:16<16:36, 41.51s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 16: training mse loss = 25.182 / validation mse loss = 49.103
+    Epoch 16: training mae loss = 3.974 / validation mae loss = 5.857
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.70 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:57<15:47, 41.21s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 17: training mse loss = 25.758 / validation mse loss = 57.904
+    Epoch 17: training mae loss = 4.005 / validation mae loss = 5.914
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.67 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [12:38<15:04, 41.13s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 18: training mse loss = 15.291 / validation mse loss = 51.376
+    Epoch 18: training mae loss = 3.069 / validation mae loss = 5.592
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.68 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [13:18<14:17, 40.82s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 19: training mse loss = 12.801 / validation mse loss = 48.956
+    Epoch 19: training mae loss = 2.889 / validation mae loss = 5.490
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.67 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [13:58<13:33, 40.66s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 20: training mse loss = 13.978 / validation mse loss = 45.104
+    Epoch 20: training mae loss = 2.940 / validation mae loss = 5.472
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.68 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [14:39<12:51, 40.63s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 21: training mse loss = 14.456 / validation mse loss = 49.714
+    Epoch 21: training mae loss = 3.065 / validation mae loss = 5.790
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.67 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [15:19<12:06, 40.37s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 22: training mse loss = 10.234 / validation mse loss = 49.079
+    Epoch 22: training mae loss = 2.437 / validation mae loss = 5.554
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.67 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [15:58<11:23, 40.19s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 23: training mse loss = 5.505 / validation mse loss = 45.967
+    Epoch 23: training mae loss = 1.841 / validation mae loss = 5.371
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.66 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [16:40<10:51, 40.72s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 24: training mse loss = 4.976 / validation mse loss = 46.827
+    Epoch 24: training mae loss = 1.713 / validation mae loss = 5.463
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.70 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [17:30<10:49, 43.30s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 25: training mse loss = 5.866 / validation mse loss = 61.484
+    Epoch 25: training mae loss = 1.865 / validation mae loss = 6.139
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.84 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [18:16<10:21, 44.36s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 26: training mse loss = 9.540 / validation mse loss = 46.846
+    Epoch 26: training mae loss = 2.457 / validation mae loss = 5.433
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.79 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [19:01<09:35, 44.27s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 27: training mse loss = 6.676 / validation mse loss = 50.975
+    Epoch 27: training mae loss = 2.002 / validation mae loss = 5.527
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.71 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [19:42<08:41, 43.43s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 28: training mse loss = 4.645 / validation mse loss = 46.835
+    Epoch 28: training mae loss = 1.745 / validation mae loss = 5.464
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.70 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [20:23<07:48, 42.58s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 29: training mse loss = 4.150 / validation mse loss = 49.511
+    Epoch 29: training mae loss = 1.635 / validation mae loss = 5.490
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.70 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [21:06<07:07, 42.72s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 30: training mse loss = 3.392 / validation mse loss = 47.675
+    Epoch 30: training mae loss = 1.490 / validation mae loss = 5.464
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.69 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [21:47<06:21, 42.40s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 31: training mse loss = 2.821 / validation mse loss = 47.481
+    Epoch 31: training mae loss = 1.328 / validation mae loss = 5.390
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.70 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [22:36<05:55, 44.38s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 32: training mse loss = 4.299 / validation mse loss = 47.390
+    Epoch 32: training mae loss = 1.623 / validation mae loss = 5.483
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.83 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [23:25<05:20, 45.78s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 33: training mse loss = 3.761 / validation mse loss = 47.084
+    Epoch 33: training mae loss = 1.506 / validation mae loss = 5.354
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.80 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [24:08<04:29, 44.93s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 34: training mse loss = 3.251 / validation mse loss = 47.187
+    Epoch 34: training mae loss = 1.438 / validation mae loss = 5.295
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.74 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [24:54<03:45, 45.01s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 35: training mse loss = 4.521 / validation mse loss = 45.684
+    Epoch 35: training mae loss = 1.647 / validation mae loss = 5.350
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.83 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [25:40<03:01, 45.50s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 36: training mse loss = 8.554 / validation mse loss = 56.643
+    Epoch 36: training mae loss = 2.255 / validation mae loss = 5.793
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.75 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [26:27<02:17, 45.91s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 37: training mse loss = 7.454 / validation mse loss = 48.092
+    Epoch 37: training mae loss = 2.196 / validation mae loss = 5.445
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.71 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [27:09<01:29, 44.82s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 38: training mse loss = 5.846 / validation mse loss = 48.827
+    Epoch 38: training mae loss = 1.939 / validation mae loss = 5.394
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.70 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [27:53<00:44, 44.34s/it]../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 39: training mse loss = 8.187 / validation mse loss = 49.250
+    Epoch 39: training mae loss = 2.279 / validation mae loss = 5.362
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.77 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [28:38<00:00, 44.58s/it]100%|██████████| 40/40 [28:38<00:00, 42.95s/it]
+../../test/adni_cn/cerebellum/1/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/1/cerebellum/pred_ages.pkl'
+    Epoch 40: training mse loss = 8.395 / validation mse loss = 54.528
+    Epoch 40: training mae loss = 2.317 / validation mae loss = 5.592
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.15 minutes
+train_mse_list:  [315.27492134247797, 58.98801577697366, 53.86951673131878, 51.641694644750174, 42.86075371402805, 44.704440397731325, 44.37524401333373, 44.84113219531916, 43.14703237202208, 37.61282375101316, 39.34705101332422, 37.89895884667413, 33.67620106975911, 26.350705041218614, 39.123846189955536, 25.181864976882935, 25.758262672666778, 15.29071539438377, 12.80076845318584, 13.977623456110388, 14.456080430645054, 10.234055858294843, 5.505468662765066, 4.9760053052993145, 5.866289742669816, 9.540350386651896, 6.676196578953226, 4.645483154929796, 4.15028822598821, 3.391629853869899, 2.8207761577125323, 4.299259611358077, 3.7608785617591467, 3.2514307408956653, 4.520956746981305, 8.553702200115737, 7.454179013937207, 5.8462463122303205, 8.187388354565128, 8.39506571373697]
+train_mae_list:  [10.269439640691726, 6.127555063215353, 5.818973985768981, 5.743001897456282, 5.19965620364173, 5.36715151899952, 5.3377918712163375, 5.323700508828891, 5.20816735898034, 4.878971140263444, 4.9523142879292115, 4.997379892963474, 4.652863074157198, 4.068460844330868, 4.9159980466810325, 3.9743456840515137, 4.005473177311784, 3.069428605548406, 2.8893837201393255, 2.940001269518319, 3.065171387235997, 2.4368754160606256, 1.8405644368317167, 1.7130798566139351, 1.8646649667772197, 2.4572221303390243, 2.001629053536108, 1.7446727186946545, 1.6349754980054951, 1.4903678489943681, 1.3277005826012562, 1.623312392477262, 1.5063267885628393, 1.4376482074543582, 1.6474540354841847, 2.254730677200576, 2.1956114768981934, 1.9389877642615367, 2.2793901411153503, 2.3167959471880377]
+valid_mse_list:  [58.60944274709195, 98.11711301682871, 64.31148492837254, 49.71307888513879, 51.55257631857184, 49.614545930789994, 47.53896236419678, 47.83356708816335, 57.84125651588923, 47.29132012475895, 46.95766116999373, 84.97279722479325, 67.83759783491304, 50.85512413556063, 62.96089119247243, 49.10251997694184, 57.90379903286318, 51.3760100437116, 48.95626413369481, 45.104441063313544, 49.714285621160194, 49.07878549189507, 45.96724387663829, 46.826566834993, 61.48352263245401, 46.84593290015112, 50.97532096090196, 46.83534919159322, 49.510857322548006, 47.67519788500629, 47.48131366319294, 47.390362063540685, 47.083919488931, 47.186583657807944, 45.683961156048355, 56.643033788174016, 48.0915171828451, 48.827481994146034, 49.25021976760671, 54.52835238734378]
+valid_mae_list:  [6.1202765114699735, 7.778963716724251, 6.1929417139367215, 5.776909429815751, 5.7006453260590755, 5.680321681348583, 5.6822603684437425, 5.729211469239827, 5.887064607837532, 5.468338133413581, 5.629739954501768, 7.208435951908933, 6.308911408050151, 5.584571089925645, 6.1000943968567665, 5.857009863551659, 5.914453554757034, 5.5920231010340435, 5.490403428862367, 5.471837128264995, 5.790235036536108, 5.554090789601773, 5.370582218411602, 5.463361329670194, 6.138589859008789, 5.433343501030644, 5.527368183377423, 5.464078589330746, 5.4896055535425115, 5.464276688008368, 5.390167839919465, 5.483326658417907, 5.354239862176437, 5.29459026191808, 5.350007817715029, 5.793303815624382, 5.444532708276676, 5.393887556051906, 5.3622396686409095, 5.592266300056554]
+
+Elapsed time for one epoch in cv: 29 minutes
+
+<<< StratifiedKFold: 3/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  1   7   8   9  11  15  16  18  24  27  34  36  37  48  61  64  67  69
+  73  78  88  91  93  94 102 104 105 122 125 126 127 128 133 135 139 143
+ 144 149 153 156 157 160 163 171 176 178 181 184 198 205 206 207 208 210
+ 212 223 231 237 238 241 246 251 253 254 255 263 265 266 267 268 269 274
+ 287 295 296 298 302 303 310 311 314 322 326 334 341 347 350 353 358 359
+ 362 363 364 369 375 380 381 394 397 405 416 417 423 427 428 429 431 435
+ 436 440 445 447 449 450 455 457 466 470 472 473 482 491 499 501 505 508
+ 510 517 520 521 525 526 528 530 539 540 542 543 549 555 556 561 563 564
+ 570 573 578 580 581 606 610 612 613 616 619 622 624]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.58 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:43<28:35, 43.99s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  1: training mse loss = 452.482 / validation mse loss = 50.971
+    Epoch  1: training mae loss = 13.066 / validation mae loss = 5.734
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.70 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:25<26:50, 42.37s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  2: training mse loss = 60.916 / validation mse loss = 42.985
+    Epoch  2: training mae loss = 6.214 / validation mae loss = 5.298
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.70 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:06<25:54, 42.02s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  3: training mse loss = 322.772 / validation mse loss = 420.244
+    Epoch  3: training mae loss = 11.062 / validation mae loss = 19.315
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.72 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:51<25:44, 42.90s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  4: training mse loss = 70.581 / validation mse loss = 49.305
+    Epoch  4: training mae loss = 6.618 / validation mae loss = 5.654
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.71 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:33<24:53, 42.67s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  5: training mse loss = 78.314 / validation mse loss = 42.868
+    Epoch  5: training mae loss = 7.064 / validation mae loss = 5.053
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.70 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:14<23:49, 42.03s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  6: training mse loss = 56.738 / validation mse loss = 47.018
+    Epoch  6: training mae loss = 6.069 / validation mae loss = 5.207
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.68 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [04:55<23:01, 41.85s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  7: training mse loss = 62.808 / validation mse loss = 41.069
+    Epoch  7: training mae loss = 6.225 / validation mae loss = 4.967
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.69 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:37<22:19, 41.85s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  8: training mse loss = 79.628 / validation mse loss = 108.365
+    Epoch  8: training mae loss = 7.271 / validation mae loss = 8.925
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.70 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:19<21:42, 42.02s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch  9: training mse loss = 53.783 / validation mse loss = 41.941
+    Epoch  9: training mae loss = 5.745 / validation mae loss = 4.956
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.72 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [07:01<20:56, 41.87s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 10: training mse loss = 58.178 / validation mse loss = 146.270
+    Epoch 10: training mae loss = 6.137 / validation mae loss = 10.577
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.68 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:44<20:22, 42.15s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 11: training mse loss = 47.860 / validation mse loss = 63.500
+    Epoch 11: training mae loss = 5.491 / validation mae loss = 6.531
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.72 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:24<19:24, 41.59s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 12: training mse loss = 65.043 / validation mse loss = 83.258
+    Epoch 12: training mae loss = 6.356 / validation mae loss = 7.692
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.67 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [09:06<18:44, 41.63s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 13: training mse loss = 50.516 / validation mse loss = 55.029
+    Epoch 13: training mae loss = 5.676 / validation mae loss = 6.019
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.71 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:49<18:13, 42.05s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 14: training mse loss = 54.864 / validation mse loss = 42.616
+    Epoch 14: training mae loss = 5.881 / validation mae loss = 5.089
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.70 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:29<17:20, 41.62s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 15: training mse loss = 51.735 / validation mse loss = 39.997
+    Epoch 15: training mae loss = 5.758 / validation mae loss = 5.020
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.68 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [11:10<16:30, 41.25s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 16: training mse loss = 42.054 / validation mse loss = 41.112
+    Epoch 16: training mae loss = 5.128 / validation mae loss = 4.967
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.67 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:51<15:51, 41.38s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 17: training mse loss = 51.312 / validation mse loss = 36.133
+    Epoch 17: training mae loss = 5.616 / validation mae loss = 4.762
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.70 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [12:33<15:14, 41.56s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 18: training mse loss = 125.116 / validation mse loss = 63.634
+    Epoch 18: training mae loss = 8.550 / validation mae loss = 6.664
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.69 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [13:14<14:27, 41.29s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 19: training mse loss = 64.948 / validation mse loss = 46.807
+    Epoch 19: training mae loss = 6.480 / validation mae loss = 5.658
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.69 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [13:55<13:46, 41.30s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 20: training mse loss = 62.040 / validation mse loss = 91.541
+    Epoch 20: training mae loss = 6.158 / validation mae loss = 8.146
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.69 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [14:38<13:13, 41.77s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 21: training mse loss = 64.604 / validation mse loss = 46.988
+    Epoch 21: training mae loss = 6.435 / validation mae loss = 5.361
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.70 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [15:19<12:26, 41.49s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 22: training mse loss = 75.541 / validation mse loss = 65.960
+    Epoch 22: training mae loss = 7.054 / validation mae loss = 6.216
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.68 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [16:01<11:45, 41.51s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 23: training mse loss = 64.620 / validation mse loss = 98.819
+    Epoch 23: training mae loss = 6.481 / validation mae loss = 8.525
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.71 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [16:44<11:10, 41.93s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 24: training mse loss = 55.556 / validation mse loss = 48.022
+    Epoch 24: training mae loss = 6.000 / validation mae loss = 5.343
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.70 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [17:27<10:36, 42.42s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 25: training mse loss = 62.234 / validation mse loss = 94.688
+    Epoch 25: training mae loss = 6.268 / validation mae loss = 8.329
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.73 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [18:09<09:49, 42.14s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 26: training mse loss = 60.025 / validation mse loss = 41.142
+    Epoch 26: training mae loss = 6.233 / validation mae loss = 5.134
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.69 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [18:51<09:07, 42.08s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 27: training mse loss = 55.995 / validation mse loss = 44.819
+    Epoch 27: training mae loss = 6.041 / validation mae loss = 5.161
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.69 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [19:31<08:18, 41.54s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 28: training mse loss = 62.703 / validation mse loss = 58.003
+    Epoch 28: training mae loss = 6.348 / validation mae loss = 6.061
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.67 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [20:12<07:36, 41.53s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 29: training mse loss = 56.467 / validation mse loss = 66.636
+    Epoch 29: training mae loss = 6.043 / validation mae loss = 6.852
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.70 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [20:55<06:57, 41.76s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 30: training mse loss = 48.107 / validation mse loss = 82.294
+    Epoch 30: training mae loss = 5.517 / validation mae loss = 7.646
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.69 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [21:38<06:21, 42.39s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 31: training mse loss = 49.561 / validation mse loss = 51.277
+    Epoch 31: training mae loss = 5.594 / validation mae loss = 5.698
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.74 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [22:19<05:35, 41.97s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 32: training mse loss = 42.201 / validation mse loss = 56.031
+    Epoch 32: training mae loss = 5.195 / validation mae loss = 5.948
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.68 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [23:02<04:53, 41.99s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 33: training mse loss = 65.548 / validation mse loss = 51.267
+    Epoch 33: training mae loss = 6.457 / validation mae loss = 5.512
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.70 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [23:43<04:11, 41.94s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 34: training mse loss = 54.350 / validation mse loss = 37.239
+    Epoch 34: training mae loss = 5.988 / validation mae loss = 4.696
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.70 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [24:25<03:29, 41.95s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 35: training mse loss = 40.302 / validation mse loss = 40.070
+    Epoch 35: training mae loss = 5.076 / validation mae loss = 4.956
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.72 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [25:08<02:48, 42.19s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 36: training mse loss = 32.533 / validation mse loss = 67.152
+    Epoch 36: training mae loss = 4.559 / validation mae loss = 6.826
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.70 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [25:49<02:05, 41.79s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 37: training mse loss = 38.068 / validation mse loss = 57.957
+    Epoch 37: training mae loss = 4.874 / validation mae loss = 6.224
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.68 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [26:30<01:23, 41.66s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 38: training mse loss = 27.552 / validation mse loss = 35.405
+    Epoch 38: training mae loss = 4.214 / validation mae loss = 4.603
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.69 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [27:14<00:42, 42.28s/it]../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 39: training mse loss = 43.361 / validation mse loss = 49.431
+    Epoch 39: training mae loss = 5.200 / validation mae loss = 5.593
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.73 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [27:56<00:00, 42.33s/it]100%|██████████| 40/40 [27:56<00:00, 41.92s/it]
+../../test/adni_cn/cerebellum/2/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/2/cerebellum/pred_ages.pkl'
+    Epoch 40: training mse loss = 31.903 / validation mse loss = 36.566
+    Epoch 40: training mae loss = 4.503 / validation mae loss = 4.747
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.15 minutes
+train_mse_list:  [452.48235110283275, 60.91631366737801, 322.77158723875533, 70.5813110517397, 78.31395980217997, 56.73771948743824, 62.80794403064075, 79.62770993109737, 53.78304650869229, 58.17752814028278, 47.86024057638318, 65.04349718033386, 50.516482976223905, 54.8639647854811, 51.73494365905859, 42.05395347522631, 51.312271631293264, 125.11645050557925, 64.94752458991762, 62.039631936313235, 64.60384428123086, 75.5410274602394, 64.6204935239183, 55.55579058375469, 62.233751676047326, 60.02461467283221, 55.99509307950042, 62.702703262232326, 56.46737908560932, 48.10691222882422, 49.561280460236695, 42.201309121436346, 65.54755724304952, 54.35045835533303, 40.30198965012145, 32.53315861683819, 38.06791431757663, 27.55234212855204, 43.360878467559814, 31.903160141588014]
+train_mae_list:  [13.066111558587556, 6.214190880289541, 11.062236116502048, 6.617836095313945, 7.064081429931124, 6.069386133431884, 6.225280422992989, 7.271428573963254, 5.744768082213453, 6.136909791329447, 5.491372533882899, 6.356426755167213, 5.676341494344506, 5.880977904821803, 5.75841635931874, 5.128064419704058, 5.616358065453947, 8.549867521128744, 6.479511059363851, 6.15780468672577, 6.435325009626264, 7.053674540610444, 6.481361695626322, 5.999533623015906, 6.2681958720749575, 6.233065945905561, 6.041358770326126, 6.348151289635431, 6.0426193140525895, 5.517377502570445, 5.593798413589187, 5.194507663396146, 6.457107293933441, 5.988196060471, 5.07606763617937, 4.559429459037538, 4.873983306562169, 4.214351041120405, 5.20018056179958, 4.502526611908798]
+valid_mse_list:  [50.97140697309166, 42.985059440515606, 420.2438086248507, 49.30523576554219, 42.86803165970335, 47.01783035667079, 41.06863676059018, 108.3650304648527, 41.94141688012773, 146.26989222393863, 63.50042027272996, 83.25767010488327, 55.02923117473627, 42.61550823138778, 39.997351931918196, 41.111875449016594, 36.13295064306563, 63.63350408396144, 46.807493319177325, 91.54105279703809, 46.98750084524701, 65.95955050523114, 98.81928426293051, 48.022318469490976, 94.68799273071775, 41.14155174060991, 44.81884034272212, 58.003401847402, 66.63616974946041, 82.29363611549329, 51.276537439625734, 56.030988122247585, 51.26672236934589, 37.23941188860851, 40.07000525286243, 67.15227049323404, 57.95651242687444, 35.40458255816417, 49.43125366405317, 36.566008956569014]
+valid_mae_list:  [5.733515453946059, 5.297998999334444, 19.31522296492461, 5.653581558519108, 5.053471850741441, 5.207126860405989, 4.967244628128732, 8.92464364410206, 4.95579368445524, 10.57664278358411, 6.531489159650864, 7.691847054062376, 6.019129030264107, 5.088547481852732, 5.02034545704058, 4.966888330544636, 4.762388533088052, 6.6644564100131864, 5.65799270921452, 8.145833592505971, 5.360548566101463, 6.216043946090018, 8.524644936725592, 5.343100432377712, 8.329189276239674, 5.134357087931056, 5.161147731124975, 6.060907448932624, 6.851598508798393, 7.645693153332752, 5.697511952394133, 5.947994037798256, 5.511548376387092, 4.696441553200886, 4.956340571118009, 6.826290592266496, 6.224116137073298, 4.602923593703349, 5.593418072743021, 4.7468369113411875]
+
+Elapsed time for one epoch in cv: 28 minutes
+
+<<< StratifiedKFold: 4/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  5   6  12  19  21  29  33  35  39  42  44  45  47  49  63  68  72  75
+  76  77  83  85  92  95 100 106 107 112 116 117 121 123 130 131 137 151
+ 152 161 167 169 175 180 182 183 185 186 189 190 195 196 197 199 201 203
+ 211 215 219 224 225 230 233 234 247 250 257 260 276 279 282 286 288 290
+ 297 299 309 312 315 317 325 331 332 338 345 348 349 352 356 361 365 366
+ 368 373 374 389 391 393 396 398 399 400 402 412 413 415 420 421 424 432
+ 434 438 443 444 448 456 460 462 469 474 475 476 479 481 483 485 486 488
+ 494 495 497 502 511 512 514 516 519 522 524 535 537 550 553 554 559 575
+ 579 583 584 586 588 595 599 602 605 611 615 620 623]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.57 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:41<27:09, 41.79s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  1: training mse loss = 363.114 / validation mse loss = 92.295
+    Epoch  1: training mae loss = 10.872 / validation mae loss = 7.640
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.68 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:22<25:56, 40.96s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  2: training mse loss = 65.583 / validation mse loss = 91.743
+    Epoch  2: training mae loss = 6.456 / validation mae loss = 8.182
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.67 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:03<25:18, 41.04s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  3: training mse loss = 53.344 / validation mse loss = 42.333
+    Epoch  3: training mae loss = 5.855 / validation mae loss = 5.406
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.70 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:44<24:42, 41.18s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  4: training mse loss = 57.135 / validation mse loss = 45.670
+    Epoch  4: training mae loss = 6.040 / validation mae loss = 5.627
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.68 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:26<24:10, 41.44s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  5: training mse loss = 62.422 / validation mse loss = 47.295
+    Epoch  5: training mae loss = 6.259 / validation mae loss = 5.433
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.71 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:08<23:31, 41.50s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  6: training mse loss = 51.237 / validation mse loss = 44.378
+    Epoch  6: training mae loss = 5.690 / validation mae loss = 5.547
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.69 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [04:48<22:39, 41.19s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  7: training mse loss = 45.867 / validation mse loss = 42.223
+    Epoch  7: training mae loss = 5.367 / validation mae loss = 5.392
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.68 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:30<22:06, 41.44s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  8: training mse loss = 42.907 / validation mse loss = 43.638
+    Epoch  8: training mae loss = 5.285 / validation mae loss = 5.147
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.72 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:15<22:01, 42.62s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch  9: training mse loss = 41.483 / validation mse loss = 91.682
+    Epoch  9: training mae loss = 5.087 / validation mae loss = 8.167
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.73 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [06:58<21:13, 42.46s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 10: training mse loss = 43.357 / validation mse loss = 43.040
+    Epoch 10: training mae loss = 5.220 / validation mae loss = 5.156
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.71 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:41<20:37, 42.68s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 11: training mse loss = 38.694 / validation mse loss = 61.923
+    Epoch 11: training mae loss = 4.940 / validation mae loss = 6.418
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.71 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:22<19:44, 42.29s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 12: training mse loss = 38.916 / validation mse loss = 38.677
+    Epoch 12: training mae loss = 4.967 / validation mae loss = 5.012
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.70 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [09:05<19:02, 42.33s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 13: training mse loss = 54.531 / validation mse loss = 47.747
+    Epoch 13: training mae loss = 6.011 / validation mae loss = 5.694
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.70 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:46<18:13, 42.05s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 14: training mse loss = 54.407 / validation mse loss = 46.554
+    Epoch 14: training mae loss = 5.962 / validation mae loss = 5.536
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.69 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:27<17:25, 41.80s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 15: training mse loss = 56.529 / validation mse loss = 48.674
+    Epoch 15: training mae loss = 5.998 / validation mae loss = 5.562
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.69 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [11:09<16:44, 41.86s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 16: training mse loss = 62.790 / validation mse loss = 47.963
+    Epoch 16: training mae loss = 6.383 / validation mae loss = 5.608
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.70 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:52<16:12, 42.27s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 17: training mse loss = 54.432 / validation mse loss = 47.131
+    Epoch 17: training mae loss = 5.864 / validation mae loss = 5.568
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.72 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [12:34<15:24, 42.04s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 18: training mse loss = 54.919 / validation mse loss = 49.583
+    Epoch 18: training mae loss = 5.886 / validation mae loss = 5.846
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.69 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [13:16<14:41, 41.97s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 19: training mse loss = 304.850 / validation mse loss = 52.611
+    Epoch 19: training mae loss = 7.411 / validation mae loss = 6.020
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.70 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [13:57<13:52, 41.62s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 20: training mse loss = 55.240 / validation mse loss = 49.344
+    Epoch 20: training mae loss = 5.969 / validation mae loss = 5.609
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.68 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [14:38<13:10, 41.59s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 21: training mse loss = 54.043 / validation mse loss = 49.883
+    Epoch 21: training mae loss = 5.853 / validation mae loss = 5.615
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.70 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [15:20<12:32, 41.82s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 22: training mse loss = 55.205 / validation mse loss = 47.811
+    Epoch 22: training mae loss = 5.882 / validation mae loss = 5.684
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.70 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [16:02<11:48, 41.68s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 23: training mse loss = 54.379 / validation mse loss = 47.652
+    Epoch 23: training mae loss = 5.914 / validation mae loss = 5.628
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.69 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [16:44<11:07, 41.71s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 24: training mse loss = 56.464 / validation mse loss = 47.980
+    Epoch 24: training mae loss = 6.044 / validation mae loss = 5.705
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.69 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [17:26<10:27, 41.83s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 25: training mse loss = 54.157 / validation mse loss = 47.661
+    Epoch 25: training mae loss = 5.898 / validation mae loss = 5.654
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.71 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [18:08<09:47, 41.94s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 26: training mse loss = 55.377 / validation mse loss = 49.572
+    Epoch 26: training mae loss = 5.986 / validation mae loss = 5.833
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.70 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [18:50<09:07, 42.11s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 27: training mse loss = 56.027 / validation mse loss = 55.184
+    Epoch 27: training mae loss = 5.954 / validation mae loss = 6.165
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.71 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [19:31<08:20, 41.75s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 28: training mse loss = 55.512 / validation mse loss = 47.822
+    Epoch 28: training mae loss = 6.047 / validation mae loss = 5.688
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.67 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [20:13<07:38, 41.69s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 29: training mse loss = 54.659 / validation mse loss = 48.526
+    Epoch 29: training mae loss = 5.943 / validation mae loss = 5.603
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.70 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [20:54<06:54, 41.42s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 30: training mse loss = 52.824 / validation mse loss = 47.983
+    Epoch 30: training mae loss = 5.889 / validation mae loss = 5.708
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.68 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [21:35<06:11, 41.32s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 31: training mse loss = 135.636 / validation mse loss = 48.039
+    Epoch 31: training mae loss = 7.127 / validation mae loss = 5.711
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.69 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [22:19<05:38, 42.29s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 32: training mse loss = 55.549 / validation mse loss = 54.135
+    Epoch 32: training mae loss = 5.953 / validation mae loss = 6.108
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.75 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [23:01<04:54, 42.09s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 33: training mse loss = 53.269 / validation mse loss = 47.637
+    Epoch 33: training mae loss = 5.885 / validation mae loss = 5.635
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.69 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [23:42<04:10, 41.72s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 34: training mse loss = 53.900 / validation mse loss = 49.616
+    Epoch 34: training mae loss = 5.901 / validation mae loss = 5.836
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.68 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [24:23<03:27, 41.50s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 35: training mse loss = 54.166 / validation mse loss = 49.535
+    Epoch 35: training mae loss = 5.920 / validation mae loss = 5.831
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.68 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [25:03<02:44, 41.17s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 36: training mse loss = 56.870 / validation mse loss = 49.993
+    Epoch 36: training mae loss = 6.045 / validation mae loss = 5.859
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.67 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [25:44<02:03, 41.13s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 37: training mse loss = 54.160 / validation mse loss = 49.926
+    Epoch 37: training mae loss = 5.960 / validation mae loss = 5.613
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.69 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [26:27<01:23, 41.53s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 38: training mse loss = 54.523 / validation mse loss = 47.901
+    Epoch 38: training mae loss = 5.901 / validation mae loss = 5.607
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.72 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [27:09<00:41, 41.78s/it]../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 39: training mse loss = 53.225 / validation mse loss = 54.846
+    Epoch 39: training mae loss = 5.923 / validation mae loss = 5.777
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.69 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [27:52<00:00, 42.07s/it]100%|██████████| 40/40 [27:52<00:00, 41.81s/it]
+../../test/adni_cn/cerebellum/3/cerebellum
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/cerebellum/3/cerebellum/pred_ages.pkl'
+    Epoch 40: training mse loss = 56.162 / validation mse loss = 48.360
+    Epoch 40: training mae loss = 6.004 / validation mae loss = 5.743
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.16 minutes
+train_mse_list:  [363.11389583160206, 65.58305038054952, 53.343951379521954, 57.13504244056363, 62.42155593243008, 51.23675009809891, 45.86749417182003, 42.90697620988648, 41.48270388536675, 43.357387035770095, 38.694109264942355, 38.91550711295066, 54.53093093041386, 54.40682554238695, 56.52932200925799, 62.79039785409066, 54.43181810520164, 54.91922115926763, 304.849871074454, 55.24002767062842, 54.04267750431569, 55.2052282934209, 54.37872788265946, 56.46395031241484, 54.15700983043453, 55.376745893385646, 56.02704385067897, 55.51175366194001, 54.65921530411057, 52.8240753944026, 135.63572285058132, 55.54867041098391, 53.26885425011149, 53.89975363910828, 54.16590313377139, 56.87012978083992, 54.160012890165376, 54.522765135412236, 53.22472131579925, 56.162433765403314]
+train_mae_list:  [10.872164873441733, 6.455625207429204, 5.854804621690423, 6.039884668071981, 6.259081915115453, 5.690021329399899, 5.366901792885133, 5.285412923478173, 5.08741393300998, 5.220137452978412, 4.939560597845162, 4.96667664348449, 6.011005966154264, 5.9622614660928415, 5.997687406318132, 6.38343084387749, 5.864412706951763, 5.886330425109218, 7.4113251926026935, 5.9686433659043425, 5.853321470619508, 5.881605103958485, 5.914164730660759, 6.043891148637767, 5.8982410067987745, 5.985729419151774, 5.9543072335563805, 6.04737153970666, 5.943269290077258, 5.888572418664525, 7.127011853595112, 5.952641428651064, 5.885438382751594, 5.901206034686551, 5.920063204291507, 6.044967151343444, 5.960150736834988, 5.900602167302912, 5.922571033050343, 6.003821455651056]
+valid_mse_list:  [92.29526071487719, 91.74306053113027, 42.33322697232483, 45.669802038532914, 47.29485114516726, 44.378247993007584, 42.22266247014331, 43.63807055297171, 91.68216566826887, 43.04001816366888, 61.92290184604135, 38.67674576704669, 47.74686617228635, 46.55385614808198, 48.673608123876484, 47.96340471316295, 47.130582277941855, 49.58304162306865, 52.61146081082381, 49.34424160999857, 49.88324504293454, 47.810556692682255, 47.652222533134896, 47.97976556553203, 47.66052086793693, 49.572338632100326, 55.18429234528997, 47.82161656990173, 48.525645034328384, 47.98292795905642, 48.03873396982812, 54.13467741847798, 47.637292167942995, 49.61623842247827, 49.535298825876346, 49.99251851544472, 49.92577662133867, 47.9006575201727, 54.84618709952968, 48.359553133226505]
+valid_mae_list:  [7.639741642459942, 8.182209768113058, 5.406134295615421, 5.627076361589371, 5.43339771829593, 5.546818629951234, 5.392094460262615, 5.146561932411923, 8.167176070486663, 5.155631970448099, 6.417865145737958, 5.012152459211411, 5.6943359860948695, 5.535876134398636, 5.56165726777095, 5.60806988758646, 5.567918279368406, 5.8457109001791405, 6.0201312994501395, 5.60868806292297, 5.61455516450724, 5.684359799524781, 5.6284513048305636, 5.705332762116839, 5.6539281857241495, 5.832696999713874, 6.164623916528787, 5.687506171548442, 5.602789131699095, 5.707534984418541, 5.711206424008509, 6.108291674571432, 5.634550787081384, 5.8359337096001695, 5.830539630476836, 5.859204723576831, 5.61277999391981, 5.606504355266595, 5.776969618098751, 5.742644048800134]
+
+Elapsed time for one epoch in cv: 28 minutes
+wandb: 
+wandb: Run history:
+wandb:     CV Split Number ▁▁▁▁▁▁▁▁▁▁▃▃▃▃▃▃▃▃▃▃▆▆▆▆▆▆▆▆▆▆██████████
+wandb:               Epoch ▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█
+wandb:       Learning rate █▇▁▂▃▃▁▂▃▅▇▂▇▃▁▂▅▄▁▂▂▇▃▂▂▆▅▂▂█▁▂▂▂█▄▂▂▅▄
+wandb:      Train MAE Loss █▅▅▅▅▄▃▂▂▁▅▅▄▃▂▂▂▁▁▁▅▅▅▅▇▆▅▅▅▃▆▅▄▅▅▅▅▅▅▅
+wandb:      Train MSE Loss █▄▃▃▃▂▂▁▁▁▄▃▃▂▂▁▁▁▁▁▄▄▄▄▇▅▄▃▃▂▄▃▃▃▄▄▄▃▃▄
+wandb: Validation MAE Loss ▃▃▂▂▂▃▃▂▂▂▅▂▂▂▂▂▂▂▂▂▂▂█▂▃▃▂▅▁▁▅▂▂▂▂▂▂▂▂▂
+wandb: Validation MSE Loss ▂▃▂▂▂▂▃▂▂▁▅▂▂▂▂▂▂▂▂▂▁▂█▁▃▃▁▄▁▁▅▂▁▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb:     CV Split Number 3
+wandb:               Epoch 40
+wandb:       Learning rate 0.00019
+wandb:      Train MAE Loss 6.00382
+wandb:      Train MSE Loss 56.16243
+wandb: Validation MAE Loss 5.74264
+wandb: Validation MSE Loss 48.35955
+wandb: 
+wandb: 🚀 View run polished-bush-306 at: https://wandb.ai/yein-hwang/reg_trial/runs/q1lbcv37
+wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDc1Mjc4NA==/version_details/v41
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240612_053512-q1lbcv37/logs

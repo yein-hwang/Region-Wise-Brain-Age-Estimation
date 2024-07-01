@@ -1,0 +1,1575 @@
+nohup: ignoring input
+wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.17.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240612_051823-jcdtu4pr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run proud-bush-305
+wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/jcdtu4pr
+====================  Setting  ====================
+Dataset :                  adni
+Mode :                     train
+Number of gpus :           1
+Batch size :              4
+Data size:                630
+Epochs :                  40
+Learning Rate :           0.0001
+Early Stopping Patience : 0
+# of Workers  :           16
+Region of Interest :      caudate
+Model Save Path:          ../../model/region_BAE/adni/caudate/
+Loaded Model Epoch:       40
+==================================================
+
+<<< StratifiedKFold: 1/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  3  10  13  17  22  23  30  32  38  46  50  51  52  53  55  57  60  70
+  82  97  98  99 101 108 109 110 115 132 134 140 141 142 146 154 155 159
+ 168 187 191 192 193 200 202 204 213 214 220 222 228 229 232 235 236 239
+ 240 242 243 244 245 249 252 258 261 262 270 271 272 273 284 289 294 305
+ 308 313 319 320 321 333 335 336 337 339 342 343 351 357 367 370 378 382
+ 384 387 388 390 392 395 401 406 408 411 422 430 433 437 439 442 452 453
+ 454 458 459 464 465 468 471 478 480 484 487 493 496 500 503 509 513 515
+ 531 534 544 545 546 551 565 566 567 568 569 572 577 582 585 589 592 593
+ 596 597 598 600 604 607 609 614 618 625 626 627 628 629]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.80 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:58<38:13, 58.80s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  1: training mse loss = 882.748 / validation mse loss = 60.858
+    Epoch  1: training mae loss = 20.747 / validation mae loss = 5.974
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.71 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:38<29:59, 47.35s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  2: training mse loss = 71.747 / validation mse loss = 56.409
+    Epoch  2: training mae loss = 6.773 / validation mae loss = 5.748
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.66 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:16<26:31, 43.02s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  3: training mse loss = 52.291 / validation mse loss = 46.238
+    Epoch  3: training mae loss = 5.824 / validation mae loss = 5.349
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.64 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:56<25:13, 42.03s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  4: training mse loss = 53.693 / validation mse loss = 56.676
+    Epoch  4: training mae loss = 5.906 / validation mae loss = 6.308
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.68 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:35<23:56, 41.04s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  5: training mse loss = 52.703 / validation mse loss = 45.405
+    Epoch  5: training mae loss = 5.777 / validation mae loss = 5.159
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.65 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:17<23:17, 41.10s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  6: training mse loss = 44.929 / validation mse loss = 61.288
+    Epoch  6: training mae loss = 5.420 / validation mae loss = 6.031
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.69 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [04:55<22:10, 40.33s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  7: training mse loss = 39.529 / validation mse loss = 48.538
+    Epoch  7: training mae loss = 4.978 / validation mae loss = 5.636
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.64 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:34<21:09, 39.68s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  8: training mse loss = 45.150 / validation mse loss = 38.554
+    Epoch  8: training mae loss = 5.353 / validation mae loss = 4.862
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.64 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:12<20:20, 39.36s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch  9: training mse loss = 35.421 / validation mse loss = 39.728
+    Epoch  9: training mae loss = 4.687 / validation mae loss = 4.953
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.64 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [06:58<20:36, 41.21s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 10: training mse loss = 34.178 / validation mse loss = 39.516
+    Epoch 10: training mae loss = 4.653 / validation mae loss = 4.999
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.75 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:36<19:30, 40.37s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 11: training mse loss = 44.427 / validation mse loss = 39.151
+    Epoch 11: training mae loss = 5.273 / validation mae loss = 4.938
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.65 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:16<18:43, 40.12s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 12: training mse loss = 53.067 / validation mse loss = 50.597
+    Epoch 12: training mae loss = 5.917 / validation mae loss = 5.669
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.65 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [08:54<17:50, 39.63s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 13: training mse loss = 53.963 / validation mse loss = 45.663
+    Epoch 13: training mae loss = 6.020 / validation mae loss = 5.228
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.64 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:33<17:03, 39.37s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 14: training mse loss = 68.224 / validation mse loss = 55.158
+    Epoch 14: training mae loss = 6.341 / validation mae loss = 6.131
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.65 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:12<16:20, 39.21s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 15: training mse loss = 194.609 / validation mse loss = 52.849
+    Epoch 15: training mae loss = 7.611 / validation mae loss = 5.503
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.65 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [10:52<15:46, 39.45s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 16: training mse loss = 55.257 / validation mse loss = 65.226
+    Epoch 16: training mae loss = 6.078 / validation mae loss = 6.821
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.67 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:30<15:01, 39.20s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 17: training mse loss = 4123.470 / validation mse loss = 74.028
+    Epoch 17: training mae loss = 16.847 / validation mae loss = 6.599
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.64 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [12:09<14:20, 39.10s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 18: training mse loss = 62.488 / validation mse loss = 50.779
+    Epoch 18: training mae loss = 6.246 / validation mae loss = 5.518
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.65 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [12:48<13:39, 39.01s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 19: training mse loss = 61.000 / validation mse loss = 49.447
+    Epoch 19: training mae loss = 6.136 / validation mae loss = 5.603
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.64 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [13:28<13:03, 39.17s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 20: training mse loss = 56.326 / validation mse loss = 49.948
+    Epoch 20: training mae loss = 6.106 / validation mae loss = 5.692
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.66 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [14:06<12:19, 38.93s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 21: training mse loss = 58.737 / validation mse loss = 53.307
+    Epoch 21: training mae loss = 6.131 / validation mae loss = 5.576
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.64 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [14:44<11:38, 38.82s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 22: training mse loss = 56.695 / validation mse loss = 52.071
+    Epoch 22: training mae loss = 6.104 / validation mae loss = 5.497
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.64 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [15:23<10:59, 38.77s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 23: training mse loss = 54.982 / validation mse loss = 53.084
+    Epoch 23: training mae loss = 5.973 / validation mae loss = 5.533
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.80 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [16:14<11:18, 42.38s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 24: training mse loss = 52.351 / validation mse loss = 52.744
+    Epoch 24: training mae loss = 5.807 / validation mae loss = 5.979
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.71 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [16:57<10:38, 42.57s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 25: training mse loss = 51.149 / validation mse loss = 50.853
+    Epoch 25: training mae loss = 5.804 / validation mae loss = 5.508
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.71 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [17:39<09:54, 42.43s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 26: training mse loss = 51.017 / validation mse loss = 53.114
+    Epoch 26: training mae loss = 5.832 / validation mae loss = 6.037
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.69 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [18:19<09:02, 41.71s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 27: training mse loss = 52.307 / validation mse loss = 50.543
+    Epoch 27: training mae loss = 5.871 / validation mae loss = 5.478
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.71 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [19:08<08:47, 43.94s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 28: training mse loss = 50.834 / validation mse loss = 55.551
+    Epoch 28: training mae loss = 5.820 / validation mae loss = 5.680
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.80 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [19:50<07:56, 43.28s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 29: training mse loss = 57.071 / validation mse loss = 50.725
+    Epoch 29: training mae loss = 6.164 / validation mae loss = 5.608
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.69 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [20:37<07:23, 44.30s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 30: training mse loss = 54.735 / validation mse loss = 51.430
+    Epoch 30: training mae loss = 5.999 / validation mae loss = 5.466
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.80 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [21:20<06:36, 44.10s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 31: training mse loss = 53.550 / validation mse loss = 50.414
+    Epoch 31: training mae loss = 5.960 / validation mae loss = 5.618
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.69 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [22:21<06:32, 49.09s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 32: training mse loss = 51.165 / validation mse loss = 50.776
+    Epoch 32: training mae loss = 5.801 / validation mae loss = 5.464
+
+Epoch  33: training
+Epoch: 33, duration for training: 1.11 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [23:09<05:41, 48.77s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 33: training mse loss = 49.398 / validation mse loss = 49.514
+    Epoch 33: training mae loss = 5.698 / validation mae loss = 5.629
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.70 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [23:50<04:39, 46.52s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 34: training mse loss = 53.953 / validation mse loss = 52.264
+    Epoch 34: training mae loss = 6.016 / validation mae loss = 5.484
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.70 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [24:39<03:55, 47.05s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 35: training mse loss = 52.649 / validation mse loss = 66.512
+    Epoch 35: training mae loss = 5.891 / validation mae loss = 6.214
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.80 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [25:21<03:02, 45.60s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 36: training mse loss = 51.754 / validation mse loss = 51.041
+    Epoch 36: training mae loss = 5.807 / validation mae loss = 5.761
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.71 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [26:02<02:12, 44.30s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 37: training mse loss = 53.172 / validation mse loss = 49.888
+    Epoch 37: training mae loss = 5.955 / validation mae loss = 5.547
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.70 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [26:46<01:28, 44.15s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 38: training mse loss = 52.975 / validation mse loss = 56.192
+    Epoch 38: training mae loss = 5.878 / validation mae loss = 5.691
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.72 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [27:33<00:45, 45.11s/it]../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 39: training mse loss = 50.190 / validation mse loss = 49.966
+    Epoch 39: training mae loss = 5.705 / validation mae loss = 5.740
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.76 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [28:15<00:00, 44.11s/it]100%|██████████| 40/40 [28:15<00:00, 42.39s/it]
+../../test/adni_cn/caudate/0/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/0/caudate/pred_ages.pkl'
+    Epoch 40: training mse loss = 49.656 / validation mse loss = 73.025
+    Epoch 40: training mae loss = 5.659 / validation mae loss = 6.567
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.17 minutes
+train_mse_list:  [882.7476375385867, 71.74720193369915, 52.29129908246509, 53.69322951769425, 52.70252555103625, 44.92908501018912, 39.52934935335386, 45.14991395150201, 35.420703011044004, 34.17824786497375, 44.42747180340654, 53.066850261162905, 53.96308426129616, 68.22402531413708, 194.6093878503573, 55.25661713390027, 4123.469829920995, 62.488356295278514, 60.99960926427679, 56.3258150654324, 58.737243493229656, 56.694678209595764, 54.981571395518415, 52.350594664024094, 51.14871099439718, 51.01695569895082, 52.30723649162357, 50.833767886889184, 57.070725606659714, 54.73518331576202, 53.54982783834813, 51.16518611827139, 49.39776300777823, 53.952982987387706, 52.64868157192812, 51.754484188758724, 53.17155739336701, 52.97516467813718, 50.18988338971542, 49.65630021337736]
+train_mae_list:  [20.74682875002845, 6.772520889670162, 5.823755951251014, 5.90572391930273, 5.776779247542559, 5.42002402321767, 4.977883039894751, 5.3534769365343, 4.686588125713801, 4.6527035600048, 5.27266782825276, 5.916741920729815, 6.019912954104149, 6.3409074363061935, 7.610892473641089, 6.0776691840866865, 16.84673496828241, 6.245738635628911, 6.1357268640550515, 6.106365979728052, 6.1312486115148515, 6.103679519588664, 5.972651570530261, 5.807242369247695, 5.803610033908133, 5.832323987605208, 5.8713550810086526, 5.819775427802134, 6.164219896672136, 5.998808513253422, 5.96015337766227, 5.800958496029094, 5.698411981938249, 6.015706183546681, 5.890925237687967, 5.807479704840708, 5.955485772278349, 5.877660258341644, 5.704529721858138, 5.659307407120527]
+valid_mse_list:  [60.85818003400971, 56.40889845015128, 46.23757144469249, 56.67573784876473, 45.405218957345696, 61.288182234462305, 48.53844125738627, 38.55430827563322, 39.72800862034665, 39.51633608492115, 39.151276612583594, 50.597396678562404, 45.663446082344535, 55.15792337248597, 52.84873980208288, 65.22560930252075, 74.02812482133696, 50.7793888442124, 49.44658464117895, 49.94772834415677, 53.307242296919036, 52.07064612304108, 53.084427398971364, 52.743902520288394, 50.85263965099673, 53.11427157438254, 50.542771701571304, 55.55068110212495, 50.724515063853204, 51.43038775649252, 50.41354125059104, 50.775712330130084, 49.51434536523457, 52.26427558102185, 66.51204162307933, 51.04058139535445, 49.8876537673081, 56.19185632391821, 49.96559201011175, 73.02522841586342]
+valid_mae_list:  [5.974150452432753, 5.747940956791745, 5.349397417865222, 6.308170246172555, 5.158602388599251, 6.030653386176387, 5.635815849787073, 4.861960761154754, 4.95327027236359, 4.999363790584516, 4.937934754770013, 5.66923457761354, 5.228456352330461, 6.131420545940157, 5.503097123737577, 6.82114089289798, 6.5991799801210815, 5.518317910689342, 5.603356107880797, 5.692485495458675, 5.576081263868114, 5.496758980087087, 5.532601634158364, 5.978723912299434, 5.507596341869499, 6.036564863180812, 5.478177927717378, 5.680334912070745, 5.608438926407054, 5.465924347503276, 5.618101844304724, 5.464340910126891, 5.628758032110673, 5.4839562283286565, 6.2142230890974215, 5.761179598071907, 5.547374797772758, 5.690987285179428, 5.73977117900607, 6.567266174509555]
+
+Elapsed time for one epoch in cv: 28 minutes
+
+<<< StratifiedKFold: 2/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  0   2   4  14  20  25  26  28  31  40  41  43  54  56  58  59  62  65
+  66  71  74  79  80  81  84  86  87  89  90  96 103 111 113 114 118 119
+ 120 124 129 136 138 145 147 148 150 158 162 164 165 166 170 172 173 174
+ 177 179 188 194 209 216 217 218 221 226 227 248 256 259 264 275 277 278
+ 280 281 283 285 291 292 293 300 301 304 306 307 316 318 323 324 327 328
+ 329 330 340 344 346 354 355 360 371 372 376 377 379 383 385 386 403 404
+ 407 409 410 414 418 419 425 426 441 446 451 461 463 467 477 489 490 492
+ 498 504 506 507 518 523 527 529 532 533 536 538 541 547 548 552 557 558
+ 560 562 571 574 576 587 590 591 594 601 603 608 617 621]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.55 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:47<30:55, 47.59s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  1: training mse loss = 401.055 / validation mse loss = 89.761
+    Epoch  1: training mae loss = 11.491 / validation mae loss = 7.456
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.80 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:30<28:18, 44.70s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  2: training mse loss = 86.923 / validation mse loss = 55.069
+    Epoch  2: training mae loss = 7.211 / validation mae loss = 6.100
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.75 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:19<28:46, 46.65s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  3: training mse loss = 50.520 / validation mse loss = 51.661
+    Epoch  3: training mae loss = 5.629 / validation mae loss = 5.799
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.86 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [03:12<29:34, 49.28s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  4: training mse loss = 52.431 / validation mse loss = 58.629
+    Epoch  4: training mae loss = 5.538 / validation mae loss = 6.239
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.80 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:53<27:05, 46.44s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  5: training mse loss = 57.704 / validation mse loss = 54.969
+    Epoch  5: training mae loss = 5.962 / validation mae loss = 5.914
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.77 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:39<26:12, 46.25s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  6: training mse loss = 47.357 / validation mse loss = 49.898
+    Epoch  6: training mae loss = 5.559 / validation mae loss = 5.811
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.68 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [05:24<25:09, 45.73s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  7: training mse loss = 51.191 / validation mse loss = 49.869
+    Epoch  7: training mae loss = 5.767 / validation mae loss = 5.739
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.77 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [06:06<23:44, 44.51s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  8: training mse loss = 42.794 / validation mse loss = 47.715
+    Epoch  8: training mae loss = 5.191 / validation mae loss = 5.492
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.70 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:50<22:57, 44.44s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch  9: training mse loss = 40.646 / validation mse loss = 54.037
+    Epoch  9: training mae loss = 5.087 / validation mae loss = 6.022
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.73 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [07:35<22:14, 44.48s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 10: training mse loss = 50.279 / validation mse loss = 48.271
+    Epoch 10: training mae loss = 5.658 / validation mae loss = 5.630
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.74 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [08:21<21:47, 45.09s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 11: training mse loss = 46.018 / validation mse loss = 51.431
+    Epoch 11: training mae loss = 5.417 / validation mae loss = 5.890
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.77 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [09:09<21:21, 45.77s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 12: training mse loss = 35.632 / validation mse loss = 56.409
+    Epoch 12: training mae loss = 4.722 / validation mae loss = 5.868
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.82 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [09:57<20:59, 46.65s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 13: training mse loss = 35.238 / validation mse loss = 110.637
+    Epoch 13: training mae loss = 4.678 / validation mae loss = 8.652
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.79 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [10:47<20:40, 47.70s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 14: training mse loss = 31.087 / validation mse loss = 56.820
+    Epoch 14: training mae loss = 4.430 / validation mae loss = 5.780
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.84 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [11:33<19:34, 46.98s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 15: training mse loss = 32.019 / validation mse loss = 47.454
+    Epoch 15: training mae loss = 4.494 / validation mae loss = 5.622
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.80 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [12:27<19:38, 49.11s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 16: training mse loss = 35.267 / validation mse loss = 40.114
+    Epoch 16: training mae loss = 4.730 / validation mae loss = 4.900
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.84 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [13:13<18:28, 48.19s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 17: training mse loss = 27.700 / validation mse loss = 43.510
+    Epoch 17: training mae loss = 4.105 / validation mae loss = 5.049
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.88 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [14:00<17:33, 47.87s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 18: training mse loss = 25.717 / validation mse loss = 38.837
+    Epoch 18: training mae loss = 4.033 / validation mae loss = 4.797
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.68 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [14:48<16:45, 47.86s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 19: training mse loss = 21.138 / validation mse loss = 64.221
+    Epoch 19: training mae loss = 3.693 / validation mae loss = 6.254
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.79 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [15:34<15:49, 47.46s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 20: training mse loss = 26.865 / validation mse loss = 42.681
+    Epoch 20: training mae loss = 4.183 / validation mae loss = 5.143
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.76 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [16:15<14:26, 45.58s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 21: training mse loss = 14.212 / validation mse loss = 51.830
+    Epoch 21: training mae loss = 2.917 / validation mae loss = 5.594
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.73 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [17:00<13:37, 45.40s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 22: training mse loss = 15.149 / validation mse loss = 40.951
+    Epoch 22: training mae loss = 3.006 / validation mae loss = 5.017
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.72 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [17:42<12:29, 44.10s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 23: training mse loss = 9.639 / validation mse loss = 44.436
+    Epoch 23: training mae loss = 2.422 / validation mae loss = 5.004
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.70 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [18:24<11:40, 43.76s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 24: training mse loss = 9.896 / validation mse loss = 42.278
+    Epoch 24: training mae loss = 2.527 / validation mae loss = 4.923
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.74 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [19:08<10:57, 43.84s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 25: training mse loss = 13.896 / validation mse loss = 39.967
+    Epoch 25: training mae loss = 2.894 / validation mae loss = 4.868
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.69 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [19:50<10:04, 43.21s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 26: training mse loss = 10.599 / validation mse loss = 42.980
+    Epoch 26: training mae loss = 2.569 / validation mae loss = 5.029
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.70 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [20:34<09:22, 43.27s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 27: training mse loss = 7.149 / validation mse loss = 39.065
+    Epoch 27: training mae loss = 2.065 / validation mae loss = 4.857
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.72 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [21:17<08:38, 43.20s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 28: training mse loss = 6.452 / validation mse loss = 38.781
+    Epoch 28: training mae loss = 2.012 / validation mae loss = 4.831
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.75 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [22:06<08:15, 45.07s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 29: training mse loss = 7.205 / validation mse loss = 40.161
+    Epoch 29: training mae loss = 2.140 / validation mae loss = 4.898
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.80 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [22:49<07:24, 44.43s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 30: training mse loss = 8.757 / validation mse loss = 36.837
+    Epoch 30: training mae loss = 2.369 / validation mae loss = 4.618
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.75 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [23:31<06:33, 43.78s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 31: training mse loss = 7.535 / validation mse loss = 38.574
+    Epoch 31: training mae loss = 2.159 / validation mae loss = 4.777
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.67 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [24:11<05:41, 42.64s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 32: training mse loss = 13.224 / validation mse loss = 39.797
+    Epoch 32: training mae loss = 2.884 / validation mae loss = 4.922
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.67 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [24:53<04:57, 42.51s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 33: training mse loss = 13.891 / validation mse loss = 51.218
+    Epoch 33: training mae loss = 2.928 / validation mae loss = 5.634
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.70 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [25:35<04:13, 42.28s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 34: training mse loss = 5.007 / validation mse loss = 40.508
+    Epoch 34: training mae loss = 1.801 / validation mae loss = 4.857
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.71 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [26:16<03:29, 41.91s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 35: training mse loss = 3.540 / validation mse loss = 37.769
+    Epoch 35: training mae loss = 1.492 / validation mae loss = 4.756
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.67 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [26:55<02:44, 41.04s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 36: training mse loss = 7.388 / validation mse loss = 41.966
+    Epoch 36: training mae loss = 2.185 / validation mae loss = 5.019
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.65 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [27:35<02:02, 40.71s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 37: training mse loss = 8.436 / validation mse loss = 46.704
+    Epoch 37: training mae loss = 2.284 / validation mae loss = 5.250
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.66 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [28:15<01:20, 40.40s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 38: training mse loss = 6.283 / validation mse loss = 39.474
+    Epoch 38: training mae loss = 2.044 / validation mae loss = 4.801
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.67 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [28:55<00:40, 40.18s/it]../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 39: training mse loss = 11.010 / validation mse loss = 42.918
+    Epoch 39: training mae loss = 2.544 / validation mae loss = 5.215
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.66 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [29:34<00:00, 39.88s/it]100%|██████████| 40/40 [29:34<00:00, 44.36s/it]
+../../test/adni_cn/caudate/1/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/1/caudate/pred_ages.pkl'
+    Epoch 40: training mse loss = 6.366 / validation mse loss = 47.097
+    Epoch 40: training mae loss = 1.970 / validation mae loss = 5.179
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.12 minutes
+train_mse_list:  [401.05455360978334, 86.92328617330325, 50.51995390148486, 52.43077018124572, 57.70439478098336, 47.35724877300909, 51.191011744030455, 42.794487589496676, 40.6455023733236, 50.27939893835682, 46.01823633404101, 35.63178983179189, 35.238312932394315, 31.086997454449282, 32.01928894348064, 35.26662118455111, 27.700078625800245, 25.716668827048803, 21.13759741237608, 26.864832847805346, 14.212047509217667, 15.149352810645508, 9.639011004466122, 9.896105357145858, 13.895822357575772, 10.599471855466648, 7.14914896579112, 6.452469792659, 7.2047349138785215, 8.756776609663236, 7.534914925441903, 13.2241127945609, 13.890518435734814, 5.007243979659121, 3.53987456353034, 7.388386045977221, 8.436445109167341, 6.282732070502588, 11.009667329363904, 6.365698906324678]
+train_mae_list:  [11.490860187401205, 7.210719391451043, 5.628663782346046, 5.538433810411873, 5.962134256201275, 5.559210639888957, 5.767245664434918, 5.191252716517044, 5.08679094961134, 5.658201064093638, 5.417312678644213, 4.722249895839368, 4.677539712291653, 4.429883876089322, 4.494152069091797, 4.730173183699786, 4.1051532777689275, 4.032988693754552, 3.693401603375451, 4.183192342014636, 2.916701324915482, 3.005524400937355, 2.422186334254378, 2.527229890985004, 2.894349324501167, 2.568955760891155, 2.0647676112288136, 2.0117225000413796, 2.1401007296675343, 2.368918160260734, 2.1590913675599177, 2.8844393875639316, 2.928077883639578, 1.800504813760014, 1.4924956741979567, 2.1853451324721513, 2.284290434950489, 2.044382758059744, 2.5440439127259333, 1.970213033385196]
+valid_mse_list:  [89.76118720332279, 55.06885086735593, 51.66068969195402, 58.62910646124731, 54.96931532364857, 49.89845650709128, 49.868505743485464, 47.714720122421845, 54.03740197193773, 48.27058282683167, 51.43093831026101, 56.409155398984495, 110.6367545308946, 56.81967953187001, 47.45433670961404, 40.11383315279514, 43.50997084152849, 38.83713923828511, 64.22093484371523, 42.6805971483641, 51.83012906810905, 40.950583675239656, 44.43627962885024, 42.27772058414507, 39.96739976617354, 42.979767835592924, 39.0649715073501, 38.78130230722548, 40.161008050170125, 36.83739144289041, 38.57370408879051, 39.79738012748429, 51.21753165088123, 40.50764761695379, 37.76903909972951, 41.96560400347166, 46.703643394421924, 39.474399509309215, 42.918105741090415, 47.097420164301425]
+valid_mae_list:  [7.45552560347545, 6.1002704523786715, 5.798726842373232, 6.239222780058656, 5.914185608489604, 5.81089804444132, 5.7392547462559955, 5.491874525818644, 6.022282057170626, 5.630320995668821, 5.8904343375676795, 5.867971227138857, 8.652037777478181, 5.780473515957216, 5.621665447573118, 4.899536253530768, 5.049480172652233, 4.796982608264005, 6.253673118881032, 5.143206608446339, 5.5935240636898, 5.017216428925719, 5.004076655906967, 4.922855353053612, 4.867927696131453, 5.028661051882973, 4.857145913039582, 4.830846303625952, 4.898215837116483, 4.618113312540175, 4.776957475686375, 4.9219151026085965, 5.633669647989394, 4.856899044181727, 4.7559854290153405, 5.018717608874357, 5.249565317660948, 4.80055963540379, 5.21544108813322, 5.178642441954794]
+
+Elapsed time for one epoch in cv: 30 minutes
+
+<<< StratifiedKFold: 3/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  1   7   8   9  11  15  16  18  24  27  34  36  37  48  61  64  67  69
+  73  78  88  91  93  94 102 104 105 122 125 126 127 128 133 135 139 143
+ 144 149 153 156 157 160 163 171 176 178 181 184 198 205 206 207 208 210
+ 212 223 231 237 238 241 246 251 253 254 255 263 265 266 267 268 269 274
+ 287 295 296 298 302 303 310 311 314 322 326 334 341 347 350 353 358 359
+ 362 363 364 369 375 380 381 394 397 405 416 417 423 427 428 429 431 435
+ 436 440 445 447 449 450 455 457 466 470 472 473 482 491 499 501 505 508
+ 510 517 520 521 525 526 528 530 539 540 542 543 549 555 556 561 563 564
+ 570 573 578 580 581 606 610 612 613 616 619 622 624]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.55 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:40<26:38, 40.98s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  1: training mse loss = 421.810 / validation mse loss = 48.797
+    Epoch  1: training mae loss = 12.487 / validation mae loss = 5.420
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.66 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:19<25:04, 39.60s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  2: training mse loss = 55.750 / validation mse loss = 41.337
+    Epoch  2: training mae loss = 6.056 / validation mae loss = 4.962
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.65 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:00<24:43, 40.11s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  3: training mse loss = 58.321 / validation mse loss = 48.778
+    Epoch  3: training mae loss = 6.159 / validation mae loss = 5.684
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.68 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:39<23:55, 39.87s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  4: training mse loss = 42.905 / validation mse loss = 43.925
+    Epoch  4: training mae loss = 5.230 / validation mae loss = 5.157
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.65 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:18<23:01, 39.47s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  5: training mse loss = 90.921 / validation mse loss = 46.599
+    Epoch  5: training mae loss = 7.097 / validation mae loss = 5.608
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.64 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [03:56<22:08, 39.07s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  6: training mse loss = 53.614 / validation mse loss = 44.626
+    Epoch  6: training mae loss = 5.841 / validation mae loss = 5.471
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.65 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [04:37<21:44, 39.54s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  7: training mse loss = 58.468 / validation mse loss = 46.010
+    Epoch  7: training mae loss = 6.219 / validation mae loss = 5.374
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.67 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:16<20:59, 39.37s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  8: training mse loss = 53.682 / validation mse loss = 52.590
+    Epoch  8: training mae loss = 5.909 / validation mae loss = 6.046
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.66 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [05:56<20:29, 39.67s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch  9: training mse loss = 57.816 / validation mse loss = 46.810
+    Epoch  9: training mae loss = 6.007 / validation mae loss = 5.652
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.66 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [06:35<19:42, 39.41s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 10: training mse loss = 56.802 / validation mse loss = 64.103
+    Epoch 10: training mae loss = 6.082 / validation mae loss = 6.669
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.72 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:21<20:01, 41.44s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 11: training mse loss = 54.557 / validation mse loss = 44.482
+    Epoch 11: training mae loss = 5.923 / validation mae loss = 5.368
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.74 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:05<19:40, 42.16s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 12: training mse loss = 53.728 / validation mse loss = 65.509
+    Epoch 12: training mae loss = 5.912 / validation mae loss = 6.745
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.72 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [09:01<20:53, 46.42s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 13: training mse loss = 53.820 / validation mse loss = 44.520
+    Epoch 13: training mae loss = 5.902 / validation mae loss = 5.475
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.91 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:49<20:20, 46.96s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 14: training mse loss = 51.075 / validation mse loss = 55.277
+    Epoch 14: training mae loss = 5.758 / validation mae loss = 6.134
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.81 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:30<18:46, 45.07s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 15: training mse loss = 50.299 / validation mse loss = 47.465
+    Epoch 15: training mae loss = 5.686 / validation mae loss = 5.631
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.67 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [11:10<17:26, 43.62s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 16: training mse loss = 52.971 / validation mse loss = 42.813
+    Epoch 16: training mae loss = 5.881 / validation mae loss = 5.308
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.75 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:56<16:55, 44.17s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 17: training mse loss = 49.323 / validation mse loss = 39.316
+    Epoch 17: training mae loss = 5.690 / validation mae loss = 4.968
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.73 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [13:03<18:45, 51.18s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 18: training mse loss = 43.999 / validation mse loss = 37.034
+    Epoch 18: training mae loss = 5.327 / validation mae loss = 4.686
+
+Epoch  19: training
+Epoch: 19, duration for training: 1.19 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [13:50<17:29, 49.98s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 19: training mse loss = 58.219 / validation mse loss = 46.206
+    Epoch 19: training mae loss = 6.129 / validation mae loss = 5.612
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.70 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [14:35<16:05, 48.28s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 20: training mse loss = 59.561 / validation mse loss = 55.114
+    Epoch 20: training mae loss = 6.252 / validation mae loss = 6.200
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.77 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [15:21<15:03, 47.54s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 21: training mse loss = 54.941 / validation mse loss = 45.175
+    Epoch 21: training mae loss = 5.921 / validation mae loss = 5.509
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.78 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [16:08<14:15, 47.55s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 22: training mse loss = 57.008 / validation mse loss = 55.062
+    Epoch 22: training mae loss = 6.092 / validation mae loss = 6.202
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.73 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [16:51<13:02, 46.02s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 23: training mse loss = 51.795 / validation mse loss = 62.617
+    Epoch 23: training mae loss = 5.803 / validation mae loss = 6.582
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.70 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [17:36<12:15, 45.97s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 24: training mse loss = 52.567 / validation mse loss = 57.174
+    Epoch 24: training mae loss = 5.805 / validation mae loss = 6.256
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.81 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [18:19<11:14, 44.97s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 25: training mse loss = 48.706 / validation mse loss = 54.008
+    Epoch 25: training mae loss = 5.588 / validation mae loss = 6.025
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.66 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [18:59<10:08, 43.50s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 26: training mse loss = 52.396 / validation mse loss = 42.447
+    Epoch 26: training mae loss = 5.810 / validation mae loss = 5.152
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.67 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [19:38<09:09, 42.24s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 27: training mse loss = 46.650 / validation mse loss = 56.322
+    Epoch 27: training mae loss = 5.498 / validation mae loss = 6.184
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.65 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [20:19<08:21, 41.77s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 28: training mse loss = 50.965 / validation mse loss = 52.920
+    Epoch 28: training mae loss = 5.815 / validation mae loss = 6.006
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.67 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [21:00<07:36, 41.49s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 29: training mse loss = 49.685 / validation mse loss = 51.469
+    Epoch 29: training mae loss = 5.681 / validation mae loss = 5.919
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.68 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [21:43<06:59, 41.94s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 30: training mse loss = 44.429 / validation mse loss = 63.784
+    Epoch 30: training mae loss = 5.345 / validation mae loss = 6.638
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.71 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [22:24<06:13, 41.54s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 31: training mse loss = 35.645 / validation mse loss = 41.914
+    Epoch 31: training mae loss = 4.757 / validation mae loss = 5.175
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.68 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [23:04<05:30, 41.30s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 32: training mse loss = 49.640 / validation mse loss = 47.089
+    Epoch 32: training mae loss = 5.585 / validation mae loss = 5.657
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.68 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [23:44<04:45, 40.78s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 33: training mse loss = 44.568 / validation mse loss = 54.995
+    Epoch 33: training mae loss = 5.389 / validation mae loss = 6.080
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.66 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [24:26<04:07, 41.22s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 34: training mse loss = 35.775 / validation mse loss = 38.686
+    Epoch 34: training mae loss = 4.705 / validation mae loss = 4.705
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.72 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [25:06<03:24, 40.92s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 35: training mse loss = 43.024 / validation mse loss = 39.441
+    Epoch 35: training mae loss = 5.227 / validation mae loss = 4.864
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.67 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [25:49<02:45, 41.30s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 36: training mse loss = 26.014 / validation mse loss = 41.704
+    Epoch 36: training mae loss = 4.000 / validation mae loss = 5.093
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.69 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [26:28<02:02, 40.79s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 37: training mse loss = 19.832 / validation mse loss = 37.745
+    Epoch 37: training mae loss = 3.473 / validation mae loss = 4.646
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.66 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [27:08<01:20, 40.41s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 38: training mse loss = 16.739 / validation mse loss = 72.133
+    Epoch 38: training mae loss = 3.240 / validation mae loss = 7.095
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.67 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [27:49<00:40, 40.70s/it]../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 39: training mse loss = 14.207 / validation mse loss = 47.448
+    Epoch 39: training mae loss = 2.940 / validation mae loss = 5.528
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.69 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [28:30<00:00, 40.85s/it]100%|██████████| 40/40 [28:30<00:00, 42.77s/it]
+../../test/adni_cn/caudate/2/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/2/caudate/pred_ages.pkl'
+    Epoch 40: training mse loss = 155.361 / validation mse loss = 78.231
+    Epoch 40: training mae loss = 7.180 / validation mae loss = 7.434
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.15 minutes
+train_mse_list:  [421.80983543799243, 55.75006595676091, 58.32101569669695, 42.90488996667035, 90.92067966098261, 53.61449282857379, 58.468184753401836, 53.682105687405546, 57.81641774248119, 56.8022109872443, 54.55702877649545, 53.728444545011946, 53.820035246915594, 51.075286323878025, 50.29888958608373, 52.971396867619006, 49.32299199013579, 43.999267412794566, 58.218915155019616, 59.56110107268642, 54.94137113139695, 57.008338774989575, 51.79458646391209, 52.56744364200132, 48.70566414476197, 52.395556080921004, 46.649516742778886, 50.96493121786299, 49.684716781148445, 44.42895802231722, 35.64501199460181, 49.64037149401094, 44.567655209759074, 35.775486639639794, 43.02360149165793, 26.01353771742, 19.83189277114626, 16.738672929384744, 14.20745879802341, 155.36096014936177]
+train_mae_list:  [12.487029472818838, 6.05565080380591, 6.158812976538757, 5.230334098444932, 7.0965258979394115, 5.840914494391476, 6.218745903031267, 5.9087828622055865, 6.007297846530003, 6.081589390309114, 5.922777833192596, 5.911685677461846, 5.902114545568099, 5.758062834467495, 5.686272554619368, 5.880703770837118, 5.689977601517079, 5.327144582478239, 6.128873183913766, 6.252130496325503, 5.921474642279788, 6.091800423555596, 5.80341621382796, 5.804861395353999, 5.5875113973153825, 5.810439902178581, 5.497800927837606, 5.814510434172874, 5.680746582547403, 5.345129678415698, 4.756518454682752, 5.585448888089138, 5.389334075798696, 4.704549817655858, 5.227428258851517, 3.9998732923705282, 3.473495209191869, 3.2398282992663394, 2.939597728640534, 7.180459835060555]
+valid_mse_list:  [48.796889976331386, 41.3373245919586, 48.777672008344325, 43.92458520877133, 46.59852191900752, 44.626053457806826, 46.00970518664949, 52.58993049184228, 46.80985947627171, 64.10326907892896, 44.48240936485825, 65.50947218487977, 44.51972797418096, 55.27693458119775, 47.465189101589715, 42.813164765667764, 39.31594255167967, 37.03413955648993, 46.20642448230913, 55.11369365036108, 45.17456262430568, 55.06192191543093, 62.61698569765516, 57.174205986557496, 54.008395188932965, 42.4474509589991, 56.32197986286916, 52.92025732538503, 51.46925036922382, 63.783592880151836, 41.914390606485355, 47.08903802276417, 54.99544760831602, 38.68551208714771, 39.44054630303838, 41.70391152618797, 37.74532196020625, 72.13289130872981, 47.448050067682935, 78.23116464675611]
+valid_mae_list:  [5.419990442361042, 4.961997597080887, 5.68407814366043, 5.157091080003483, 5.608088888180483, 5.471287138143163, 5.3735850145862365, 6.046066332774557, 5.652163414438819, 6.668883159661749, 5.3678514517036975, 6.744524573064913, 5.474810897924338, 6.134162465478204, 5.630775354470417, 5.307746547042944, 4.967982638413739, 4.685842040238107, 5.611995964293268, 6.199585835645153, 5.509093800927423, 6.202123897090839, 6.581651724068222, 6.255560808121019, 6.024825806830339, 5.1518063879316776, 6.18443137976774, 6.006100502743084, 5.91872974565834, 6.638059919806802, 5.174658514132165, 5.656798393103727, 6.08018722048231, 4.70516112503732, 4.864300770364749, 5.092554274637988, 4.64554678558544, 7.0953265147604, 5.527828775393735, 7.434123871432748]
+
+Elapsed time for one epoch in cv: 29 minutes
+
+<<< StratifiedKFold: 4/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  5   6  12  19  21  29  33  35  39  42  44  45  47  49  63  68  72  75
+  76  77  83  85  92  95 100 106 107 112 116 117 121 123 130 131 137 151
+ 152 161 167 169 175 180 182 183 185 186 189 190 195 196 197 199 201 203
+ 211 215 219 224 225 230 233 234 247 250 257 260 276 279 282 286 288 290
+ 297 299 309 312 315 317 325 331 332 338 345 348 349 352 356 361 365 366
+ 368 373 374 389 391 393 396 398 399 400 402 412 413 415 420 421 424 432
+ 434 438 443 444 448 456 460 462 469 474 475 476 479 481 483 485 486 488
+ 494 495 497 502 511 512 514 516 519 522 524 535 537 550 553 554 559 575
+ 579 583 584 586 588 595 599 602 605 611 615 620 623]
+[ Start ]
+  0%|          | 0/40 [00:00<?, ?it/s]
+Epoch   1: training
+Epoch: 1, duration for training: 0.55 minutes
+
+Epoch   1: validation
+  2%|▎         | 1/40 [00:42<27:33, 42.41s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  1: training mse loss = 461.277 / validation mse loss = 79.216
+    Epoch  1: training mae loss = 13.035 / validation mae loss = 6.974
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.69 minutes
+
+Epoch   2: validation
+  5%|▌         | 2/40 [01:21<25:43, 40.61s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  2: training mse loss = 64.146 / validation mse loss = 45.135
+    Epoch  2: training mae loss = 6.375 / validation mae loss = 5.569
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.68 minutes
+
+Epoch   3: validation
+  8%|▊         | 3/40 [02:03<25:15, 40.96s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  3: training mse loss = 54.190 / validation mse loss = 60.176
+    Epoch  3: training mae loss = 5.795 / validation mae loss = 6.352
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.68 minutes
+
+Epoch   4: validation
+ 10%|█         | 4/40 [02:44<24:34, 40.96s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  4: training mse loss = 51.166 / validation mse loss = 47.073
+    Epoch  4: training mae loss = 5.774 / validation mae loss = 5.608
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.66 minutes
+
+Epoch   5: validation
+ 12%|█▎        | 5/40 [03:23<23:38, 40.53s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  5: training mse loss = 42.055 / validation mse loss = 45.088
+    Epoch  5: training mae loss = 5.158 / validation mae loss = 5.301
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.66 minutes
+
+Epoch   6: validation
+ 15%|█▌        | 6/40 [04:03<22:53, 40.40s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  6: training mse loss = 47.760 / validation mse loss = 59.599
+    Epoch  6: training mae loss = 5.498 / validation mae loss = 6.271
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.67 minutes
+
+Epoch   7: validation
+ 18%|█▊        | 7/40 [04:46<22:32, 40.98s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  7: training mse loss = 43.775 / validation mse loss = 39.199
+    Epoch  7: training mae loss = 5.234 / validation mae loss = 4.915
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.75 minutes
+
+Epoch   8: validation
+ 20%|██        | 8/40 [05:28<22:09, 41.56s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  8: training mse loss = 41.152 / validation mse loss = 34.961
+    Epoch  8: training mae loss = 5.062 / validation mae loss = 4.690
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.66 minutes
+
+Epoch   9: validation
+ 22%|██▎       | 9/40 [06:09<21:14, 41.10s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch  9: training mse loss = 52.058 / validation mse loss = 45.037
+    Epoch  9: training mae loss = 5.819 / validation mae loss = 5.370
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.66 minutes
+
+Epoch  10: validation
+ 25%|██▌       | 10/40 [06:49<20:31, 41.03s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 10: training mse loss = 51.187 / validation mse loss = 42.035
+    Epoch 10: training mae loss = 5.700 / validation mae loss = 5.180
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.69 minutes
+
+Epoch  11: validation
+ 28%|██▊       | 11/40 [07:33<20:08, 41.66s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 11: training mse loss = 44.585 / validation mse loss = 35.473
+    Epoch 11: training mae loss = 5.344 / validation mae loss = 4.792
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.71 minutes
+
+Epoch  12: validation
+ 30%|███       | 12/40 [08:12<19:12, 41.14s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 12: training mse loss = 43.580 / validation mse loss = 38.312
+    Epoch 12: training mae loss = 5.283 / validation mae loss = 5.054
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.66 minutes
+
+Epoch  13: validation
+ 32%|███▎      | 13/40 [08:53<18:21, 40.81s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 13: training mse loss = 40.453 / validation mse loss = 43.422
+    Epoch 13: training mae loss = 5.045 / validation mae loss = 5.173
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.68 minutes
+
+Epoch  14: validation
+ 35%|███▌      | 14/40 [09:33<17:36, 40.62s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 14: training mse loss = 36.346 / validation mse loss = 59.305
+    Epoch 14: training mae loss = 4.734 / validation mae loss = 6.161
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.67 minutes
+
+Epoch  15: validation
+ 38%|███▊      | 15/40 [10:14<17:01, 40.88s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 15: training mse loss = 35.440 / validation mse loss = 41.167
+    Epoch 15: training mae loss = 4.638 / validation mae loss = 5.112
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.71 minutes
+
+Epoch  16: validation
+ 40%|████      | 16/40 [10:56<16:30, 41.29s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 16: training mse loss = 29.630 / validation mse loss = 39.364
+    Epoch 16: training mae loss = 4.257 / validation mae loss = 5.043
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.68 minutes
+
+Epoch  17: validation
+ 42%|████▎     | 17/40 [11:35<15:33, 40.57s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 17: training mse loss = 21.886 / validation mse loss = 40.315
+    Epoch 17: training mae loss = 3.703 / validation mae loss = 4.926
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.65 minutes
+
+Epoch  18: validation
+ 45%|████▌     | 18/40 [12:14<14:41, 40.08s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 18: training mse loss = 25.701 / validation mse loss = 68.548
+    Epoch 18: training mae loss = 3.998 / validation mae loss = 6.919
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.65 minutes
+
+Epoch  19: validation
+ 48%|████▊     | 19/40 [12:54<13:56, 39.85s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 19: training mse loss = 17.643 / validation mse loss = 41.570
+    Epoch 19: training mae loss = 3.240 / validation mae loss = 5.170
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.65 minutes
+
+Epoch  20: validation
+ 50%|█████     | 20/40 [13:33<13:16, 39.82s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 20: training mse loss = 13.919 / validation mse loss = 41.135
+    Epoch 20: training mae loss = 2.917 / validation mae loss = 4.901
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.66 minutes
+
+Epoch  21: validation
+ 52%|█████▎    | 21/40 [14:13<12:37, 39.89s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 21: training mse loss = 17.950 / validation mse loss = 41.431
+    Epoch 21: training mae loss = 3.273 / validation mae loss = 5.094
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.67 minutes
+
+Epoch  22: validation
+ 55%|█████▌    | 22/40 [14:53<11:56, 39.81s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 22: training mse loss = 13.177 / validation mse loss = 49.878
+    Epoch 22: training mae loss = 2.890 / validation mae loss = 5.781
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.67 minutes
+
+Epoch  23: validation
+ 57%|█████▊    | 23/40 [15:33<11:16, 39.80s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 23: training mse loss = 8.750 / validation mse loss = 36.956
+    Epoch 23: training mae loss = 2.371 / validation mae loss = 4.759
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.67 minutes
+
+Epoch  24: validation
+ 60%|██████    | 24/40 [16:14<10:43, 40.22s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 24: training mse loss = 11.761 / validation mse loss = 41.079
+    Epoch 24: training mae loss = 2.729 / validation mae loss = 5.096
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.67 minutes
+
+Epoch  25: validation
+ 62%|██████▎   | 25/40 [16:54<10:01, 40.10s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 25: training mse loss = 10.472 / validation mse loss = 40.896
+    Epoch 25: training mae loss = 2.543 / validation mae loss = 5.089
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.70 minutes
+
+Epoch  26: validation
+ 65%|██████▌   | 26/40 [17:37<09:33, 40.95s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 26: training mse loss = 13.306 / validation mse loss = 37.496
+    Epoch 26: training mae loss = 2.751 / validation mae loss = 4.757
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.68 minutes
+
+Epoch  27: validation
+ 68%|██████▊   | 27/40 [18:20<09:02, 41.76s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 27: training mse loss = 9.501 / validation mse loss = 41.824
+    Epoch 27: training mae loss = 2.385 / validation mae loss = 5.194
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.75 minutes
+
+Epoch  28: validation
+ 70%|███████   | 28/40 [19:01<08:18, 41.51s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 28: training mse loss = 8.953 / validation mse loss = 40.131
+    Epoch 28: training mae loss = 2.369 / validation mae loss = 4.992
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.65 minutes
+
+Epoch  29: validation
+ 72%|███████▎  | 29/40 [19:42<07:34, 41.34s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 29: training mse loss = 9.382 / validation mse loss = 40.695
+    Epoch 29: training mae loss = 2.387 / validation mae loss = 5.065
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.70 minutes
+
+Epoch  30: validation
+ 75%|███████▌  | 30/40 [20:24<06:53, 41.34s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 30: training mse loss = 6.733 / validation mse loss = 35.181
+    Epoch 30: training mae loss = 2.059 / validation mae loss = 4.637
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.67 minutes
+
+Epoch  31: validation
+ 78%|███████▊  | 31/40 [21:03<06:06, 40.71s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 31: training mse loss = 4.924 / validation mse loss = 36.350
+    Epoch 31: training mae loss = 1.773 / validation mae loss = 4.675
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.65 minutes
+
+Epoch  32: validation
+ 80%|████████  | 32/40 [21:45<05:28, 41.08s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 32: training mse loss = 3.027 / validation mse loss = 35.323
+    Epoch 32: training mae loss = 1.367 / validation mae loss = 4.770
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.70 minutes
+
+Epoch  33: validation
+ 82%|████████▎ | 33/40 [22:25<04:45, 40.78s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 33: training mse loss = 4.502 / validation mse loss = 36.404
+    Epoch 33: training mae loss = 1.678 / validation mae loss = 4.760
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.67 minutes
+
+Epoch  34: validation
+ 85%|████████▌ | 34/40 [23:05<04:02, 40.46s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 34: training mse loss = 5.589 / validation mse loss = 35.216
+    Epoch 34: training mae loss = 1.842 / validation mae loss = 4.715
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.67 minutes
+
+Epoch  35: validation
+ 88%|████████▊ | 35/40 [23:46<03:23, 40.66s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 35: training mse loss = 4.643 / validation mse loss = 35.427
+    Epoch 35: training mae loss = 1.709 / validation mae loss = 4.653
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.68 minutes
+
+Epoch  36: validation
+ 90%|█████████ | 36/40 [24:26<02:42, 40.63s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 36: training mse loss = 8.309 / validation mse loss = 41.430
+    Epoch 36: training mae loss = 2.226 / validation mae loss = 5.056
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.67 minutes
+
+Epoch  37: validation
+ 92%|█████████▎| 37/40 [25:07<02:01, 40.56s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 37: training mse loss = 6.741 / validation mse loss = 40.396
+    Epoch 37: training mae loss = 2.026 / validation mae loss = 5.105
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.71 minutes
+
+Epoch  38: validation
+ 95%|█████████▌| 38/40 [25:49<01:22, 41.04s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 38: training mse loss = 6.055 / validation mse loss = 37.887
+    Epoch 38: training mae loss = 1.930 / validation mae loss = 4.904
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.67 minutes
+
+Epoch  39: validation
+ 98%|█████████▊| 39/40 [26:33<00:41, 41.87s/it]../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 39: training mse loss = 6.759 / validation mse loss = 37.010
+    Epoch 39: training mae loss = 2.067 / validation mae loss = 4.831
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.73 minutes
+
+Epoch  40: validation
+100%|██████████| 40/40 [27:12<00:00, 41.07s/it]100%|██████████| 40/40 [27:12<00:00, 40.81s/it]
+../../test/adni_cn/caudate/3/caudate
+Error saving data: [Errno 2] No such file or directory: '../../test/adni_cn/caudate/3/caudate/pred_ages.pkl'
+    Epoch 40: training mse loss = 5.230 / validation mse loss = 36.369
+    Epoch 40: training mae loss = 1.833 / validation mae loss = 4.748
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.12 minutes
+train_mse_list:  [461.2774541504035, 64.1463733415019, 54.1901595903911, 51.16597297579743, 42.05470130005044, 47.75971097926005, 43.77504930032484, 41.152002477746684, 52.0579633501065, 51.18664959974067, 44.5846590703436, 43.579538712289825, 40.452816126966574, 36.34589217354329, 35.440489384985625, 29.630484387436073, 21.885627904855674, 25.701277760950255, 17.642853313974296, 13.918665227627905, 17.9498887324182, 13.176566842242476, 8.749803144886428, 11.761351516080458, 10.472360110686143, 13.305648785816942, 9.501346866279274, 8.953487793688542, 9.38161321069423, 6.733347181537943, 4.924177619921985, 3.027499588044955, 4.5019523143516285, 5.589429658480248, 4.642825245101155, 8.308635474259455, 6.741146806430615, 6.055490491002105, 6.759213080113836, 5.2304287160929865]
+train_mae_list:  [13.035045752817682, 6.375155249307322, 5.794796836804638, 5.7740483193266465, 5.157957097188615, 5.497945426634452, 5.233914421678345, 5.0618292826678735, 5.818858955173614, 5.7000083681392875, 5.34432654350555, 5.283142872138961, 5.044662693338212, 4.7337553818684555, 4.6375115537744245, 4.256598103626082, 3.7026638329407127, 3.9981445006033836, 3.240205639764572, 2.9172732008436015, 3.273005318188012, 2.8900771352755847, 2.3712810492162726, 2.728727852819334, 2.542769353435105, 2.7506735319819056, 2.3850412671208128, 2.3686381575925153, 2.386923179061922, 2.05885123803298, 1.772563353653438, 1.3667200261896306, 1.678493249743988, 1.8424820607610788, 1.7086281484075632, 2.22572767810136, 2.0261321037566686, 1.9300787766438459, 2.0671189612616443, 1.8331628279252485]
+valid_mse_list:  [79.21609895548244, 45.13529218382137, 60.176063502765004, 47.07341470042611, 45.08810749175442, 59.59911403752816, 39.19947832557047, 34.96088523014336, 45.03685925720604, 42.03532567601295, 35.47250660209899, 38.31213570855985, 43.422451666206314, 59.30540211792964, 41.16717826333016, 39.36432055455104, 40.31487964217071, 68.54757457174313, 41.57045721552175, 41.13545694776401, 41.431226696403826, 49.878186067957785, 36.95583148215227, 41.07851900720293, 40.89628812461902, 37.49589232122822, 41.824352586345306, 40.13119874334639, 40.69476173182202, 35.180875024977766, 36.35008669620866, 35.32319806335838, 36.40413143376636, 35.215740285861266, 35.42709618465156, 41.430486126310505, 40.39602321576161, 37.8874394635486, 37.00989833758895, 36.36947016503401]
+valid_mae_list:  [6.9736705464162645, 5.568696283231116, 6.351731950310385, 5.608031983588152, 5.301198242576259, 6.2713831032917, 4.915494639402742, 4.690389791112037, 5.370486848673243, 5.179762287504354, 4.791745860105867, 5.054465761609897, 5.172540190872873, 6.160851885558693, 5.111654974093103, 5.043035470755997, 4.926069028817924, 6.918769666343738, 5.170384741133185, 4.901386285283763, 5.094163396555906, 5.780802101086659, 4.758935916196009, 5.095838607496517, 5.088853799613418, 4.756528550652182, 5.193920378472395, 4.992270014088625, 5.064550897877687, 4.636799952027145, 4.675335926614749, 4.770186527519469, 4.759589614382215, 4.714642955998706, 4.652540073273288, 5.05636331837648, 5.104739195222308, 4.903972747219596, 4.831172773033191, 4.747876987335788]
+
+Elapsed time for one epoch in cv: 27 minutes
+wandb: 
+wandb: Run history:
+wandb:     CV Split Number ▁▁▁▁▁▁▁▁▁▁▃▃▃▃▃▃▃▃▃▃▆▆▆▆▆▆▆▆▆▆██████████
+wandb:               Epoch ▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█▁▂▂▃▄▅▅▆▇█
+wandb:       Learning rate █▆▃▂▇▅▁▂█▃▇▂▅▂▁▂▂▆▁▂▁▇▂▂▂▇▄▂▂▆▃▃▂▂▆▄▁▂▅▇
+wandb:      Train MAE Loss ▇▆▅▇▇▇▆▆▆▆█▆▆▄▄▃▂▂▁▁▇▆▇▆▆▇▆▆▅▃▇▆▆▅▄▂▂▁▁▁
+wandb:      Train MSE Loss ▇▄▃▆▆▅▅▅▅▅█▅▅▃▃▂▁▁▁▁▅▅▅▅▄▅▅▄▄▂▆▅▅▄▃▂▂▁▁▁
+wandb: Validation MAE Loss ▄▅▂▅▄▃▅▃▃▄▅▄▄▄▂▂▂▁▂▂▂▃▇▅▁▅▃▇▁█▄▆▃▅█▄▁▁▁▁
+wandb: Validation MSE Loss ▅▆▂▅▄▄▄▄▄▅▅▄▃▅▂▂▂▁▂▂▂▃▆▅▁▅▂▆▂█▃▆▂▆▇▄▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:     CV Split Number 3
+wandb:               Epoch 40
+wandb:       Learning rate 0.00044
+wandb:      Train MAE Loss 1.83316
+wandb:      Train MSE Loss 5.23043
+wandb: Validation MAE Loss 4.74788
+wandb: Validation MSE Loss 36.36947
+wandb: 
+wandb: 🚀 View run proud-bush-305 at: https://wandb.ai/yein-hwang/reg_trial/runs/jcdtu4pr
+wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDc1Mjc4NA==/version_details/v41
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240612_051823-jcdtu4pr/logs

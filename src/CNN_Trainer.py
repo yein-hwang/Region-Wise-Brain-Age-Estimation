@@ -27,6 +27,7 @@ class CNN_Trainer():
             early_stopping,
             scheduler,
             cv_num,
+            region,
             model_load):
         super(CNN_Trainer, self).__init__()
 
@@ -43,6 +44,7 @@ class CNN_Trainer():
         self.mae_loss_fn = nn.L1Loss()
 
         self.cv_num = cv_num
+        self.region = region
         self.model_load = model_load
         self.model_load_folder = model_load_folder
         self.model_save_folder = Path(model_save_folder)
@@ -120,12 +122,23 @@ class CNN_Trainer():
             self.model.eval()
             with torch.no_grad():
                 valid_mse_sum, valid_mae_sum = 0, 0
+                pred_ages_list = []
+                true_ages_list = []
                 for _, (input, target) in enumerate(self.dataloader_valid):
                     input = input.cuda(non_blocking=True)
                     target = target.reshape(-1, 1)
                     target = target.cuda(non_blocking=True)
 
                     output = self.model(input)
+
+                    # feature extraction
+                    features = self.model.module.forward_features(input) 
+                    self.feature_list.append(features.cpu())  # CPU로 옮겨 리스트에 추가
+                    # save for test data extraction
+                    pred_ages = output.cpu().numpy()
+                    true_ages = target.cpu().numpy()
+                    pred_ages_list.extend(pred_ages.flatten())
+                    true_ages_list.extend(true_ages.flatten())
 
                     mse_loss = self.mse_loss_fn(output, target) 
                     mae_loss = self.mae_loss_fn(output, target)
@@ -140,6 +153,10 @@ class CNN_Trainer():
 
                 self.valid_mse_list.append(valid_mse_avg)
                 self.valid_mae_list.append(valid_mae_avg)
+
+
+                # test data save
+                self.valid_age_data_extraction(pred_ages_list, true_ages_list, self.feature_list)
 
                 # learning rate scheduler update
                 if self.scheduler:
@@ -240,8 +257,36 @@ class CNN_Trainer():
 
         print(f"============== Loaded model: {model_path}")
 
+    def valid_age_data_extraction(self, pred_ages, true_ages, features):
+        results_folder = os.path.join(self.results_folder, str(self.cv_num), self.region)
+        results_folder = Path(results_folder)
+        results_folder.mkdir(parents=True, exist_ok=True)
+
+        pred_age_data = dict()
+        true_age_data = dict()
+        feature_data = dict()
+        pred_age_data[self.region] = pred_ages
+        true_age_data[self.region] = true_ages
+        feature_data[self.region] = features
+
+        pred_ages_filename = os.path.join(results_folder, 'pred_ages.pkl')
+        true_ages_filename = os.path.join(results_folder, 'true_ages.pkl')
+        features_filename = os.path.join(results_folder, 'features.pkl')
+        print(results_folder)
+
+        try:
+            with open(pred_ages_filename, 'wb') as file:
+                pickle.dump(pred_age_data, file)
+            with open(true_ages_filename, 'wb') as file:
+                pickle.dump(true_age_data, file)
+            print(f"Ages saved")
+            with open(features_filename, 'wb') as file:
+                pickle.dump(feature_data, file)
+            print(f"Features saved")
+        except Exception as e:
+            print("Error saving data:", e)
     
-    def age_data_extraction(self, pred_age_data, true_age_data, feature_data):
+    def test_age_data_extraction(self, pred_age_data, true_age_data, feature_data):
 
         pred_ages_filename = os.path.join(self.results_folder, 'pred_ages.pkl')
         true_ages_filename = os.path.join(self.results_folder, 'true_ages.pkl')

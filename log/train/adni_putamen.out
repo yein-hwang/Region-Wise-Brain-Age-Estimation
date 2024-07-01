@@ -1,0 +1,1698 @@
+====================  Setting  ====================
+Dataset :                  adni
+Mode :                     train
+Number of gpus :           1
+Batch size :              4
+Data size:                630
+Epochs :                  40
+Learning Rate :           0.0001
+Early Stopping Patience : 0
+# of Workers  :           16
+Region of Interest :      putamen
+Model Save Path:          ../../model/region_BAE/adni/putamen/
+Loaded Model Epoch:       40
+==================================================
+
+<<< StratifiedKFold: 1/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  3  10  13  17  22  23  30  32  38  46  50  51  52  53  55  57  60  70
+  82  97  98  99 101 108 109 110 115 132 134 140 141 142 146 154 155 159
+ 168 187 191 192 193 200 202 204 213 214 220 222 228 229 232 235 236 239
+ 240 242 243 244 245 249 252 258 261 262 270 271 272 273 284 289 294 305
+ 308 313 319 320 321 333 335 336 337 339 342 343 351 357 367 370 378 382
+ 384 387 388 390 392 395 401 406 408 411 422 430 433 437 439 442 452 453
+ 454 458 459 464 465 468 471 478 480 484 487 493 496 500 503 509 513 515
+ 531 534 544 545 546 551 565 566 567 568 569 572 577 582 585 589 592 593
+ 596 597 598 600 604 607 609 614 618 625 626 627 628 629]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.83 minutes
+
+Epoch   1: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 280.907 / validation mse loss = 68.392
+    Epoch  1: training mae loss = 10.089 / validation mae loss = 6.319
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.77 minutes
+
+Epoch   2: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 61.269 / validation mse loss = 58.305
+    Epoch  2: training mae loss = 6.194 / validation mae loss = 5.821
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.72 minutes
+
+Epoch   3: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 51.236 / validation mse loss = 46.455
+    Epoch  3: training mae loss = 5.826 / validation mae loss = 5.342
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.67 minutes
+
+Epoch   4: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 60.750 / validation mse loss = 50.130
+    Epoch  4: training mae loss = 6.231 / validation mae loss = 5.412
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.65 minutes
+
+Epoch   5: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 46.436 / validation mse loss = 45.723
+    Epoch  5: training mae loss = 5.538 / validation mae loss = 5.312
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.67 minutes
+
+Epoch   6: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 44.653 / validation mse loss = 46.473
+    Epoch  6: training mae loss = 5.309 / validation mae loss = 5.506
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.66 minutes
+
+Epoch   7: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 45.228 / validation mse loss = 74.741
+    Epoch  7: training mae loss = 5.314 / validation mae loss = 6.695
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.66 minutes
+
+Epoch   8: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 42.375 / validation mse loss = 59.897
+    Epoch  8: training mae loss = 5.095 / validation mae loss = 6.510
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.64 minutes
+
+Epoch   9: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 36.837 / validation mse loss = 47.508
+    Epoch  9: training mae loss = 4.840 / validation mae loss = 5.553
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.65 minutes
+
+Epoch  10: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 41.547 / validation mse loss = 49.142
+    Epoch 10: training mae loss = 5.117 / validation mae loss = 5.768
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.66 minutes
+
+Epoch  11: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 32.823 / validation mse loss = 53.442
+    Epoch 11: training mae loss = 4.525 / validation mae loss = 5.772
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.67 minutes
+
+Epoch  12: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 44.173 / validation mse loss = 53.066
+    Epoch 12: training mae loss = 5.262 / validation mae loss = 6.086
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.64 minutes
+
+Epoch  13: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 34.286 / validation mse loss = 50.430
+    Epoch 13: training mae loss = 4.675 / validation mae loss = 5.649
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.68 minutes
+
+Epoch  14: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 30.435 / validation mse loss = 58.880
+    Epoch 14: training mae loss = 4.415 / validation mae loss = 6.454
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.74 minutes
+
+Epoch  15: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 35.876 / validation mse loss = 45.336
+    Epoch 15: training mae loss = 4.856 / validation mae loss = 5.298
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.64 minutes
+
+Epoch  16: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 35.894 / validation mse loss = 54.270
+    Epoch 16: training mae loss = 4.793 / validation mae loss = 6.132
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.65 minutes
+
+Epoch  17: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 25.361 / validation mse loss = 56.689
+    Epoch 17: training mae loss = 4.038 / validation mae loss = 5.789
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.93 minutes
+
+Epoch  18: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 15.994 / validation mse loss = 51.360
+    Epoch 18: training mae loss = 3.159 / validation mae loss = 6.007
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.64 minutes
+
+Epoch  19: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 11.818 / validation mse loss = 58.853
+    Epoch 19: training mae loss = 2.754 / validation mae loss = 5.791
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.72 minutes
+
+Epoch  20: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 11.606 / validation mse loss = 48.868
+    Epoch 20: training mae loss = 2.657 / validation mae loss = 5.529
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.71 minutes
+
+Epoch  21: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 9.518 / validation mse loss = 55.342
+    Epoch 21: training mae loss = 2.454 / validation mae loss = 6.184
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.64 minutes
+
+Epoch  22: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 8.136 / validation mse loss = 46.361
+    Epoch 22: training mae loss = 2.246 / validation mae loss = 5.622
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.66 minutes
+
+Epoch  23: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 6.419 / validation mse loss = 45.167
+    Epoch 23: training mae loss = 2.025 / validation mae loss = 5.448
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.65 minutes
+
+Epoch  24: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 5.202 / validation mse loss = 46.349
+    Epoch 24: training mae loss = 1.800 / validation mae loss = 5.489
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.66 minutes
+
+Epoch  25: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 5.369 / validation mse loss = 48.167
+    Epoch 25: training mae loss = 1.844 / validation mae loss = 5.611
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.68 minutes
+
+Epoch  26: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 4.491 / validation mse loss = 48.040
+    Epoch 26: training mae loss = 1.680 / validation mae loss = 5.521
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.66 minutes
+
+Epoch  27: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 5.679 / validation mse loss = 50.008
+    Epoch 27: training mae loss = 1.889 / validation mae loss = 5.709
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.65 minutes
+
+Epoch  28: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 6.064 / validation mse loss = 50.320
+    Epoch 28: training mae loss = 1.955 / validation mae loss = 5.777
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.64 minutes
+
+Epoch  29: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 4.567 / validation mse loss = 47.574
+    Epoch 29: training mae loss = 1.666 / validation mae loss = 5.697
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.67 minutes
+
+Epoch  30: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 4.176 / validation mse loss = 49.426
+    Epoch 30: training mae loss = 1.612 / validation mae loss = 5.842
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.65 minutes
+
+Epoch  31: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 5.531 / validation mse loss = 55.154
+    Epoch 31: training mae loss = 1.887 / validation mae loss = 5.765
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.67 minutes
+
+Epoch  32: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 6.302 / validation mse loss = 45.052
+    Epoch 32: training mae loss = 1.947 / validation mae loss = 5.415
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.65 minutes
+
+Epoch  33: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 3.903 / validation mse loss = 51.535
+    Epoch 33: training mae loss = 1.576 / validation mae loss = 5.965
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.74 minutes
+
+Epoch  34: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 4.950 / validation mse loss = 48.140
+    Epoch 34: training mae loss = 1.763 / validation mae loss = 5.645
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.67 minutes
+
+Epoch  35: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 6.041 / validation mse loss = 45.392
+    Epoch 35: training mae loss = 1.961 / validation mae loss = 5.425
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.65 minutes
+
+Epoch  36: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 14.906 / validation mse loss = 45.355
+    Epoch 36: training mae loss = 2.778 / validation mae loss = 5.382
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.64 minutes
+
+Epoch  37: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 14.500 / validation mse loss = 45.910
+    Epoch 37: training mae loss = 2.981 / validation mae loss = 5.529
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.66 minutes
+
+Epoch  38: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 7.122 / validation mse loss = 51.754
+    Epoch 38: training mae loss = 2.133 / validation mae loss = 6.010
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.64 minutes
+
+Epoch  39: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 6.683 / validation mse loss = 47.343
+    Epoch 39: training mae loss = 2.048 / validation mae loss = 5.464
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.67 minutes
+
+Epoch  40: validation
+../../test/adni_cn/putamen/0/putamen
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 4.587 / validation mse loss = 46.261
+    Epoch 40: training mae loss = 1.700 / validation mae loss = 5.666
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.15 minutes
+train_mse_list:  [280.90710198980264, 61.268626601009046, 51.23613823066324, 60.74994827933231, 46.43591889688524, 44.65340418128644, 45.22752247422429, 42.37462346432573, 36.83717601986255, 41.5473488387415, 32.82319288460885, 44.173484331470426, 34.28578579425812, 30.435394318932193, 35.87584215301578, 35.89351356938734, 25.361402039810763, 15.994048564110772, 11.81778117686005, 11.605970093254316, 9.517869795783092, 8.136228444622988, 6.418842373510539, 5.201838421998388, 5.369134457182076, 4.491115003824234, 5.679019049820253, 6.064345736372268, 4.567373962536202, 4.176302323401985, 5.5312143713235855, 6.302134052171546, 3.903264609560118, 4.950331018890365, 6.04085084934861, 14.906371052739983, 14.500044580738424, 7.121620319657406, 6.6832811408123725, 4.586903178590839]
+train_mae_list:  [10.088817814649161, 6.193915997521352, 5.825736312542931, 6.231457047543283, 5.538133047394833, 5.309288194624044, 5.314263295319121, 5.0951665215573065, 4.840270769798149, 5.117420422828804, 4.525291362051236, 5.2620295831712625, 4.675123982510324, 4.4145990711147505, 4.8563815860425015, 4.792757899074231, 4.037515090683759, 3.1592771400839594, 2.7539737669088074, 2.6565447419376698, 2.453976000769664, 2.245956437062409, 2.0254443055492337, 1.7999739808551336, 1.843716281955525, 1.6803762953160173, 1.8887570591296179, 1.9551559868505446, 1.6661710739135742, 1.6122673648898884, 1.8870210809222723, 1.9471086081811937, 1.575508036855924, 1.7634096145629883, 1.9607531014135329, 2.7783716896833, 2.980554750410177, 2.1329682156191034, 2.0476573685468256, 1.6998262405395508]
+valid_mse_list:  [68.39211558088472, 58.30508500111254, 46.4550762297232, 50.129977597465995, 45.723210980620564, 46.47299833539166, 74.74073890492886, 59.89706101032752, 47.508486669274824, 49.141874844514874, 53.442495720295966, 53.066021765334696, 50.429584092731716, 58.88000028344649, 45.33631684508505, 54.27014058752905, 56.688601699056505, 51.35980936847156, 58.8530851134771, 48.86814057072507, 55.34244815005532, 46.360724062859255, 45.167447947248625, 46.34893687767318, 48.166803034046026, 48.04023304468469, 50.0082796917686, 50.31979582581339, 47.57371071924137, 49.426163757903666, 55.153855456581596, 45.05207018309002, 51.534500049639355, 48.13974206658858, 45.391697364517405, 45.35543907744975, 45.910322575629515, 51.75396578824973, 47.34320906144154, 46.26064447813396]
+valid_mae_list:  [6.319487390638907, 5.821384116064144, 5.341571300844603, 5.4116439577899405, 5.311931537676461, 5.505859205994425, 6.6945921258081365, 6.509652753419514, 5.553002538560312, 5.767918767808359, 5.77192666258993, 6.085801740235921, 5.648835821996761, 6.453633151476896, 5.298468022406856, 6.13175440438186, 5.789012908935547, 6.0071694820742065, 5.791363486760779, 5.528500375868399, 6.183633900895903, 5.621951115282276, 5.448434660706339, 5.488633916347841, 5.61060352566876, 5.521176664135124, 5.708780071403407, 5.77716583541677, 5.696700446213348, 5.842090051385421, 5.765238942979257, 5.414592308334157, 5.9647857810877545, 5.645359329030484, 5.425008146068718, 5.381859912148005, 5.528513823883443, 6.010178650481792, 5.464400062078162, 5.665646830691567]
+
+Elapsed time for one epoch in cv: 27 minutes
+
+<<< StratifiedKFold: 2/4 >>>
+Train Dataset & Validation Dataset size:  118 40
+[  0   2   4  14  20  25  26  28  31  40  41  43  54  56  58  59  62  65
+  66  71  74  79  80  81  84  86  87  89  90  96 103 111 113 114 118 119
+ 120 124 129 136 138 145 147 148 150 158 162 164 165 166 170 172 173 174
+ 177 179 188 194 209 216 217 218 221 226 227 248 256 259 264 275 277 278
+ 280 281 283 285 291 292 293 300 301 304 306 307 316 318 323 324 327 328
+ 329 330 340 344 346 354 355 360 371 372 376 377 379 383 385 386 403 404
+ 407 409 410 414 418 419 425 426 441 446 451 461 463 467 477 489 490 492
+ 498 504 506 507 518 523 527 529 532 533 536 538 541 547 548 552 557 558
+ 560 562 571 574 576 587 590 591 594 601 603 608 617 621]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.56 minutes
+
+Epoch   1: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 359.633 / validation mse loss = 66.617
+    Epoch  1: training mae loss = 10.905 / validation mae loss = 6.452
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.66 minutes
+
+Epoch   2: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 57.987 / validation mse loss = 54.369
+    Epoch  2: training mae loss = 6.131 / validation mae loss = 6.092
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.64 minutes
+
+Epoch   3: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 51.147 / validation mse loss = 71.579
+    Epoch  3: training mae loss = 5.594 / validation mae loss = 7.085
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.66 minutes
+
+Epoch   4: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 56.353 / validation mse loss = 54.008
+    Epoch  4: training mae loss = 6.046 / validation mae loss = 5.997
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.73 minutes
+
+Epoch   5: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 49.462 / validation mse loss = 68.669
+    Epoch  5: training mae loss = 5.613 / validation mae loss = 6.448
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.65 minutes
+
+Epoch   6: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 50.060 / validation mse loss = 54.498
+    Epoch  6: training mae loss = 5.582 / validation mae loss = 5.912
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.64 minutes
+
+Epoch   7: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 45.981 / validation mse loss = 73.069
+    Epoch  7: training mae loss = 5.410 / validation mae loss = 6.654
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.66 minutes
+
+Epoch   8: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 45.685 / validation mse loss = 50.820
+    Epoch  8: training mae loss = 5.420 / validation mae loss = 5.740
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.64 minutes
+
+Epoch   9: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 40.069 / validation mse loss = 62.351
+    Epoch  9: training mae loss = 5.096 / validation mae loss = 6.160
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.75 minutes
+
+Epoch  10: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 44.319 / validation mse loss = 51.646
+    Epoch 10: training mae loss = 5.286 / validation mae loss = 5.780
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.64 minutes
+
+Epoch  11: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 38.894 / validation mse loss = 55.831
+    Epoch 11: training mae loss = 5.015 / validation mae loss = 6.094
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.66 minutes
+
+Epoch  12: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 40.588 / validation mse loss = 50.583
+    Epoch 12: training mae loss = 5.085 / validation mae loss = 5.691
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.80 minutes
+
+Epoch  13: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 33.386 / validation mse loss = 53.467
+    Epoch 13: training mae loss = 4.548 / validation mae loss = 5.761
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.80 minutes
+
+Epoch  14: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 959.999 / validation mse loss = 55.949
+    Epoch 14: training mae loss = 9.692 / validation mae loss = 6.201
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.65 minutes
+
+Epoch  15: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 55.449 / validation mse loss = 56.654
+    Epoch 15: training mae loss = 5.941 / validation mae loss = 6.089
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.65 minutes
+
+Epoch  16: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 52.380 / validation mse loss = 60.010
+    Epoch 16: training mae loss = 5.802 / validation mae loss = 6.115
+
+Epoch  17: training
+Epoch: 17, duration for training: 1.08 minutes
+
+Epoch  17: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 330.053 / validation mse loss = 55.784
+    Epoch 17: training mae loss = 10.718 / validation mae loss = 6.172
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.81 minutes
+
+Epoch  18: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 65.049 / validation mse loss = 55.843
+    Epoch 18: training mae loss = 6.365 / validation mae loss = 6.185
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.75 minutes
+
+Epoch  19: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 71.901 / validation mse loss = 56.853
+    Epoch 19: training mae loss = 6.804 / validation mae loss = 6.091
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.67 minutes
+
+Epoch  20: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 71.379 / validation mse loss = 105.479
+    Epoch 20: training mae loss = 6.823 / validation mae loss = 8.697
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.67 minutes
+
+Epoch  21: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 59.871 / validation mse loss = 55.947
+    Epoch 21: training mae loss = 6.188 / validation mae loss = 6.120
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.69 minutes
+
+Epoch  22: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 64.290 / validation mse loss = 60.119
+    Epoch 22: training mae loss = 6.574 / validation mae loss = 6.116
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.66 minutes
+
+Epoch  23: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 63.731 / validation mse loss = 55.863
+    Epoch 23: training mae loss = 6.406 / validation mae loss = 6.176
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.68 minutes
+
+Epoch  24: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 55.858 / validation mse loss = 60.777
+    Epoch 24: training mae loss = 5.989 / validation mae loss = 6.129
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.75 minutes
+
+Epoch  25: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 56.863 / validation mse loss = 75.731
+    Epoch 25: training mae loss = 6.080 / validation mae loss = 6.769
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.84 minutes
+
+Epoch  26: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 51.657 / validation mse loss = 76.797
+    Epoch 26: training mae loss = 5.739 / validation mae loss = 6.815
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.69 minutes
+
+Epoch  27: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 55.617 / validation mse loss = 65.127
+    Epoch 27: training mae loss = 5.982 / validation mae loss = 6.287
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.70 minutes
+
+Epoch  28: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 53.017 / validation mse loss = 65.095
+    Epoch 28: training mae loss = 5.811 / validation mae loss = 6.285
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.68 minutes
+
+Epoch  29: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 51.613 / validation mse loss = 67.948
+    Epoch 29: training mae loss = 5.720 / validation mae loss = 6.411
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.67 minutes
+
+Epoch  30: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 52.561 / validation mse loss = 69.576
+    Epoch 30: training mae loss = 5.719 / validation mae loss = 6.489
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.91 minutes
+
+Epoch  31: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 55.290 / validation mse loss = 58.102
+    Epoch 31: training mae loss = 5.865 / validation mae loss = 6.374
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.66 minutes
+
+Epoch  32: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 53.185 / validation mse loss = 56.774
+    Epoch 32: training mae loss = 5.739 / validation mae loss = 6.093
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.83 minutes
+
+Epoch  33: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 51.846 / validation mse loss = 82.068
+    Epoch 33: training mae loss = 5.800 / validation mae loss = 7.049
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.93 minutes
+
+Epoch  34: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 55.900 / validation mse loss = 63.078
+    Epoch 34: training mae loss = 5.946 / validation mae loss = 6.204
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.87 minutes
+
+Epoch  35: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 51.419 / validation mse loss = 57.007
+    Epoch 35: training mae loss = 5.736 / validation mae loss = 6.297
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.73 minutes
+
+Epoch  36: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 50.793 / validation mse loss = 57.931
+    Epoch 36: training mae loss = 5.762 / validation mae loss = 6.095
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.64 minutes
+
+Epoch  37: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 52.115 / validation mse loss = 67.593
+    Epoch 37: training mae loss = 5.735 / validation mae loss = 6.399
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.72 minutes
+
+Epoch  38: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 51.149 / validation mse loss = 56.849
+    Epoch 38: training mae loss = 5.711 / validation mae loss = 6.094
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.68 minutes
+
+Epoch  39: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 51.796 / validation mse loss = 56.239
+    Epoch 39: training mae loss = 5.757 / validation mae loss = 6.105
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.65 minutes
+
+Epoch  40: validation
+../../test/adni_cn/putamen/1/putamen
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 52.782 / validation mse loss = 66.190
+    Epoch 40: training mae loss = 5.807 / validation mae loss = 6.337
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.17 minutes
+train_mse_list:  [359.63347909006023, 57.98737285500866, 51.14671706749221, 56.353280209888844, 49.46190090502723, 50.06004139932536, 45.980644209910245, 45.68501522480431, 40.06880486617654, 44.31889165458033, 38.89428115598226, 40.58832322945029, 33.38620812610044, 959.99880634223, 55.44920692605487, 52.38031924629615, 330.05335194579624, 65.04933891053928, 71.90083865796106, 71.37921625880871, 59.871222011113574, 64.28998119548216, 63.73064092862404, 55.85771729986546, 56.86268924050412, 51.65717045129356, 55.61664830223989, 53.01743803387981, 51.61271051027007, 52.56125214342344, 55.289979217416146, 53.18476653806234, 51.846249075259195, 55.89992869001324, 51.41866082660223, 50.793416104074254, 52.114801262394856, 51.149314152992375, 51.79639803757102, 52.78249525821815]
+train_mae_list:  [10.90521399449494, 6.130855034973662, 5.594228930392508, 6.04579248266705, 5.612728256290242, 5.582348799301406, 5.40973082235304, 5.41971735226906, 5.095730805801133, 5.286057140867589, 5.014597593727759, 5.084711155648959, 4.548417196435444, 9.692086429919227, 5.941371133771994, 5.802204059342206, 10.71766007956812, 6.364936731629452, 6.803674487744347, 6.823132587691485, 6.187880491806289, 6.574358835058697, 6.406154212305101, 5.989171504974365, 6.080078682657016, 5.7392858650724765, 5.982153932927019, 5.8105016724538, 5.719650955523475, 5.718726925930734, 5.86490762839883, 5.738600803633868, 5.799543243343547, 5.946452827776893, 5.736426199896861, 5.762131715224961, 5.7347084223213844, 5.710917965840485, 5.75689691608235, 5.806859865026959]
+valid_mse_list:  [66.61718766900557, 54.36891870860812, 71.57872443863108, 54.00840733322916, 68.66868144651002, 54.498153771026224, 73.06928818135322, 50.81971861440924, 62.35108102726031, 51.64583398118804, 55.83080832565887, 50.583140928534014, 53.46692292901534, 55.94926366323157, 56.65366129331951, 60.01022249535669, 55.78439349766019, 55.84255275847037, 56.85319346415846, 105.47943791256675, 55.94732239880139, 60.11873293526565, 55.86255994627747, 60.77731580372098, 75.73128113565566, 76.79663394976266, 65.12675164621088, 65.09545526625234, 67.94795323625395, 69.5760764834247, 58.10223450238192, 56.773854943770395, 82.06756002691728, 63.07825670363028, 57.00743894939181, 57.93146723735182, 67.59315302402159, 56.84899249257921, 56.239408022240745, 66.18986716451523]
+valid_mae_list:  [6.452146433576753, 6.091550054429453, 7.084521595435806, 5.997144650809372, 6.447921535636805, 5.9119562800926495, 6.654116932349869, 5.740420256988911, 6.160324748558335, 5.77968918522702, 6.094447341146348, 5.6908089601540865, 5.760527091690257, 6.201348002952866, 6.088619932343688, 6.115203881565528, 6.17170423193823, 6.185234528553637, 6.090624386751199, 8.696529171134852, 6.1203635734847825, 6.116335060023054, 6.175704883623727, 6.1291122195086905, 6.768895233733745, 6.815338062334664, 6.28663937049576, 6.284711934343169, 6.410765949683853, 6.489012199112132, 6.3740041467207895, 6.0932530511783645, 7.048963353603701, 6.203895158405546, 6.296600945388215, 6.094866861270953, 6.399171636074404, 6.093791358078582, 6.104702261429798, 6.337279138685782]
+
+Elapsed time for one epoch in cv: 29 minutes
+
+<<< StratifiedKFold: 3/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  1   7   8   9  11  15  16  18  24  27  34  36  37  48  61  64  67  69
+  73  78  88  91  93  94 102 104 105 122 125 126 127 128 133 135 139 143
+ 144 149 153 156 157 160 163 171 176 178 181 184 198 205 206 207 208 210
+ 212 223 231 237 238 241 246 251 253 254 255 263 265 266 267 268 269 274
+ 287 295 296 298 302 303 310 311 314 322 326 334 341 347 350 353 358 359
+ 362 363 364 369 375 380 381 394 397 405 416 417 423 427 428 429 431 435
+ 436 440 445 447 449 450 455 457 466 470 472 473 482 491 499 501 505 508
+ 510 517 520 521 525 526 528 530 539 540 542 543 549 555 556 561 563 564
+ 570 573 578 580 581 606 610 612 613 616 619 622 624]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.55 minutes
+
+Epoch   1: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 422.485 / validation mse loss = 97.522
+    Epoch  1: training mae loss = 12.468 / validation mae loss = 7.894
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.64 minutes
+
+Epoch   2: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 57.682 / validation mse loss = 46.161
+    Epoch  2: training mae loss = 6.221 / validation mae loss = 5.549
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.65 minutes
+
+Epoch   3: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 56.301 / validation mse loss = 52.554
+    Epoch  3: training mae loss = 5.975 / validation mae loss = 5.910
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.67 minutes
+
+Epoch   4: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 46.181 / validation mse loss = 41.269
+    Epoch  4: training mae loss = 5.453 / validation mae loss = 5.027
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.65 minutes
+
+Epoch   5: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 52.043 / validation mse loss = 50.158
+    Epoch  5: training mae loss = 5.740 / validation mae loss = 5.749
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.66 minutes
+
+Epoch   6: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 51.543 / validation mse loss = 40.733
+    Epoch  6: training mae loss = 5.706 / validation mae loss = 4.976
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.65 minutes
+
+Epoch   7: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 49.180 / validation mse loss = 42.884
+    Epoch  7: training mae loss = 5.676 / validation mae loss = 5.175
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.64 minutes
+
+Epoch   8: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 41.038 / validation mse loss = 43.781
+    Epoch  8: training mae loss = 5.095 / validation mae loss = 5.111
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.65 minutes
+
+Epoch   9: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 45.778 / validation mse loss = 44.638
+    Epoch  9: training mae loss = 5.426 / validation mae loss = 5.201
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.64 minutes
+
+Epoch  10: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 42.310 / validation mse loss = 57.318
+    Epoch 10: training mae loss = 5.327 / validation mae loss = 6.069
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.67 minutes
+
+Epoch  11: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 56.338 / validation mse loss = 43.344
+    Epoch 11: training mae loss = 6.036 / validation mae loss = 5.269
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.69 minutes
+
+Epoch  12: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 50.351 / validation mse loss = 47.273
+    Epoch 12: training mae loss = 5.703 / validation mae loss = 5.419
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.65 minutes
+
+Epoch  13: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 47.296 / validation mse loss = 51.045
+    Epoch 13: training mae loss = 5.417 / validation mae loss = 5.877
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.68 minutes
+
+Epoch  14: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 45.592 / validation mse loss = 40.169
+    Epoch 14: training mae loss = 5.440 / validation mae loss = 4.857
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.64 minutes
+
+Epoch  15: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 36.241 / validation mse loss = 46.131
+    Epoch 15: training mae loss = 4.835 / validation mae loss = 5.374
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.66 minutes
+
+Epoch  16: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 37.597 / validation mse loss = 39.928
+    Epoch 16: training mae loss = 4.796 / validation mae loss = 4.759
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.66 minutes
+
+Epoch  17: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 41.861 / validation mse loss = 44.181
+    Epoch 17: training mae loss = 5.226 / validation mae loss = 5.139
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.65 minutes
+
+Epoch  18: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 41.603 / validation mse loss = 48.416
+    Epoch 18: training mae loss = 5.225 / validation mae loss = 5.415
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.67 minutes
+
+Epoch  19: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 31.473 / validation mse loss = 49.153
+    Epoch 19: training mae loss = 4.353 / validation mae loss = 5.486
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.66 minutes
+
+Epoch  20: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 26.491 / validation mse loss = 41.835
+    Epoch 20: training mae loss = 4.131 / validation mae loss = 5.105
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.69 minutes
+
+Epoch  21: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 23.603 / validation mse loss = 42.935
+    Epoch 21: training mae loss = 3.890 / validation mae loss = 4.988
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.68 minutes
+
+Epoch  22: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 34.524 / validation mse loss = 46.999
+    Epoch 22: training mae loss = 4.652 / validation mae loss = 5.199
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.73 minutes
+
+Epoch  23: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 18.527 / validation mse loss = 61.190
+    Epoch 23: training mae loss = 3.418 / validation mae loss = 6.198
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.65 minutes
+
+Epoch  24: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 21.007 / validation mse loss = 42.736
+    Epoch 24: training mae loss = 3.637 / validation mae loss = 4.975
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.68 minutes
+
+Epoch  25: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 11.695 / validation mse loss = 41.722
+    Epoch 25: training mae loss = 2.700 / validation mae loss = 4.907
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.67 minutes
+
+Epoch  26: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 13.782 / validation mse loss = 44.570
+    Epoch 26: training mae loss = 2.967 / validation mae loss = 4.995
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.67 minutes
+
+Epoch  27: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 9.338 / validation mse loss = 43.119
+    Epoch 27: training mae loss = 2.456 / validation mae loss = 4.904
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.73 minutes
+
+Epoch  28: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 5.658 / validation mse loss = 41.836
+    Epoch 28: training mae loss = 1.895 / validation mae loss = 4.882
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.65 minutes
+
+Epoch  29: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 6.380 / validation mse loss = 44.285
+    Epoch 29: training mae loss = 1.989 / validation mae loss = 5.146
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.65 minutes
+
+Epoch  30: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 8.112 / validation mse loss = 49.052
+    Epoch 30: training mae loss = 2.281 / validation mae loss = 5.425
+
+Epoch  31: training
+Epoch: 31, duration for training: 0.67 minutes
+
+Epoch  31: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 5.125 / validation mse loss = 43.372
+    Epoch 31: training mae loss = 1.843 / validation mae loss = 5.053
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.70 minutes
+
+Epoch  32: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 7.032 / validation mse loss = 44.428
+    Epoch 32: training mae loss = 2.144 / validation mae loss = 5.078
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.66 minutes
+
+Epoch  33: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 10.976 / validation mse loss = 43.326
+    Epoch 33: training mae loss = 2.535 / validation mae loss = 5.104
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.70 minutes
+
+Epoch  34: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 8.919 / validation mse loss = 50.490
+    Epoch 34: training mae loss = 2.391 / validation mae loss = 5.484
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.72 minutes
+
+Epoch  35: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 4.852 / validation mse loss = 44.715
+    Epoch 35: training mae loss = 1.762 / validation mae loss = 5.158
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.64 minutes
+
+Epoch  36: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 3.530 / validation mse loss = 40.672
+    Epoch 36: training mae loss = 1.463 / validation mae loss = 4.734
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.65 minutes
+
+Epoch  37: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 4.866 / validation mse loss = 41.764
+    Epoch 37: training mae loss = 1.786 / validation mae loss = 4.868
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.67 minutes
+
+Epoch  38: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 10.926 / validation mse loss = 47.042
+    Epoch 38: training mae loss = 2.664 / validation mae loss = 5.312
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.66 minutes
+
+Epoch  39: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 8.181 / validation mse loss = 43.225
+    Epoch 39: training mae loss = 2.249 / validation mae loss = 5.048
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.66 minutes
+
+Epoch  40: validation
+../../test/adni_cn/putamen/2/putamen
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 13.624 / validation mse loss = 40.677
+    Epoch 40: training mae loss = 2.953 / validation mae loss = 4.972
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.12 minutes
+train_mse_list:  [422.48549845253945, 57.68214878017756, 56.301042466032584, 46.181436379414535, 52.043164648414916, 51.54333245678634, 49.179685735803325, 41.038284219092596, 45.777813387219545, 42.31041880843503, 56.338408434869876, 50.35132333541773, 47.29573230662759, 45.592481449844975, 36.24131848393736, 37.596988905433875, 41.861174964501544, 41.60255607137216, 31.472616861914982, 26.49123141427877, 23.603363020979575, 34.524475601712446, 18.52688737134853, 21.006799336467687, 11.694973789360256, 13.781995569676727, 9.337685336018213, 5.657536902147922, 6.380079085302655, 8.111761458706402, 5.125448716619302, 7.032222913259179, 10.976308640415523, 8.918679617172064, 4.852351496133945, 3.5304679961335586, 4.865860084650633, 10.92633659937606, 8.180584583927663, 13.624475978141607]
+train_mae_list:  [12.468485801970983, 6.221149533293968, 5.975318892561608, 5.452940394460021, 5.74017913850619, 5.706119738975993, 5.676089732389873, 5.094598975796528, 5.425818525963556, 5.326561345106452, 6.035590996449896, 5.702839889687665, 5.4171690104123655, 5.440363442418943, 4.835167447305885, 4.796301585675294, 5.225818892109974, 5.224727195110684, 4.3528928212333176, 4.130640429119731, 3.8897731208398025, 4.652145611559361, 3.4182267945110167, 3.6365715172023654, 2.7002045548743476, 2.966833884821886, 2.455712284144589, 1.8954173323972028, 1.9890783926901303, 2.280798567273904, 1.8431153408316678, 2.144049880368513, 2.534702809114033, 2.3908187430706387, 1.7623463604465348, 1.4630108565155093, 1.7859676353019085, 2.6641698196120798, 2.248583214983628, 2.952522737531279]
+valid_mse_list:  [97.52197480657298, 46.16121368043741, 52.55428620356663, 41.268872220045445, 50.158127985182844, 40.733002892535204, 42.88384585167952, 43.781305343482146, 44.63796413931877, 57.317910801832845, 43.34426092190348, 47.27295659909583, 51.04542179472128, 40.1687650817215, 46.130577281781825, 39.92767682348847, 44.18064426616499, 48.416416247179555, 49.15349096553341, 41.834557543894284, 42.93514826343318, 46.998724943513324, 61.19042265339262, 42.73615442263852, 41.72245845065755, 44.57043389605868, 43.119093749173885, 41.83581142364793, 44.2850100280373, 49.052280012969, 43.3723429297186, 44.427886959853446, 43.32604778800041, 50.489736405147866, 44.71532661899639, 40.67193784227796, 41.76437117947135, 47.041676393739735, 43.22521695665493, 40.677225404484254]
+valid_mae_list:  [7.894278362298468, 5.549262660324194, 5.910384986051328, 5.027233828404906, 5.749441887922348, 4.975715394232683, 5.175495706546079, 5.1111173204555636, 5.200562203765675, 6.06883852041451, 5.269090348747885, 5.418691550090814, 5.876544733715665, 4.857480529007638, 5.373976057502115, 4.759159258216809, 5.13898346530404, 5.415277566120124, 5.486053248119962, 5.1047066366596585, 4.988306179168118, 5.198565586357359, 6.197793462473875, 4.975406330861863, 4.907282859656461, 4.9948825714694465, 4.904003070418242, 4.882416063053593, 5.145994490119302, 5.4246479690454565, 5.053214297932424, 5.077830587982372, 5.103536788065722, 5.484331726268598, 5.157568135838599, 4.733819876506829, 4.867984455861863, 5.312179152373296, 5.048215052124801, 4.97166807332616]
+
+Elapsed time for one epoch in cv: 27 minutes
+
+<<< StratifiedKFold: 4/4 >>>
+Train Dataset & Validation Dataset size:  119 40
+[  5   6  12  19  21  29  33  35  39  42  44  45  47  49  63  68  72  75
+  76  77  83  85  92  95 100 106 107 112 116 117 121 123 130 131 137 151
+ 152 161 167 169 175 180 182 183 185 186 189 190 195 196 197 199 201 203
+ 211 215 219 224 225 230 233 234 247 250 257 260 276 279 282 286 288 290
+ 297 299 309 312 315 317 325 331 332 338 345 348 349 352 356 361 365 366
+ 368 373 374 389 391 393 396 398 399 400 402 412 413 415 420 421 424 432
+ 434 438 443 444 448 456 460 462 469 474 475 476 479 481 483 485 486 488
+ 494 495 497 502 511 512 514 516 519 522 524 535 537 550 553 554 559 575
+ 579 583 584 586 588 595 599 602 605 611 615 620 623]
+[ Start ]
+
+Epoch   1: training
+Epoch: 1, duration for training: 0.54 minutes
+
+Epoch   1: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  1: training mse loss = 392.339 / validation mse loss = 67.185
+    Epoch  1: training mae loss = 11.561 / validation mae loss = 6.422
+
+Epoch   2: training
+Epoch: 2, duration for training: 0.64 minutes
+
+Epoch   2: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  2: training mse loss = 58.417 / validation mse loss = 58.825
+    Epoch  2: training mae loss = 6.110 / validation mae loss = 6.346
+
+Epoch   3: training
+Epoch: 3, duration for training: 0.67 minutes
+
+Epoch   3: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  3: training mse loss = 857.450 / validation mse loss = 242.615
+    Epoch  3: training mae loss = 12.318 / validation mae loss = 13.357
+
+Epoch   4: training
+Epoch: 4, duration for training: 0.66 minutes
+
+Epoch   4: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  4: training mse loss = 132.658 / validation mse loss = 113.951
+    Epoch  4: training mae loss = 9.141 / validation mae loss = 8.579
+
+Epoch   5: training
+Epoch: 5, duration for training: 0.65 minutes
+
+Epoch   5: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  5: training mse loss = 129.420 / validation mse loss = 105.067
+    Epoch  5: training mae loss = 9.099 / validation mae loss = 8.129
+
+Epoch   6: training
+Epoch: 6, duration for training: 0.66 minutes
+
+Epoch   6: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  6: training mse loss = 111.445 / validation mse loss = 230.330
+    Epoch  6: training mae loss = 8.443 / validation mae loss = 12.992
+
+Epoch   7: training
+Epoch: 7, duration for training: 0.64 minutes
+
+Epoch   7: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  7: training mse loss = 137.702 / validation mse loss = 137.181
+    Epoch  7: training mae loss = 9.568 / validation mae loss = 9.627
+
+Epoch   8: training
+Epoch: 8, duration for training: 0.72 minutes
+
+Epoch   8: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  8: training mse loss = 107.480 / validation mse loss = 158.112
+    Epoch  8: training mae loss = 8.303 / validation mae loss = 9.987
+
+Epoch   9: training
+Epoch: 9, duration for training: 0.66 minutes
+
+Epoch   9: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch  9: training mse loss = 105.403 / validation mse loss = 92.572
+    Epoch  9: training mae loss = 8.192 / validation mae loss = 7.525
+
+Epoch  10: training
+Epoch: 10, duration for training: 0.67 minutes
+
+Epoch  10: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 10: training mse loss = 118.472 / validation mse loss = 100.389
+    Epoch 10: training mae loss = 8.752 / validation mae loss = 7.814
+
+Epoch  11: training
+Epoch: 11, duration for training: 0.64 minutes
+
+Epoch  11: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 11: training mse loss = 109.184 / validation mse loss = 88.263
+    Epoch 11: training mae loss = 8.250 / validation mae loss = 7.333
+
+Epoch  12: training
+Epoch: 12, duration for training: 0.67 minutes
+
+Epoch  12: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 12: training mse loss = 106.238 / validation mse loss = 317.620
+    Epoch 12: training mae loss = 8.245 / validation mae loss = 15.886
+
+Epoch  13: training
+Epoch: 13, duration for training: 0.67 minutes
+
+Epoch  13: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 13: training mse loss = 109.025 / validation mse loss = 89.671
+    Epoch 13: training mae loss = 8.246 / validation mae loss = 7.466
+
+Epoch  14: training
+Epoch: 14, duration for training: 0.67 minutes
+
+Epoch  14: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 14: training mse loss = 109.527 / validation mse loss = 114.535
+    Epoch 14: training mae loss = 8.354 / validation mae loss = 8.728
+
+Epoch  15: training
+Epoch: 15, duration for training: 0.65 minutes
+
+Epoch  15: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 15: training mse loss = 101.210 / validation mse loss = 80.142
+    Epoch 15: training mae loss = 7.980 / validation mae loss = 7.026
+
+Epoch  16: training
+Epoch: 16, duration for training: 0.78 minutes
+
+Epoch  16: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 16: training mse loss = 91.784 / validation mse loss = 80.557
+    Epoch 16: training mae loss = 7.506 / validation mae loss = 7.073
+
+Epoch  17: training
+Epoch: 17, duration for training: 0.70 minutes
+
+Epoch  17: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 17: training mse loss = 92.756 / validation mse loss = 140.282
+    Epoch 17: training mae loss = 7.569 / validation mae loss = 9.786
+
+Epoch  18: training
+Epoch: 18, duration for training: 0.66 minutes
+
+Epoch  18: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 18: training mse loss = 104.651 / validation mse loss = 90.821
+    Epoch 18: training mae loss = 8.333 / validation mae loss = 7.678
+
+Epoch  19: training
+Epoch: 19, duration for training: 0.64 minutes
+
+Epoch  19: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 19: training mse loss = 88.554 / validation mse loss = 91.491
+    Epoch 19: training mae loss = 7.594 / validation mae loss = 7.545
+
+Epoch  20: training
+Epoch: 20, duration for training: 0.66 minutes
+
+Epoch  20: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 20: training mse loss = 96.554 / validation mse loss = 98.104
+    Epoch 20: training mae loss = 7.572 / validation mae loss = 8.034
+
+Epoch  21: training
+Epoch: 21, duration for training: 0.69 minutes
+
+Epoch  21: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 21: training mse loss = 74.840 / validation mse loss = 81.162
+    Epoch 21: training mae loss = 6.886 / validation mae loss = 7.121
+
+Epoch  22: training
+Epoch: 22, duration for training: 0.70 minutes
+
+Epoch  22: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 22: training mse loss = 94.018 / validation mse loss = 68.632
+    Epoch 22: training mae loss = 7.676 / validation mae loss = 6.573
+
+Epoch  23: training
+Epoch: 23, duration for training: 0.64 minutes
+
+Epoch  23: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 23: training mse loss = 77.765 / validation mse loss = 67.895
+    Epoch 23: training mae loss = 7.026 / validation mae loss = 6.532
+
+Epoch  24: training
+Epoch: 24, duration for training: 0.67 minutes
+
+Epoch  24: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 24: training mse loss = 77.658 / validation mse loss = 74.277
+    Epoch 24: training mae loss = 6.914 / validation mae loss = 6.869
+
+Epoch  25: training
+Epoch: 25, duration for training: 0.74 minutes
+
+Epoch  25: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 25: training mse loss = 88.194 / validation mse loss = 63.947
+    Epoch 25: training mae loss = 7.390 / validation mae loss = 6.373
+
+Epoch  26: training
+Epoch: 26, duration for training: 0.68 minutes
+
+Epoch  26: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 26: training mse loss = 81.111 / validation mse loss = 87.236
+    Epoch 26: training mae loss = 7.100 / validation mae loss = 7.576
+
+Epoch  27: training
+Epoch: 27, duration for training: 0.66 minutes
+
+Epoch  27: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 27: training mse loss = 67.780 / validation mse loss = 66.891
+    Epoch 27: training mae loss = 6.422 / validation mae loss = 6.584
+
+Epoch  28: training
+Epoch: 28, duration for training: 0.73 minutes
+
+Epoch  28: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 28: training mse loss = 70.661 / validation mse loss = 80.046
+    Epoch 28: training mae loss = 6.697 / validation mae loss = 7.255
+
+Epoch  29: training
+Epoch: 29, duration for training: 0.64 minutes
+
+Epoch  29: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 29: training mse loss = 70.736 / validation mse loss = 69.481
+    Epoch 29: training mae loss = 6.675 / validation mae loss = 6.737
+
+Epoch  30: training
+Epoch: 30, duration for training: 0.65 minutes
+
+Epoch  30: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 30: training mse loss = 63.629 / validation mse loss = 67.509
+    Epoch 30: training mae loss = 6.358 / validation mae loss = 6.643
+
+Epoch  31: training
+Epoch: 31, duration for training: 1.09 minutes
+
+Epoch  31: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 31: training mse loss = 67.158 / validation mse loss = 63.144
+    Epoch 31: training mae loss = 6.495 / validation mae loss = 6.409
+
+Epoch  32: training
+Epoch: 32, duration for training: 0.70 minutes
+
+Epoch  32: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 32: training mse loss = 69.764 / validation mse loss = 95.372
+    Epoch 32: training mae loss = 6.797 / validation mae loss = 7.881
+
+Epoch  33: training
+Epoch: 33, duration for training: 0.67 minutes
+
+Epoch  33: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 33: training mse loss = 57.480 / validation mse loss = 57.511
+    Epoch 33: training mae loss = 6.207 / validation mae loss = 6.198
+
+Epoch  34: training
+Epoch: 34, duration for training: 0.75 minutes
+
+Epoch  34: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 34: training mse loss = 56.172 / validation mse loss = 51.809
+    Epoch 34: training mae loss = 6.034 / validation mae loss = 5.884
+
+Epoch  35: training
+Epoch: 35, duration for training: 0.67 minutes
+
+Epoch  35: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 35: training mse loss = 60.648 / validation mse loss = 66.523
+    Epoch 35: training mae loss = 6.241 / validation mae loss = 6.755
+
+Epoch  36: training
+Epoch: 36, duration for training: 0.66 minutes
+
+Epoch  36: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 36: training mse loss = 48.768 / validation mse loss = 52.126
+    Epoch 36: training mae loss = 5.600 / validation mae loss = 5.923
+
+Epoch  37: training
+Epoch: 37, duration for training: 0.71 minutes
+
+Epoch  37: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 37: training mse loss = 54.979 / validation mse loss = 66.533
+    Epoch 37: training mae loss = 5.855 / validation mae loss = 6.779
+
+Epoch  38: training
+Epoch: 38, duration for training: 0.70 minutes
+
+Epoch  38: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 38: training mse loss = 54.334 / validation mse loss = 94.880
+    Epoch 38: training mae loss = 5.866 / validation mae loss = 8.206
+
+Epoch  39: training
+Epoch: 39, duration for training: 0.68 minutes
+
+Epoch  39: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 39: training mse loss = 53.050 / validation mse loss = 48.396
+    Epoch 39: training mae loss = 5.872 / validation mae loss = 5.615
+
+Epoch  40: training
+Epoch: 40, duration for training: 0.77 minutes
+
+Epoch  40: validation
+../../test/adni_cn/putamen/3/putamen
+Ages saved
+Features saved
+    Epoch 40: training mse loss = 49.020 / validation mse loss = 46.567
+    Epoch 40: training mae loss = 5.525 / validation mae loss = 5.536
+[ End of Epoch ]
+Epoch: 40, duration for validation: 0.13 minutes
+train_mse_list:  [392.33898966811427, 58.41690034997388, 857.4499018489685, 132.65763785420714, 129.4204904221581, 111.44541539803116, 137.70223161483668, 107.47993605535076, 105.40256186922811, 118.472086035424, 109.1841035443683, 106.2377872628339, 109.02513386280793, 109.52742696060439, 101.20966017120232, 91.7835323986997, 92.75595524850405, 104.65142137757316, 88.55448017967176, 96.55441017634773, 74.83970485227556, 94.0184282863367, 77.76463152137417, 77.65806674352407, 88.19427844283445, 81.1112332414623, 67.78037473968925, 70.66102073056501, 70.73648853181028, 63.62947931148537, 67.15810054351613, 69.7640152300135, 57.479832669393204, 56.17204560008664, 60.64759480474363, 48.76837763486599, 54.97873736940025, 54.33358913042581, 53.050321681806956, 49.0201762604663]
+train_mae_list:  [11.560957136416285, 6.110247194640984, 12.317823647948703, 9.140600337538608, 9.09880949830908, 8.44274778950794, 9.567933378965607, 8.302884309538827, 8.192132986121148, 8.752249969740499, 8.249927319129476, 8.244872571045955, 8.245856158073055, 8.353840535589303, 7.979841905718878, 7.506405167045351, 7.569356922367411, 8.332940398008576, 7.593941831689556, 7.5720219602040455, 6.88556768727857, 7.675776806240606, 7.026456570776522, 6.914307624542688, 7.38950151923343, 7.1002565025023126, 6.422483795036977, 6.696671572598544, 6.674618993198645, 6.358311602731588, 6.49468089258948, 6.7966852490544065, 6.207250905591388, 6.034454410222318, 6.240711276677396, 5.599710734651659, 5.8552507396480244, 5.866168370962647, 5.872266337937079, 5.524856148008061]
+valid_mse_list:  [67.1849839155841, 58.82523235631217, 242.615163742357, 113.95078231726482, 105.0672099666231, 230.32963515846592, 137.18140499075506, 158.11177265871862, 92.5723613811906, 100.38905760892638, 88.26310111610752, 317.62045958695137, 89.6712551602892, 114.53503677723513, 80.1424552893183, 80.5574464008307, 140.281577626611, 90.8214693253587, 91.49149711268723, 98.10417417128374, 81.16175645475934, 68.63209268241931, 67.89458252366181, 74.27717964512527, 63.94716756359028, 87.23641401643206, 66.89056321162327, 80.04574475926199, 69.48113518004205, 67.50868061697408, 63.14381067919883, 95.37154937549761, 57.51093012208392, 51.80902441292052, 66.5227503685435, 52.12620427805906, 66.53269266019201, 94.8804635697869, 48.39555452431843, 46.56694538957754]
+valid_mae_list:  [6.421669978245049, 6.346169004015103, 13.357149743730096, 8.579029909364737, 8.128514915514904, 12.992033843022243, 9.626716881041315, 9.98721694946289, 7.525233323407021, 7.813836674781362, 7.33289745355108, 15.885757251909585, 7.465507823190872, 8.727928866246703, 7.025857305830451, 7.072884286285206, 9.785624728840627, 7.678266148658315, 7.544763042668628, 8.034444966893288, 7.1207761825269955, 6.572670663238331, 6.532174638881805, 6.86856727843072, 6.372518211413341, 7.576418736937699, 6.584208105779757, 7.2552665904828695, 6.736687581250622, 6.643093838053904, 6.408865108611478, 7.880568923464247, 6.1977353430098026, 5.883862149183917, 6.754620740368108, 5.92324629862597, 6.7791488550271195, 8.206396455218078, 5.614887213251393, 5.535676555269084]
+
+Elapsed time for one epoch in cv: 28 minutes

@@ -11,18 +11,26 @@ class Config:
         
         dataset = {
             0: "ukb",
-            1: "adni"
+            1: "adni",
+            2: "ukb_disease",
+            3: "adni_ad",
+            4: "adni_mci"
         }
         mri_csvs = {
             0: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/ukbb_cn_region.csv',
-            1: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_cn_region.csv' 
+            1: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_cn_region.csv',
+            2: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/ukbb_I10_region.csv',
+            3: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_ad_region.csv',
+            4: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_mci_region.csv'
         }
         roots = {
             0: '/media/leelabsg-storage1/DATA/UKBB/bulk/20252_unzip', # UKBB
-            1: '/media/leelabsg-storage1/yein/research/data/adni_region' # ADNI
+            1: '/media/leelabsg-storage1/yein/research/data/adni_region', # ADNI
+            2: '/media/leelabsg-storage1/yein/research/data/ukb_region/disease/I10', # UKBB disease
+            3: '/media/leelabsg-storage1/yein/research/data/adni_region/disease' # ADNI disease
         }
         self.dataset = dataset[args.dataset]
-        self.root = roots[args.dataset]
+        self.root = None
         self.mri_csv = mri_csvs[args.dataset]
         self.data_size = args.data_size
         self.input_size = (1, 128, 128, 128) 
@@ -43,16 +51,20 @@ class Config:
         self.roi = self.regions[args.roi]
         self.proj_n = args.proj_n
         self.results_folder = os.path.join('../../test/', args.results_path)
-        self.model_load_folder = os.path.join('../../model/region_BAE/ukb', self.roi)
-        self.model_save_folder = os.path.join('../../model/region_BAE/pre', self.dataset, self.roi, self.model_save_path)
-        self.model_load = args.model_load
-        self.model_load_epoch = args.load_epoch
         mode = {
             0: 'train',
             1: 'test',
             2: 'test_tf'
         }
         self.mode = mode[args.mode]
+        self.model_load_folder = os.path.join('../../model/region_BAE/ukb', self.roi)
+        if self.mode == 'test':
+            self.model_load_folder = '../../model/region_BAE/ukb'
+        elif self.mode == 'test_tf':
+            self.model_load_folder = '../../model/region_BAE/transfer_adni'
+        self.model_save_folder = os.path.join('../../model/region_BAE/', self.dataset, self.roi, self.model_save_path)
+        self.model_load = args.model_load
+        self.model_load_epoch = args.load_epoch
         
 
 def parse_args():

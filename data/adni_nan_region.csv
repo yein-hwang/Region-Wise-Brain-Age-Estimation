@@ -1,0 +1,1 @@
+subjectID,imgs,mask,age,gender,caudate,caudate_mask,cerebellum,cerebellum_mask,frontal_lobe,frontal_lobe_mask,insula,insula_mask,occipital_lobe,occipital_lobe_mask,parietal_lobe,parietal_lobe_mask,putamen,putamen_mask,temporal_lobe,temporal_lobe_mask,thalamus,thalamus_mask
