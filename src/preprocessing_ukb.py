@@ -73,19 +73,19 @@ def process_subject(root, subject, atlas_template_path, save_root, regions, df, 
 
 def main(config):
     gc.collect()
-
+    start_index, end_index = config.start_index, config.end_index
     root = '/media/leelabsg-storage1/DATA/UKBB/bulk/20252_uz/'
-    df = pd.read_csv(f'/media/leelabsg-storage1/yein/research/data/csv/ukbb_{config.icd10}.csv')
+    df = pd.read_csv(f'/media/leelabsg-storage1/yein/research/data/csv/ukbb_disease.csv')
 
     trial = config.trial
-    save_root = f'/media/leelabsg-storage1/yein/research/data/ukbb_region/disease/{config.icd10}'
+    save_root = f'/media/leelabsg-storage1/yein/research/data/ukbb_region/disease/'
     tmp_path = '/media/leelabsg-storage1/yein/research/tmp/tmp'
     os.makedirs(save_root, exist_ok=True)
 
     atlas_template_path = '/media/leelabsg-storage1/yein/research/data/template/MNI-maxprob-thr0-1mm.nii.gz'
     regions = ['caudate', 'cerebellum', 'frontal_lobe', 'insula', 'occipital_lobe', 'parietal_lobe', 'putamen', 'temporal_lobe', 'thalamus']
 
-    for i in tqdm(range(1184, len(df))):
+    for i in tqdm(range(start_index, end_index)):
         subject = str(df['id'][i])
         process_subject(root, subject, atlas_template_path, save_root, regions, df, trial, tmp_path)
         gc.collect()

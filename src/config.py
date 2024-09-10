@@ -16,19 +16,20 @@ class Config:
             3: "adni_ad",
             4: "adni_mci"
         }
+        ukb_disease = args.ukb_disease
         mri_csvs = {
             0: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/ukbb_cn_region.csv',
             1: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_cn_region.csv',
-            2: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/ukbb_I10_region.csv',
+            2: f'/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/ukbb_{ukb_disease}_region.csv',
             3: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_ad_region.csv',
             4: '/media/leelabsg-storage1/yein/research/BAE/RegionBAE/data/adni_mci_region.csv'
         }
-        roots = {
-            0: '/media/leelabsg-storage1/DATA/UKBB/bulk/20252_unzip', # UKBB
-            1: '/media/leelabsg-storage1/yein/research/data/adni_region', # ADNI
-            2: '/media/leelabsg-storage1/yein/research/data/ukb_region/disease/I10', # UKBB disease
-            3: '/media/leelabsg-storage1/yein/research/data/adni_region/disease' # ADNI disease
-        }
+        # roots = {
+        #     0: '/media/leelabsg-storage1/DATA/UKBB/bulk/20252_unzip', # UKBB
+        #     1: '/media/leelabsg-storage1/yein/research/data/adni_region', # ADNI
+        #     2: f'/media/leelabsg-storage1/yein/research/data/ukbb_region/disease/{ukb_disease}', # UKBB disease
+        #     3: '/media/leelabsg-storage1/yein/research/data/adni_region/disease' # ADNI disease
+        # }
         self.dataset = dataset[args.dataset]
         self.root = None
         self.mri_csv = mri_csvs[args.dataset]
@@ -50,7 +51,7 @@ class Config:
         self.regions = {0: 'imgs', 1: 'caudate', 2: 'cerebellum', 3: 'frontal_lobe', 4: 'insula', 5: 'occipital_lobe', 6: 'parietal_lobe', 7: 'putamen', 8: 'temporal_lobe', 9: 'thalamus'}
         self.roi = self.regions[args.roi]
         self.proj_n = args.proj_n
-        self.results_folder = os.path.join('../../test/', args.results_path)
+        self.results_folder = os.path.join('../../test/', args.results_path, ukb_disease)
         mode = {
             0: 'train',
             1: 'test',
@@ -65,6 +66,10 @@ class Config:
         self.model_save_folder = os.path.join('../../model/region_BAE/', self.dataset, self.roi, self.model_save_path)
         self.model_load = args.model_load
         self.model_load_epoch = args.load_epoch
+        if args.gpu == 1:
+            self.gpu = True
+        elif args.gpu == 0:
+            self.gpu = False
         
 
 def parse_args():
@@ -88,5 +93,7 @@ def parse_args():
     parser.add_argument('--results_path', type=str, default='')
     parser.add_argument('--model_save_path', type=str, default='')
     parser.add_argument('--load_epoch', type=int, default=40)
+    parser.add_argument('--ukb_disease', type=str, default='')
+    parser.add_argument('--gpu', type=int, default=1)
 
     return parser.parse_args()

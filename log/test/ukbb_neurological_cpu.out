@@ -1,0 +1,99 @@
+nohup: ignoring input
+wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.7 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240827_122330-a9pebhkf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stilted-salad-326
+wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/a9pebhkf
+====================  Setting  ====================
+Dataset :                  ukb_disease
+Mode :                     test_tf
+GPU :                      False
+Number of gpus :           1
+Batch size :              4
+Data size:                1561
+Epochs :                  40
+Learning Rate :           0.0001
+Early Stopping Patience : 0
+# of Workers  :           16
+Region of Interest :      imgs
+Model Save Path:          ../../model/region_BAE/ukb_disease/imgs/
+Loaded Model Epoch:       40
+==================================================
+
+<<< StratifiedKFold: 1/4 >>>
+Train Dataset & Validation Dataset size:  293 98
+[   4    9   13   15   17   20   23   24   26   27   34   37   43   46
+   51   55   58   60   63   68   71   95   98   99  101  108  109  110
+  111  113  116  117  118  122  127  128  130  140  141  146  147  151
+  152  164  167  170  172  179  180  185  186  187  189  193  194  199
+  200  204  206  207  210  213  216  228  240  241  249  252  253  259
+  262  263  264  275  278  280  283  284  285  286  287  294  297  300
+  302  308  311  313  324  325  326  328  330  340  341  344  346  348
+  350  351  354  358  361  363  367  369  370  374  378  383  392  396
+  397  407  409  410  412  414  415  416  426  430  432  445  447  450
+  451  452  454  463  464  465  471  474  488  492  498  500  501  503
+  506  513  517  525  531  540  541  547  553  558  565  568  571  572
+  581  585  586  587  603  611  619  621  635  637  638  649  652  653
+  656  658  668  669  673  677  680  683  684  687  693  699  700  704
+  705  707  708  712  713  715  716  728  731  734  735  736  737  739
+  747  748  751  754  757  758  760  765  768  769  777  779  782  783
+  790  791  797  799  806  815  816  817  820  825  830  833  835  837
+  851  857  861  866  868  870  872  874  876  885  888  895  898  899
+  903  913  915  922  927  930  935  936  945  951  953  957  967  970
+  971  978  980  981  983  984  997  999 1005 1010 1011 1017 1022 1026
+ 1027 1042 1046 1047 1054 1064 1067 1069 1078 1083 1085 1086 1089 1090
+ 1094 1097 1102 1116 1123 1128 1132 1137 1144 1146 1151 1153 1162 1166
+ 1167 1170 1171 1186 1187 1188 1190 1192 1215 1217 1221 1225 1227 1228
+ 1229 1231 1232 1237 1238 1247 1250 1253 1257 1259 1266 1269 1274 1277
+ 1278 1280 1282 1292 1295 1297 1307 1313 1314 1315 1327 1328 1329 1331
+ 1347 1348 1350 1353 1360 1383 1388 1393 1395 1401 1405 1412 1414 1423
+ 1425 1426 1430 1435 1436 1441 1444 1449 1450 1452 1459 1460 1466 1470
+ 1474 1481 1482 1488 1490 1492 1497 1498 1499 1503 1504 1512 1514 1517
+ 1518 1519 1521 1522 1524 1525 1535 1538 1539 1540 1553 1558 1560]
+============== Loaded model: ../../model/region_BAE/transfer_adni/imgs/cv-0-40.pth.tar
+[ Start test ] <torch.utils.data.dataloader.DataLoader object at 0x7f3203b22d40>
+  0%|          | 0/391 [00:00<?, ?it/s]  0%|          | 0/391 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/main_cv.py", line 233, in <module>
+    pred_ages, true_ages, features = trainer.test() # test
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/CNN_Trainer.py", line 207, in test
+    for _, (input, target) in enumerate(tqdm(self.dataloader_test)):
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/tqdm/std.py", line 1182, in __iter__
+    for obj in iterable:
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/nibabel/loadsave.py", line 100, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/media/leelabsg-storage1/yein/research/data/ukbb_region/disease/neurological/1000638_20252_2_0/T1w_registered.nii.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/dataset.py", line 118, in __getitem__
+    image = nib.load(image_path).get_fdata()
+  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/site-packages/nibabel/loadsave.py", line 102, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/media/leelabsg-storage1/yein/research/data/ukbb_region/disease/neurological/1000638_20252_2_0/T1w_registered.nii.gz'
+
+wandb: - 0.015 MB of 0.015 MB uploadedwandb: \ 0.015 MB of 0.015 MB uploadedwandb: | 0.015 MB of 0.015 MB uploadedwandb: / 0.015 MB of 0.015 MB uploadedwandb: - 0.015 MB of 0.015 MB uploadedwandb: \ 0.015 MB of 0.015 MB uploadedwandb: | 0.015 MB of 0.015 MB uploadedwandb: / 0.015 MB of 0.015 MB uploadedwandb: 🚀 View run stilted-salad-326 at: https://wandb.ai/yein-hwang/reg_trial/runs/a9pebhkf
+wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDc1Mjc4NA==/version_details/v47
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240827_122330-a9pebhkf/logs

@@ -58,6 +58,7 @@ MODEL_LOAD_EPOCH = config.model_load_epoch
 DATA_SIZE = len(dataset_df)
 MODE = config.mode
 PATIENCE = config.patience
+GPU = config.gpu
 
 # setting log
 print("="* 20, " Setting ", "="* 20)
@@ -66,6 +67,7 @@ ngpus = torch.cuda.device_count()
 
 print("Dataset :                 ", DATASET)
 print("Mode :                    ", MODE)
+print("GPU :                     ", GPU)
 print("Number of gpus :          ", ngpus)
 print("Batch size :             ", BATCH_SIZE)
 print("Data size:               ", DATA_SIZE)
@@ -119,6 +121,8 @@ for train_indices, valid_indices in kf.split(dataset_indices):
 
     # Define model and optimizer
     model = CNN(in_channels=1).cuda()
+    if not GPU:
+        model = CNN(in_channels=1).to('cpu')
     # Apply the weight_initialiation
     model.apply(initialize_weights)
     model = torch.nn.DataParallel(model) # use with multi-gpu environment
@@ -161,7 +165,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                             model_load=MODEL_LOAD)
         # Model Loading
         if MODEL_LOAD == 1:
-            trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
+            trainer.load(cv_num, MODEL_LOAD_EPOCH, GPU) # pre-trained model load
             
         train_start = time.time()
         trainer.train() # This will create the lists as instance variables
@@ -225,7 +229,7 @@ for train_indices, valid_indices in kf.split(dataset_indices):
                                 region=ROI,
                                 model_load=MODEL_LOAD)
 
-            trainer.load(cv_num, MODEL_LOAD_EPOCH) # pre-trained model load
+            trainer.load(cv_num, MODEL_LOAD_EPOCH, GPU) # pre-trained model load
             pred_ages, true_ages, features = trainer.test() # test
 
             pred_age_data.setdefault(v, [])

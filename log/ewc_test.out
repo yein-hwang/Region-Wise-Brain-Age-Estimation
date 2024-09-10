@@ -1,44 +1,0 @@
-nohup: ignoring input
-wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
-wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: wandb version 0.17.0 is available!  To upgrade, please run:
-wandb:  $ pip install wandb --upgrade
-wandb: Tracking run with wandb version 0.16.1
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240522_050107-jjm7ha84
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run frosty-paper-287
-wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/jjm7ha84
-====================  Setting  ====================
-Mode :                    test
-Number of gpus :          1
-Batch size :              4
-Data A size:              25656
-Data B size:              630
-Epochs :                  40
-Importance(Lambda) :      0.5
-Early Stopping Patience : 0
-# of Workers  :           16
-==================================================
-Model Load Path:          /media/leelabsg-storage1/yein/research/model/region_BAE/ewc/ipt_5/imgs/imgs
-Model Save Path:          ../../model/region_BAE/ewc/imgs
-
-<<< StratifiedKFold: 1/4 >>>
-Model Load Path:          /media/leelabsg-storage1/yein/research/model/region_BAE/ewc/ipt_5/imgs/imgs/0
-Model Save Path:          ../../model/region_BAE/ewc/ukb/imgs
-Results Path:          ../../test/ewc/_tf_ewc/0
-Traceback (most recent call last):
-  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/main_cv_ewc.py", line 214, in <module>
-    trainer = CNN_Trainer(model=model,
-  File "/media/leelabsg-storage1/yein/research/BAE/RegionBAE/src/CNN_Trainer_ewc.py", line 51, in __init__
-    self.model_save_folder = Path(model_save_folder)
-  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/pathlib.py", line 960, in __new__
-    self = cls._from_parts(args)
-  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/pathlib.py", line 594, in _from_parts
-    drv, root, parts = self._parse_args(args)
-  File "/data/home/yeinhwang/micromamba/envs/vx/lib/python3.10/pathlib.py", line 578, in _parse_args
-    a = os.fspath(a)
-TypeError: expected str, bytes or os.PathLike object, not NoneType
-wandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: 🚀 View run frosty-paper-287 at: https://wandb.ai/yein-hwang/reg_trial/runs/jjm7ha84
-wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDExNzQzOQ==/version_details/v8
-wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240522_050107-jjm7ha84/logs
