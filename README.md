@@ -1,8 +1,10 @@
 # Region-Wise Brain Age Estimation
 
+![Uploading image.png…]()
+
+
 ### Relevant Papers
 - Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Aging Jangho Kim, Junhyeong Lee, Seunggeun Lee medRxiv 2022.03.04.22271813; doi: https://doi.org/10.1101/2022.03.04.22271813
-- A Multitask Deep Learning Model for Voxel-level Brain Age Estimation; Accepted at MLMI workshop @ MICCAI 2023; https://arxiv.org/abs/2310.11385
 -----------------------------
 
 
