@@ -1,1221 +1,0 @@
-nohup: ignoring input
-wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
-wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: wandb version 0.17.0 is available!  To upgrade, please run:
-wandb:  $ pip install wandb --upgrade
-wandb: Tracking run with wandb version 0.16.1
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240509_132038-ti8cfkr8
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run smart-rain-251
-wandb: ⭐️ View project at https://wandb.ai/yein-hwang/reg_trial
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/reg_trial/runs/ti8cfkr8
-====================  Setting  ====================
-Dataset :                  ukb
-Mode :                     train
-Number of gpus :           1
-Batch size :              4
-Data size:                25656
-Epochs :                  40
-Learning Rate :           0.0001
-Early Stopping Patience : 0
-# of Workers  :           16
-Region of Interest :      imgs
-Model Save Path:          ../../model/region_BAE/ukb/imgs/
-Loaded Model Epoch:       40
-==================================================
-
-<<< StratifiedKFold: 0/4 >>>
-Train Dataset & Validation Dataset size:  4811 1604
-[    2     9    12 ... 25646 25648 25651]
-[ Start ]
-  0%|          | 0/40 [00:00<?, ?it/s]
-Epoch   1: training
-Epoch: 1, duration for training: 86.02 minutes
-
-Epoch   1: validation
-  2%|▎         | 1/40 [2:00:59<78:38:29, 7259.21s/it]    Epoch  1: training mse loss = 52.641 / validation mse loss = 28.324
-    Epoch  1: training mae loss = 5.565 / validation mae loss = 4.345
-
-Epoch   2: training
-Epoch: 2, duration for training: 79.73 minutes
-
-Epoch   2: validation
-  5%|▌         | 2/40 [2:54:41<51:33:29, 4884.47s/it]    Epoch  2: training mse loss = 74.557 / validation mse loss = 57.055
-    Epoch  2: training mae loss = 6.216 / validation mae loss = 5.984
-
-Epoch   3: training
-Epoch: 3, duration for training: 35.42 minutes
-
-Epoch   3: validation
-  8%|▊         | 3/40 [3:29:34<37:06:10, 3610.02s/it]    Epoch  3: training mse loss = 43.297 / validation mse loss = 44.939
-    Epoch  3: training mae loss = 5.376 / validation mae loss = 5.301
-
-Epoch   4: training
-Epoch: 4, duration for training: 54.62 minutes
-
-Epoch   4: validation
- 10%|█         | 4/40 [4:36:14<37:38:25, 3764.05s/it]    Epoch  4: training mse loss = 33.106 / validation mse loss = 28.748
-    Epoch  4: training mae loss = 4.639 / validation mae loss = 4.344
-
-Epoch   5: training
-Epoch: 5, duration for training: 53.12 minutes
-
-Epoch   5: validation
- 12%|█▎        | 5/40 [5:20:47<32:46:05, 3370.44s/it]    Epoch  5: training mse loss = 28.032 / validation mse loss = 26.178
-    Epoch  5: training mae loss = 4.234 / validation mae loss = 4.110
-
-Epoch   6: training
-Epoch: 6, duration for training: 43.21 minutes
-
-Epoch   6: validation
- 15%|█▌        | 6/40 [6:02:23<29:01:31, 3073.29s/it]    Epoch  6: training mse loss = 28.880 / validation mse loss = 26.031
-    Epoch  6: training mae loss = 4.297 / validation mae loss = 4.002
-
-Epoch   7: training
-Epoch: 7, duration for training: 46.38 minutes
-
-Epoch   7: validation
- 18%|█▊        | 7/40 [6:50:17<27:34:25, 3008.06s/it]    Epoch  7: training mse loss = 25.060 / validation mse loss = 26.923
-    Epoch  7: training mae loss = 4.001 / validation mae loss = 4.062
-
-Epoch   8: training
-Epoch: 8, duration for training: 42.90 minutes
-
-Epoch   8: validation
- 20%|██        | 8/40 [7:30:37<25:04:29, 2820.93s/it]    Epoch  8: training mse loss = 24.793 / validation mse loss = 22.217
-    Epoch  8: training mae loss = 3.949 / validation mae loss = 3.743
-
-Epoch   9: training
-Epoch: 9, duration for training: 39.32 minutes
-
-Epoch   9: validation
- 22%|██▎       | 9/40 [8:10:51<23:11:43, 2693.65s/it]    Epoch  9: training mse loss = 20.401 / validation mse loss = 25.054
-    Epoch  9: training mae loss = 3.591 / validation mae loss = 4.014
-
-Epoch  10: training
-Epoch: 10, duration for training: 40.16 minutes
-
-Epoch  10: validation
- 25%|██▌       | 10/40 [8:49:45<21:31:13, 2582.45s/it]    Epoch 10: training mse loss = 20.129 / validation mse loss = 20.726
-    Epoch 10: training mae loss = 3.509 / validation mae loss = 3.637
-
-Epoch  11: training
-Epoch: 11, duration for training: 38.84 minutes
-
-Epoch  11: validation
- 28%|██▊       | 11/40 [9:31:36<20:37:38, 2560.64s/it]    Epoch 11: training mse loss = 21.125 / validation mse loss = 19.291
-    Epoch 11: training mae loss = 3.608 / validation mae loss = 3.543
-
-Epoch  12: training
-Epoch: 12, duration for training: 43.54 minutes
-
-Epoch  12: validation
- 30%|███       | 12/40 [10:13:12<19:45:46, 2540.93s/it]    Epoch 12: training mse loss = 19.158 / validation mse loss = 17.997
-    Epoch 12: training mae loss = 3.461 / validation mae loss = 3.361
-
-Epoch  13: training
-Epoch: 13, duration for training: 42.75 minutes
-
-Epoch  13: validation
- 32%|███▎      | 13/40 [10:56:19<19:09:39, 2554.81s/it]    Epoch 13: training mse loss = 44.003 / validation mse loss = 31.665
-    Epoch 13: training mae loss = 5.377 / validation mae loss = 4.464
-
-Epoch  14: training
-Epoch: 14, duration for training: 45.29 minutes
-
-Epoch  14: validation
- 35%|███▌      | 14/40 [11:42:12<18:53:02, 2614.71s/it]    Epoch 14: training mse loss = 27.297 / validation mse loss = 24.608
-    Epoch 14: training mae loss = 4.186 / validation mae loss = 3.967
-
-Epoch  15: training
-Epoch: 15, duration for training: 45.49 minutes
-
-Epoch  15: validation
- 38%|███▊      | 15/40 [12:23:37<17:53:09, 2575.58s/it]    Epoch 15: training mse loss = 22.447 / validation mse loss = 27.418
-    Epoch 15: training mae loss = 3.782 / validation mae loss = 4.144
-
-Epoch  16: training
-Epoch: 16, duration for training: 33.30 minutes
-
-Epoch  16: validation
- 40%|████      | 16/40 [12:58:51<16:14:42, 2436.77s/it]    Epoch 16: training mse loss = 18.724 / validation mse loss = 16.890
-    Epoch 16: training mae loss = 3.423 / validation mae loss = 3.283
-
-Epoch  17: training
-Epoch: 17, duration for training: 38.95 minutes
-
-Epoch  17: validation
- 42%|████▎     | 17/40 [13:37:44<15:22:08, 2405.59s/it]    Epoch 17: training mse loss = 16.761 / validation mse loss = 22.748
-    Epoch 17: training mae loss = 3.241 / validation mae loss = 3.840
-
-Epoch  18: training
-Epoch: 18, duration for training: 37.41 minutes
-
-Epoch  18: validation
- 45%|████▌     | 18/40 [14:15:25<14:26:08, 2362.21s/it]    Epoch 18: training mse loss = 39.688 / validation mse loss = 40.962
-    Epoch 18: training mae loss = 4.737 / validation mae loss = 5.080
-
-Epoch  19: training
-Epoch: 19, duration for training: 38.51 minutes
-
-Epoch  19: validation
- 48%|████▊     | 19/40 [14:53:29<13:38:32, 2338.70s/it]    Epoch 19: training mse loss = 25.251 / validation mse loss = 23.033
-    Epoch 19: training mae loss = 4.011 / validation mae loss = 3.727
-
-Epoch  20: training
-Epoch: 20, duration for training: 36.46 minutes
-
-Epoch  20: validation
- 50%|█████     | 20/40 [15:30:41<12:48:49, 2306.49s/it]    Epoch 20: training mse loss = 32.076 / validation mse loss = 28.551
-    Epoch 20: training mae loss = 4.501 / validation mae loss = 4.303
-
-Epoch  21: training
-Epoch: 21, duration for training: 38.85 minutes
-
-Epoch  21: validation
- 52%|█████▎    | 21/40 [16:09:11<12:10:44, 2307.61s/it]    Epoch 21: training mse loss = 25.407 / validation mse loss = 21.286
-    Epoch 21: training mae loss = 4.018 / validation mae loss = 3.674
-
-Epoch  22: training
-Epoch: 22, duration for training: 41.16 minutes
-
-Epoch  22: validation
- 55%|█████▌    | 22/40 [16:51:26<11:52:48, 2376.01s/it]    Epoch 22: training mse loss = 20.650 / validation mse loss = 23.367
-    Epoch 22: training mae loss = 3.599 / validation mae loss = 3.847
-
-Epoch  23: training
-Epoch: 23, duration for training: 49.31 minutes
-
-Epoch  23: validation
- 57%|█████▊    | 23/40 [17:44:16<12:20:43, 2614.30s/it]    Epoch 23: training mse loss = 18.489 / validation mse loss = 21.538
-    Epoch 23: training mae loss = 3.405 / validation mae loss = 3.736
-
-Epoch  24: training
-Epoch: 24, duration for training: 56.23 minutes
-
-Epoch  24: validation
- 60%|██████    | 24/40 [18:41:54<12:44:37, 2867.35s/it]    Epoch 24: training mse loss = 16.726 / validation mse loss = 15.407
-    Epoch 24: training mae loss = 3.235 / validation mae loss = 3.113
-
-Epoch  25: training
-Epoch: 25, duration for training: 63.94 minutes
-
-Epoch  25: validation
- 62%|██████▎   | 25/40 [19:48:17<13:20:31, 3202.13s/it]    Epoch 25: training mse loss = 15.433 / validation mse loss = 14.835
-    Epoch 25: training mae loss = 3.110 / validation mae loss = 3.053
-
-Epoch  26: training
-Epoch: 26, duration for training: 46.76 minutes
-
-Epoch  26: validation
- 65%|██████▌   | 26/40 [20:25:19<11:18:31, 2907.98s/it]    Epoch 26: training mse loss = 14.272 / validation mse loss = 15.236
-    Epoch 26: training mae loss = 2.955 / validation mae loss = 3.114
-
-Epoch  27: training
-Epoch: 27, duration for training: 33.23 minutes
-
-Epoch  27: validation
- 68%|██████▊   | 27/40 [20:58:34<9:30:41, 2633.94s/it]     Epoch 27: training mse loss = 13.378 / validation mse loss = 14.743
-    Epoch 27: training mae loss = 2.886 / validation mae loss = 3.064
-
-Epoch  28: training
-Epoch: 28, duration for training: 32.93 minutes
-
-Epoch  28: validation
- 70%|███████   | 28/40 [21:31:00<8:05:33, 2427.81s/it]    Epoch 28: training mse loss = 15.245 / validation mse loss = 14.374
-    Epoch 28: training mae loss = 3.024 / validation mae loss = 3.032
-
-Epoch  29: training
-Epoch: 29, duration for training: 31.56 minutes
-
-Epoch  29: validation
- 72%|███████▎  | 29/40 [22:03:10<6:57:43, 2278.47s/it]    Epoch 29: training mse loss = 12.754 / validation mse loss = 14.917
-    Epoch 29: training mae loss = 2.829 / validation mae loss = 3.055
-
-Epoch  30: training
-Epoch: 30, duration for training: 34.99 minutes
-
-Epoch  30: validation
- 75%|███████▌  | 30/40 [22:37:29<6:08:44, 2212.45s/it]    Epoch 30: training mse loss = 40.762 / validation mse loss = 38.199
-    Epoch 30: training mae loss = 3.141 / validation mae loss = 5.127
-
-Epoch  31: training
-Epoch: 31, duration for training: 31.93 minutes
-
-Epoch  31: validation
- 78%|███████▊  | 31/40 [23:10:31<5:21:29, 2143.23s/it]    Epoch 31: training mse loss = 26.151 / validation mse loss = 19.979
-    Epoch 31: training mae loss = 4.076 / validation mae loss = 3.584
-
-Epoch  32: training
-Epoch: 32, duration for training: 32.80 minutes
-
-Epoch  32: validation
- 80%|████████  | 32/40 [23:42:33<4:36:56, 2077.00s/it]    Epoch 32: training mse loss = 16.252 / validation mse loss = 14.413
-    Epoch 32: training mae loss = 3.174 / validation mae loss = 2.991
-
-Epoch  33: training
-Epoch: 33, duration for training: 33.69 minutes
-
-Epoch  33: validation
- 82%|████████▎ | 33/40 [24:17:01<4:01:59, 2074.28s/it]    Epoch 33: training mse loss = 22.955 / validation mse loss = 17.050
-    Epoch 33: training mae loss = 3.735 / validation mae loss = 3.253
-
-Epoch  34: training
-Epoch: 34, duration for training: 35.25 minutes
-
-Epoch  34: validation
- 85%|████████▌ | 34/40 [24:51:46<3:27:45, 2077.58s/it]    Epoch 34: training mse loss = 37.819 / validation mse loss = 53.588
-    Epoch 34: training mae loss = 3.472 / validation mae loss = 6.229
-
-Epoch  35: training
-Epoch: 35, duration for training: 36.62 minutes
-
-Epoch  35: validation
- 88%|████████▊ | 35/40 [25:29:57<2:58:27, 2141.47s/it]    Epoch 35: training mse loss = 31.532 / validation mse loss = 17.067
-    Epoch 35: training mae loss = 4.482 / validation mae loss = 3.283
-
-Epoch  36: training
-Epoch: 36, duration for training: 39.74 minutes
-
-Epoch  36: validation
- 90%|█████████ | 36/40 [26:09:55<2:27:54, 2218.61s/it]    Epoch 36: training mse loss = 754.015 / validation mse loss = 16.461
-    Epoch 36: training mae loss = 3.518 / validation mae loss = 3.214
-
-Epoch  37: training
-Epoch: 37, duration for training: 36.77 minutes
-
-Epoch  37: validation
- 92%|█████████▎| 37/40 [26:45:35<1:49:44, 2194.80s/it]    Epoch 37: training mse loss = 3538.829 / validation mse loss = 14.712
-    Epoch 37: training mae loss = 3.489 / validation mae loss = 3.019
-
-Epoch  38: training
-Epoch: 38, duration for training: 35.30 minutes
-
-Epoch  38: validation
- 95%|█████████▌| 38/40 [27:20:57<1:12:26, 2173.09s/it]    Epoch 38: training mse loss = 13.949 / validation mse loss = 14.024
-    Epoch 38: training mae loss = 2.941 / validation mae loss = 2.983
-
-Epoch  39: training
-Epoch: 39, duration for training: 35.07 minutes
-
-Epoch  39: validation
- 98%|█████████▊| 39/40 [27:55:56<35:50, 2150.95s/it]      Epoch 39: training mse loss = 13.457 / validation mse loss = 14.206
-    Epoch 39: training mae loss = 2.886 / validation mae loss = 3.028
-
-Epoch  40: training
-Epoch: 40, duration for training: 34.28 minutes
-
-Epoch  40: validation
-100%|██████████| 40/40 [28:29:29<00:00, 2109.37s/it]100%|██████████| 40/40 [28:29:29<00:00, 2564.23s/it]
-    Epoch 40: training mse loss = 13.015 / validation mse loss = 14.062
-    Epoch 40: training mae loss = 2.838 / validation mae loss = 2.990
-[ End of Epoch ]
-Epoch: 40, duration for validation: 7.67 minutes
-train_mse_list:  [52.64118238272804, 74.55663061680956, 43.29672640354516, 33.10647279818048, 28.032033077025783, 28.879877462300104, 25.060329198369537, 24.79344467009171, 20.401366982935446, 20.128561139692785, 21.12491439611398, 19.15751397227463, 44.003298632407954, 27.29711072592487, 22.44655336861352, 18.724252050544454, 16.760863021550463, 39.68817242838441, 25.250803475443877, 32.07596750674358, 25.406565866138518, 20.650282432756434, 18.48885239539158, 16.72639190645751, 15.433160187495918, 14.271839400804684, 13.377863840459725, 15.244655154779416, 12.754127801714525, 40.76185179276806, 26.151435288411765, 16.252056029722716, 22.955192259803727, 37.81894649425052, 31.531782134724633, 754.015251157035, 3538.8285898847435, 13.949339638714383, 13.456546040143241, 13.01463318774983]
-train_mae_list:  [5.564723678071835, 6.215723258766783, 5.37572398065294, 4.639083755647005, 4.234121945925059, 4.29747952404841, 4.000738538237126, 3.9486333256067176, 3.5912624795674013, 3.5087675622540195, 3.608356641565808, 3.4614087261314537, 5.376930524276704, 4.185607753936448, 3.7817458589016777, 3.4225028662210244, 3.240555280410454, 4.73668225289085, 4.011358011910058, 4.501176611473402, 4.01786728745847, 3.5992138282435686, 3.4050292962802544, 3.2350110737081255, 3.110095922868374, 2.955255946948491, 2.885772387484059, 3.024308003329547, 2.8294550861294807, 3.1408265237438493, 4.076031794804271, 3.1739946868312843, 3.7351179230970226, 3.471790742532167, 4.4819474178148075, 3.518164733729706, 3.48865116025415, 2.9413589683320986, 2.8864733443514448, 2.8376233047661397]
-valid_mse_list:  [28.323862570336498, 57.05490231558583, 44.93895814873773, 28.74752263031089, 26.178206069096994, 26.031054266264107, 26.923462272972788, 22.21670735295889, 25.053802104030847, 20.72594908718978, 19.291175300174686, 17.996777747422318, 31.665294824134982, 24.60830906658928, 27.418198579934515, 16.890030505754215, 22.748216176501384, 40.9619996462576, 23.032626914418596, 28.551163036168308, 21.286047651002367, 23.367131660670033, 21.538393235593187, 15.406620899046326, 14.834851393558022, 15.236253928015602, 14.743271511706713, 14.373885061534944, 14.916943076469462, 38.19916248105938, 19.97891878869848, 14.413207068597933, 17.049687773704825, 53.58784967514076, 17.066557507853958, 16.461243825665804, 14.711539200320956, 14.02409394862758, 14.205615562599677, 14.062338874417746]
-valid_mae_list:  [4.34466514373294, 5.984257892243469, 5.300620842991048, 4.343837900997361, 4.110096224007816, 4.001604655319038, 4.061958285035246, 3.7434072247687475, 4.014090351572206, 3.6371835673528183, 3.542725531230435, 3.3611932218650957, 4.463558025140052, 3.9668568735149443, 4.143801830994737, 3.2827481494947577, 3.839803262704029, 5.080425125064974, 3.726817321063649, 4.303412596533371, 3.6736121479506654, 3.8469232208899036, 3.7363089652755828, 3.1125649100417543, 3.052973024340333, 3.114277230343939, 3.0639813550729635, 3.0317996429214977, 3.0551803221314504, 5.1274157525001005, 3.5843409284610113, 2.9907846777915656, 3.252923800709614, 6.2292058110274295, 3.2831472843504415, 3.2138328855566267, 3.0194802773418847, 2.982612611052772, 3.0277660906333437, 2.9900644609851557]
-
-Elapsed time for one epoch in cv: 1709 minutes
-
-<<< StratifiedKFold: 1/4 >>>
-Train Dataset & Validation Dataset size:  4811 1604
-[    1     5     8 ... 25649 25652 25654]
-[ Start ]
-  0%|          | 0/40 [00:00<?, ?it/s]
-Epoch   1: training
-Epoch: 1, duration for training: 25.01 minutes
-
-Epoch   1: validation
-  2%|▎         | 1/40 [32:38<21:13:06, 1958.63s/it]    Epoch  1: training mse loss = 49.369 / validation mse loss = 29.199
-    Epoch  1: training mae loss = 5.495 / validation mae loss = 4.372
-
-Epoch   2: training
-Epoch: 2, duration for training: 32.53 minutes
-
-Epoch   2: validation
-  5%|▌         | 2/40 [1:04:42<20:27:32, 1938.22s/it]    Epoch  2: training mse loss = 26.990 / validation mse loss = 35.931
-    Epoch  2: training mae loss = 4.135 / validation mae loss = 4.847
-
-Epoch   3: training
-Epoch: 3, duration for training: 32.65 minutes
-
-Epoch   3: validation
-  8%|▊         | 3/40 [1:37:54<20:10:28, 1962.92s/it]    Epoch  3: training mse loss = 20.682 / validation mse loss = 22.967
-    Epoch  3: training mae loss = 3.599 / validation mae loss = 3.854
-
-Epoch   4: training
-Epoch: 4, duration for training: 36.33 minutes
-
-Epoch   4: validation
- 10%|█         | 4/40 [2:17:33<21:16:16, 2127.12s/it]    Epoch  4: training mse loss = 17.739 / validation mse loss = 16.809
-    Epoch  4: training mae loss = 3.315 / validation mae loss = 3.230
-
-Epoch   5: training
-Epoch: 5, duration for training: 56.25 minutes
-
-Epoch   5: validation
- 12%|█▎        | 5/40 [3:18:17<25:59:56, 2674.17s/it]    Epoch  5: training mse loss = 16.105 / validation mse loss = 17.091
-    Epoch  5: training mae loss = 3.164 / validation mae loss = 3.298
-
-Epoch   6: training
-Epoch: 6, duration for training: 60.38 minutes
-
-Epoch   6: validation
- 15%|█▌        | 6/40 [4:16:26<27:52:15, 2951.05s/it]    Epoch  6: training mse loss = 14.389 / validation mse loss = 14.457
-    Epoch  6: training mae loss = 2.988 / validation mae loss = 3.019
-
-Epoch   7: training
-Epoch: 7, duration for training: 55.85 minutes
-
-Epoch   7: validation
- 18%|█▊        | 7/40 [5:09:23<27:43:42, 3024.91s/it]    Epoch  7: training mse loss = 13.544 / validation mse loss = 15.510
-    Epoch  7: training mae loss = 2.898 / validation mae loss = 3.106
-
-Epoch   8: training
-Epoch: 8, duration for training: 37.32 minutes
-
-Epoch   8: validation
- 20%|██        | 8/40 [5:43:55<24:11:32, 2721.64s/it]    Epoch  8: training mse loss = 12.558 / validation mse loss = 12.934
-    Epoch  8: training mae loss = 2.787 / validation mae loss = 2.823
-
-Epoch   9: training
-Epoch: 9, duration for training: 53.51 minutes
-
-Epoch   9: validation
- 22%|██▎       | 9/40 [6:37:12<24:42:51, 2870.06s/it]    Epoch  9: training mse loss = 11.613 / validation mse loss = 14.190
-    Epoch  9: training mae loss = 2.674 / validation mae loss = 2.994
-
-Epoch  10: training
-Epoch: 10, duration for training: 31.45 minutes
-
-Epoch  10: validation
- 25%|██▌       | 10/40 [7:08:06<21:18:12, 2556.41s/it]    Epoch 10: training mse loss = 11.085 / validation mse loss = 12.424
-    Epoch 10: training mae loss = 2.604 / validation mae loss = 2.753
-
-Epoch  11: training
-Epoch: 11, duration for training: 31.74 minutes
-
-Epoch  11: validation
- 28%|██▊       | 11/40 [7:39:37<18:57:16, 2352.99s/it]    Epoch 11: training mse loss = 10.419 / validation mse loss = 12.910
-    Epoch 11: training mae loss = 2.535 / validation mae loss = 2.811
-
-Epoch  12: training
-Epoch: 12, duration for training: 29.91 minutes
-
-Epoch  12: validation
- 30%|███       | 12/40 [8:10:00<17:02:43, 2191.55s/it]    Epoch 12: training mse loss = 9.547 / validation mse loss = 12.746
-    Epoch 12: training mae loss = 2.416 / validation mae loss = 2.808
-
-Epoch  13: training
-Epoch: 13, duration for training: 29.60 minutes
-
-Epoch  13: validation
- 32%|███▎      | 13/40 [8:37:07<15:09:17, 2020.66s/it]    Epoch 13: training mse loss = 8.991 / validation mse loss = 12.959
-    Epoch 13: training mae loss = 2.332 / validation mae loss = 2.858
-
-Epoch  14: training
-Epoch: 14, duration for training: 27.11 minutes
-
-Epoch  14: validation
- 35%|███▌      | 14/40 [9:04:27<13:45:47, 1905.68s/it]    Epoch 14: training mse loss = 8.078 / validation mse loss = 11.919
-    Epoch 14: training mae loss = 2.204 / validation mae loss = 2.683
-
-Epoch  15: training
-Epoch: 15, duration for training: 27.41 minutes
-
-Epoch  15: validation
- 38%|███▊      | 15/40 [9:31:33<12:38:50, 1821.23s/it]    Epoch 15: training mse loss = 7.705 / validation mse loss = 19.823
-    Epoch 15: training mae loss = 2.160 / validation mae loss = 3.590
-
-Epoch  16: training
-Epoch: 16, duration for training: 26.83 minutes
-
-Epoch  16: validation
- 40%|████      | 16/40 [9:58:46<11:45:51, 1764.63s/it]    Epoch 16: training mse loss = 7.031 / validation mse loss = 11.489
-    Epoch 16: training mae loss = 2.054 / validation mae loss = 2.643
-
-Epoch  17: training
-Epoch: 17, duration for training: 27.31 minutes
-
-Epoch  17: validation
- 42%|████▎     | 17/40 [10:26:04<11:01:52, 1726.64s/it]    Epoch 17: training mse loss = 6.380 / validation mse loss = 15.160
-    Epoch 17: training mae loss = 1.939 / validation mae loss = 3.052
-
-Epoch  18: training
-Epoch: 18, duration for training: 27.34 minutes
-
-Epoch  18: validation
- 45%|████▌     | 18/40 [10:53:11<10:22:06, 1696.67s/it]    Epoch 18: training mse loss = 5.892 / validation mse loss = 12.930
-    Epoch 18: training mae loss = 1.827 / validation mae loss = 2.803
-
-Epoch  19: training
-Epoch: 19, duration for training: 26.86 minutes
-
-Epoch  19: validation
- 48%|████▊     | 19/40 [11:20:35<9:48:20, 1680.96s/it]     Epoch 19: training mse loss = 5.400 / validation mse loss = 12.667
-    Epoch 19: training mae loss = 1.770 / validation mae loss = 2.802
-
-Epoch  20: training
-Epoch: 20, duration for training: 27.61 minutes
-
-Epoch  20: validation
- 50%|█████     | 20/40 [11:48:41<9:20:45, 1682.28s/it]    Epoch 20: training mse loss = 4.967 / validation mse loss = 11.265
-    Epoch 20: training mae loss = 1.688 / validation mae loss = 2.620
-
-Epoch  21: training
-Epoch: 21, duration for training: 28.15 minutes
-
-Epoch  21: validation
- 52%|█████▎    | 21/40 [12:16:31<8:51:32, 1678.54s/it]    Epoch 21: training mse loss = 4.409 / validation mse loss = 14.530
-    Epoch 21: training mae loss = 1.593 / validation mae loss = 3.011
-
-Epoch  22: training
-Epoch: 22, duration for training: 28.03 minutes
-
-Epoch  22: validation
- 55%|█████▌    | 22/40 [12:45:37<8:29:40, 1698.90s/it]    Epoch 22: training mse loss = 4.213 / validation mse loss = 14.321
-    Epoch 22: training mae loss = 1.565 / validation mae loss = 3.035
-
-Epoch  23: training
-Epoch: 23, duration for training: 29.77 minutes
-
-Epoch  23: validation
- 57%|█████▊    | 23/40 [13:15:10<8:07:40, 1721.22s/it]    Epoch 23: training mse loss = 3.749 / validation mse loss = 11.400
-    Epoch 23: training mae loss = 1.489 / validation mae loss = 2.668
-
-Epoch  24: training
-Epoch: 24, duration for training: 29.51 minutes
-
-Epoch  24: validation
- 60%|██████    | 24/40 [13:44:56<7:44:09, 1740.57s/it]    Epoch 24: training mse loss = 3.532 / validation mse loss = 11.313
-    Epoch 24: training mae loss = 1.426 / validation mae loss = 2.654
-
-Epoch  25: training
-Epoch: 25, duration for training: 30.60 minutes
-
-Epoch  25: validation
- 62%|██████▎   | 25/40 [14:16:07<7:24:54, 1779.63s/it]    Epoch 25: training mse loss = 3.195 / validation mse loss = 11.315
-    Epoch 25: training mae loss = 1.375 / validation mae loss = 2.653
-
-Epoch  26: training
-Epoch: 26, duration for training: 31.20 minutes
-
-Epoch  26: validation
- 65%|██████▌   | 26/40 [14:47:27<7:02:19, 1809.97s/it]    Epoch 26: training mse loss = 2.918 / validation mse loss = 12.127
-    Epoch 26: training mae loss = 1.318 / validation mae loss = 2.739
-
-Epoch  27: training
-Epoch: 27, duration for training: 31.13 minutes
-
-Epoch  27: validation
- 68%|██████▊   | 27/40 [15:17:40<6:32:20, 1810.80s/it]    Epoch 27: training mse loss = 2.720 / validation mse loss = 11.303
-    Epoch 27: training mae loss = 1.276 / validation mae loss = 2.678
-
-Epoch  28: training
-Epoch: 28, duration for training: 31.11 minutes
-
-Epoch  28: validation
- 70%|███████   | 28/40 [15:48:55<6:06:00, 1830.04s/it]    Epoch 28: training mse loss = 2.492 / validation mse loss = 11.263
-    Epoch 28: training mae loss = 1.221 / validation mae loss = 2.654
-
-Epoch  29: training
-Epoch: 29, duration for training: 30.93 minutes
-
-Epoch  29: validation
- 72%|███████▎  | 29/40 [16:20:23<5:38:40, 1847.33s/it]    Epoch 29: training mse loss = 2.349 / validation mse loss = 13.321
-    Epoch 29: training mae loss = 1.188 / validation mae loss = 2.891
-
-Epoch  30: training
-Epoch: 30, duration for training: 31.94 minutes
-
-Epoch  30: validation
- 75%|███████▌  | 30/40 [16:51:32<5:08:57, 1853.77s/it]    Epoch 30: training mse loss = 2.307 / validation mse loss = 11.955
-    Epoch 30: training mae loss = 1.179 / validation mae loss = 2.726
-
-Epoch  31: training
-Epoch: 31, duration for training: 29.69 minutes
-
-Epoch  31: validation
- 78%|███████▊  | 31/40 [17:21:50<4:36:29, 1843.24s/it]    Epoch 31: training mse loss = 2.235 / validation mse loss = 14.325
-    Epoch 31: training mae loss = 1.150 / validation mae loss = 3.017
-
-Epoch  32: training
-Epoch: 32, duration for training: 30.66 minutes
-
-Epoch  32: validation
- 80%|████████  | 32/40 [17:52:39<4:05:59, 1844.93s/it]    Epoch 32: training mse loss = 2.053 / validation mse loss = 10.905
-    Epoch 32: training mae loss = 1.119 / validation mae loss = 2.616
-
-Epoch  33: training
-Epoch: 33, duration for training: 30.77 minutes
-
-Epoch  33: validation
- 82%|████████▎ | 33/40 [18:24:38<3:37:50, 1867.23s/it]    Epoch 33: training mse loss = 1.954 / validation mse loss = 11.533
-    Epoch 33: training mae loss = 1.090 / validation mae loss = 2.686
-
-Epoch  34: training
-Epoch: 34, duration for training: 32.68 minutes
-
-Epoch  34: validation
- 85%|████████▌ | 34/40 [18:56:42<3:08:24, 1884.15s/it]    Epoch 34: training mse loss = 1.919 / validation mse loss = 11.094
-    Epoch 34: training mae loss = 1.070 / validation mae loss = 2.641
-
-Epoch  35: training
-Epoch: 35, duration for training: 31.68 minutes
-
-Epoch  35: validation
- 88%|████████▊ | 35/40 [19:27:43<2:36:25, 1877.08s/it]    Epoch 35: training mse loss = 1.885 / validation mse loss = 12.136
-    Epoch 35: training mae loss = 1.071 / validation mae loss = 2.765
-
-Epoch  36: training
-Epoch: 36, duration for training: 36.65 minutes
-
-Epoch  36: validation
- 90%|█████████ | 36/40 [20:07:00<2:14:44, 2021.15s/it]    Epoch 36: training mse loss = 1.859 / validation mse loss = 11.452
-    Epoch 36: training mae loss = 1.057 / validation mae loss = 2.648
-
-Epoch  37: training
-Epoch: 37, duration for training: 38.55 minutes
-
-Epoch  37: validation
- 92%|█████████▎| 37/40 [20:45:30<1:45:23, 2107.75s/it]    Epoch 37: training mse loss = 1.708 / validation mse loss = 12.556
-    Epoch 37: training mae loss = 1.009 / validation mae loss = 2.801
-
-Epoch  38: training
-Epoch: 38, duration for training: 39.46 minutes
-
-Epoch  38: validation
- 95%|█████████▌| 38/40 [21:24:45<1:12:43, 2181.92s/it]    Epoch 38: training mse loss = 1.586 / validation mse loss = 11.522
-    Epoch 38: training mae loss = 0.983 / validation mae loss = 2.695
-
-Epoch  39: training
-Epoch: 39, duration for training: 36.51 minutes
-
-Epoch  39: validation
- 98%|█████████▊| 39/40 [22:00:03<36:02, 2162.89s/it]      Epoch 39: training mse loss = 1.632 / validation mse loss = 10.906
-    Epoch 39: training mae loss = 0.994 / validation mae loss = 2.604
-
-Epoch  40: training
-Epoch: 40, duration for training: 35.44 minutes
-
-Epoch  40: validation
-100%|██████████| 40/40 [22:34:34<00:00, 2135.23s/it]100%|██████████| 40/40 [22:34:34<00:00, 2031.86s/it]
-    Epoch 40: training mse loss = 1.521 / validation mse loss = 10.577
-    Epoch 40: training mae loss = 0.962 / validation mae loss = 2.570
-[ End of Epoch ]
-Epoch: 40, duration for validation: 7.12 minutes
-train_mse_list:  [49.36915153396649, 26.989593834778386, 20.682072959326867, 17.739208723498663, 16.10458433227868, 14.388677858331201, 13.543787682692061, 12.557825909119586, 11.613221336637425, 11.085406321517619, 10.418650308358094, 9.547205616652551, 8.99070859581318, 8.077850334843465, 7.704979315112044, 7.030775567859941, 6.380447633159457, 5.892162904151852, 5.399987358767561, 4.966734714956315, 4.408529479809709, 4.2133163455182565, 3.749285526283642, 3.531579358049613, 3.194574758089849, 2.9177696574852994, 2.7199761127065116, 2.491852449120003, 2.3487118973506393, 2.3073253489038748, 2.2345661666258207, 2.0531657187678767, 1.9542301939673572, 1.9193838010294768, 1.8847649393293635, 1.859271913539572, 1.7084701326797198, 1.5857831787323993, 1.6324551166483907, 1.5211622853055884]
-train_mae_list:  [5.495402530701489, 4.13547474712756, 3.599317151584988, 3.3150951360518737, 3.16397993842897, 2.9882380591894977, 2.89757315347527, 2.7870175415457763, 2.674111807672215, 2.6042677531704785, 2.5350738880651904, 2.416439408485786, 2.332289401638125, 2.203905911272646, 2.160179463311102, 2.053643806797714, 1.9389715068814364, 1.8271758110554697, 1.7698517006284393, 1.6878450431542218, 1.593240105700634, 1.5647502774669877, 1.489348090496644, 1.4255937935718441, 1.3747718566396532, 1.317653963489253, 1.2755021841780534, 1.220653882059879, 1.187586612382236, 1.1790060658499997, 1.1495700263640027, 1.1185514235766634, 1.0901977244465257, 1.0704339085590715, 1.0705084888445167, 1.0573662513135786, 1.0085774149992353, 0.9826016378011169, 0.9941911470393185, 0.9624318928842968]
-valid_mse_list:  [29.199223248951895, 35.93127917213755, 22.96685802910534, 16.8090701754085, 17.09100399914656, 14.45689318633206, 15.510373717672847, 12.93391468353386, 14.189613097473064, 12.423649527329985, 12.909636210774497, 12.746445054274911, 12.958607581255032, 11.91908159108596, 19.822857081351117, 11.489086729475817, 15.160402087229302, 12.929509670908368, 12.666937469042162, 11.264754346487937, 14.530077541956175, 14.3205783552922, 11.400432857808793, 11.31323849004416, 11.31464828974107, 12.126944831126124, 11.302916155366612, 11.262978347228032, 13.321292480604278, 11.954716165581708, 14.325030094911124, 10.905433705849628, 11.532554231604982, 11.094205773491, 12.136339394816513, 11.451663110387782, 12.55626584484007, 11.521995553670735, 10.906219397484792, 10.577118950587847]
-valid_mae_list:  [4.371977464410052, 4.847196517720712, 3.8541431879008488, 3.2299155314689045, 3.29835035706518, 3.019075258074797, 3.1059329054011413, 2.8234868616116615, 2.993751926142589, 2.7525492318144162, 2.8114917928792624, 2.807969332707794, 2.857746091556579, 2.683118752984195, 3.5898121797224425, 2.642506091811035, 3.051824705898855, 2.8027564917987555, 2.802277132919878, 2.619947323443773, 3.0107320679063028, 3.035155595780014, 2.66816863085869, 2.6541626367905002, 2.652538212132967, 2.7392221967639454, 2.6777283936450886, 2.6543105047812965, 2.890942923555056, 2.726078425384512, 3.0169871871182212, 2.6158493310817126, 2.6863729740400943, 2.640726600958619, 2.7649432635210665, 2.6476028152147038, 2.8013768958866985, 2.6951993306477866, 2.6036161108109153, 2.569765730293733]
-
-Elapsed time for one epoch in cv: 1355 minutes
-
-<<< StratifiedKFold: 2/4 >>>
-Train Dataset & Validation Dataset size:  4811 1604
-[    0     3     4 ... 25643 25644 25650]
-[ Start ]
-  0%|          | 0/40 [00:00<?, ?it/s]
-Epoch   1: training
-Epoch: 1, duration for training: 27.12 minutes
-
-Epoch   1: validation
-  2%|▎         | 1/40 [35:42<23:12:23, 2142.13s/it]    Epoch  1: training mse loss = 51.659 / validation mse loss = 24.801
-    Epoch  1: training mae loss = 5.674 / validation mae loss = 3.955
-
-Epoch   2: training
-Epoch: 2, duration for training: 35.55 minutes
-
-Epoch   2: validation
-  5%|▌         | 2/40 [1:11:46<22:45:01, 2155.30s/it]    Epoch  2: training mse loss = 65.219 / validation mse loss = 55.163
-    Epoch  2: training mae loss = 6.404 / validation mae loss = 6.319
-
-Epoch   3: training
-Epoch: 3, duration for training: 39.52 minutes
-
-Epoch   3: validation
-  8%|▊         | 3/40 [1:49:41<22:42:52, 2210.07s/it]    Epoch  3: training mse loss = 54.627 / validation mse loss = 53.765
-    Epoch  3: training mae loss = 6.236 / validation mae loss = 6.229
-
-Epoch   4: training
-Epoch: 4, duration for training: 32.30 minutes
-
-Epoch   4: validation
- 10%|█         | 4/40 [2:21:58<21:01:21, 2102.25s/it]    Epoch  4: training mse loss = 54.683 / validation mse loss = 53.981
-    Epoch  4: training mae loss = 6.249 / validation mae loss = 6.212
-
-Epoch   5: training
-Epoch: 5, duration for training: 31.45 minutes
-
-Epoch   5: validation
- 12%|█▎        | 5/40 [2:52:35<19:30:32, 2006.64s/it]    Epoch  5: training mse loss = 53.097 / validation mse loss = 45.066
-    Epoch  5: training mae loss = 6.116 / validation mae loss = 5.540
-
-Epoch   6: training
-Epoch: 6, duration for training: 29.93 minutes
-
-Epoch   6: validation
- 15%|█▌        | 6/40 [3:22:49<18:19:48, 1940.83s/it]    Epoch  6: training mse loss = 38.862 / validation mse loss = 38.693
-    Epoch  6: training mae loss = 5.090 / validation mae loss = 4.932
-
-Epoch   7: training
-Epoch: 7, duration for training: 30.08 minutes
-
-Epoch   7: validation
- 18%|█▊        | 7/40 [3:52:12<17:15:38, 1882.98s/it]    Epoch  7: training mse loss = 31.299 / validation mse loss = 50.558
-    Epoch  7: training mae loss = 4.510 / validation mae loss = 5.869
-
-Epoch   8: training
-Epoch: 8, duration for training: 29.36 minutes
-
-Epoch   8: validation
- 20%|██        | 8/40 [4:22:09<16:29:33, 1855.43s/it]    Epoch  8: training mse loss = 28.984 / validation mse loss = 32.411
-    Epoch  8: training mae loss = 4.333 / validation mae loss = 4.484
-
-Epoch   9: training
-Epoch: 9, duration for training: 30.34 minutes
-
-Epoch   9: validation
- 22%|██▎       | 9/40 [4:52:34<15:53:47, 1846.05s/it]    Epoch  9: training mse loss = 25.783 / validation mse loss = 23.680
-    Epoch  9: training mae loss = 4.078 / validation mae loss = 3.891
-
-Epoch  10: training
-Epoch: 10, duration for training: 30.21 minutes
-
-Epoch  10: validation
- 25%|██▌       | 10/40 [5:22:47<15:17:50, 1835.67s/it]    Epoch 10: training mse loss = 23.250 / validation mse loss = 22.480
-    Epoch 10: training mae loss = 3.846 / validation mae loss = 3.731
-
-Epoch  11: training
-Epoch: 11, duration for training: 30.29 minutes
-
-Epoch  11: validation
- 28%|██▊       | 11/40 [5:52:46<14:41:52, 1824.57s/it]    Epoch 11: training mse loss = 21.840 / validation mse loss = 21.620
-    Epoch 11: training mae loss = 3.724 / validation mae loss = 3.722
-
-Epoch  12: training
-Epoch: 12, duration for training: 29.68 minutes
-
-Epoch  12: validation
- 30%|███       | 12/40 [6:23:22<14:13:07, 1828.11s/it]    Epoch 12: training mse loss = 20.299 / validation mse loss = 25.438
-    Epoch 12: training mae loss = 3.577 / validation mae loss = 4.030
-
-Epoch  13: training
-Epoch: 13, duration for training: 31.29 minutes
-
-Epoch  13: validation
- 32%|███▎      | 13/40 [6:53:22<13:38:48, 1819.56s/it]    Epoch 13: training mse loss = 19.256 / validation mse loss = 19.295
-    Epoch 13: training mae loss = 3.489 / validation mae loss = 3.442
-
-Epoch  14: training
-Epoch: 14, duration for training: 30.87 minutes
-
-Epoch  14: validation
- 35%|███▌      | 14/40 [7:25:21<13:21:30, 1849.65s/it]    Epoch 14: training mse loss = 18.146 / validation mse loss = 18.637
-    Epoch 14: training mae loss = 3.380 / validation mae loss = 3.400
-
-Epoch  15: training
-Epoch: 15, duration for training: 32.03 minutes
-
-Epoch  15: validation
- 38%|███▊      | 15/40 [7:57:21<12:59:31, 1870.88s/it]    Epoch 15: training mse loss = 17.034 / validation mse loss = 23.327
-    Epoch 15: training mae loss = 3.278 / validation mae loss = 3.852
-
-Epoch  16: training
-Epoch: 16, duration for training: 31.88 minutes
-
-Epoch  16: validation
- 40%|████      | 16/40 [8:29:32<12:35:33, 1888.88s/it]    Epoch 16: training mse loss = 16.553 / validation mse loss = 19.071
-    Epoch 16: training mae loss = 3.218 / validation mae loss = 3.510
-
-Epoch  17: training
-Epoch: 17, duration for training: 31.99 minutes
-
-Epoch  17: validation
- 42%|████▎     | 17/40 [9:01:24<12:06:42, 1895.76s/it]    Epoch 17: training mse loss = 15.533 / validation mse loss = 17.592
-    Epoch 17: training mae loss = 3.122 / validation mae loss = 3.322
-
-Epoch  18: training
-Epoch: 18, duration for training: 34.11 minutes
-
-Epoch  18: validation
- 45%|████▌     | 18/40 [9:35:34<11:52:08, 1942.19s/it]    Epoch 18: training mse loss = 15.403 / validation mse loss = 18.591
-    Epoch 18: training mae loss = 3.114 / validation mae loss = 3.400
-
-Epoch  19: training
-Epoch: 19, duration for training: 30.97 minutes
-
-Epoch  19: validation
- 48%|████▊     | 19/40 [10:05:10<11:02:18, 1892.29s/it]    Epoch 19: training mse loss = 14.965 / validation mse loss = 18.777
-    Epoch 19: training mae loss = 3.059 / validation mae loss = 3.444
-
-Epoch  20: training
-Epoch: 20, duration for training: 29.38 minutes
-
-Epoch  20: validation
- 50%|█████     | 20/40 [10:33:30<10:11:31, 1834.56s/it]    Epoch 20: training mse loss = 14.008 / validation mse loss = 17.649
-    Epoch 20: training mae loss = 2.967 / validation mae loss = 3.360
-
-Epoch  21: training
-Epoch: 21, duration for training: 27.28 minutes
-
-Epoch  21: validation
- 52%|█████▎    | 21/40 [11:00:22<9:19:47, 1767.75s/it]     Epoch 21: training mse loss = 13.649 / validation mse loss = 14.676
-    Epoch 21: training mae loss = 2.936 / validation mae loss = 3.052
-
-Epoch  22: training
-Epoch: 22, duration for training: 26.79 minutes
-
-Epoch  22: validation
- 55%|█████▌    | 22/40 [11:27:12<8:36:08, 1720.46s/it]    Epoch 22: training mse loss = 13.082 / validation mse loss = 15.303
-    Epoch 22: training mae loss = 2.862 / validation mae loss = 3.066
-
-Epoch  23: training
-Epoch: 23, duration for training: 27.04 minutes
-
-Epoch  23: validation
- 57%|█████▊    | 23/40 [11:54:50<8:02:06, 1701.54s/it]    Epoch 23: training mse loss = 14.075 / validation mse loss = 19.783
-    Epoch 23: training mae loss = 2.961 / validation mae loss = 3.512
-
-Epoch  24: training
-Epoch: 24, duration for training: 27.86 minutes
-
-Epoch  24: validation
- 60%|██████    | 24/40 [12:22:28<7:30:17, 1688.58s/it]    Epoch 24: training mse loss = 12.479 / validation mse loss = 14.824
-    Epoch 24: training mae loss = 2.783 / validation mae loss = 3.061
-
-Epoch  25: training
-Epoch: 25, duration for training: 27.69 minutes
-
-Epoch  25: validation
- 62%|██████▎   | 25/40 [12:50:08<7:00:00, 1680.05s/it]    Epoch 25: training mse loss = 11.973 / validation mse loss = 16.668
-    Epoch 25: training mae loss = 2.738 / validation mae loss = 3.242
-
-Epoch  26: training
-Epoch: 26, duration for training: 27.16 minutes
-
-Epoch  26: validation
- 65%|██████▌   | 26/40 [13:16:38<6:25:39, 1652.81s/it]    Epoch 26: training mse loss = 11.426 / validation mse loss = 15.207
-    Epoch 26: training mae loss = 2.675 / validation mae loss = 3.128
-
-Epoch  27: training
-Epoch: 27, duration for training: 26.51 minutes
-
-Epoch  27: validation
- 68%|██████▊   | 27/40 [13:43:32<5:55:35, 1641.18s/it]    Epoch 27: training mse loss = 11.021 / validation mse loss = 13.313
-    Epoch 27: training mae loss = 2.627 / validation mae loss = 2.899
-
-Epoch  28: training
-Epoch: 28, duration for training: 28.01 minutes
-
-Epoch  28: validation
- 70%|███████   | 28/40 [14:13:56<5:39:15, 1696.25s/it]    Epoch 28: training mse loss = 10.469 / validation mse loss = 15.106
-    Epoch 28: training mae loss = 2.558 / validation mae loss = 3.097
-
-Epoch  29: training
-Epoch: 29, duration for training: 30.83 minutes
-
-Epoch  29: validation
- 72%|███████▎  | 29/40 [14:44:27<5:18:21, 1736.46s/it]    Epoch 29: training mse loss = 10.112 / validation mse loss = 13.118
-    Epoch 29: training mae loss = 2.517 / validation mae loss = 2.891
-
-Epoch  30: training
-Epoch: 30, duration for training: 31.55 minutes
-
-Epoch  30: validation
- 75%|███████▌  | 30/40 [15:15:47<4:56:36, 1779.62s/it]    Epoch 30: training mse loss = 9.953 / validation mse loss = 13.391
-    Epoch 30: training mae loss = 2.495 / validation mae loss = 2.927
-
-Epoch  31: training
-Epoch: 31, duration for training: 30.74 minutes
-
-Epoch  31: validation
- 78%|███████▊  | 31/40 [15:46:28<4:29:42, 1798.06s/it]    Epoch 31: training mse loss = 9.453 / validation mse loss = 13.281
-    Epoch 31: training mae loss = 2.392 / validation mae loss = 2.875
-
-Epoch  32: training
-Epoch: 32, duration for training: 31.12 minutes
-
-Epoch  32: validation
- 80%|████████  | 32/40 [16:18:07<4:03:47, 1828.43s/it]    Epoch 32: training mse loss = 8.652 / validation mse loss = 19.137
-    Epoch 32: training mae loss = 2.334 / validation mae loss = 3.507
-
-Epoch  33: training
-Epoch: 33, duration for training: 31.20 minutes
-
-Epoch  33: validation
- 82%|████████▎ | 33/40 [16:48:38<3:33:22, 1828.98s/it]    Epoch 33: training mse loss = 12.215 / validation mse loss = 13.272
-    Epoch 33: training mae loss = 2.733 / validation mae loss = 2.864
-
-Epoch  34: training
-Epoch: 34, duration for training: 30.07 minutes
-
-Epoch  34: validation
- 85%|████████▌ | 34/40 [17:18:59<3:02:40, 1826.70s/it]    Epoch 34: training mse loss = 22.376 / validation mse loss = 18.467
-    Epoch 34: training mae loss = 3.722 / validation mae loss = 3.391
-
-Epoch  35: training
-Epoch: 35, duration for training: 30.68 minutes
-
-Epoch  35: validation
- 88%|████████▊ | 35/40 [17:49:27<2:32:16, 1827.22s/it]    Epoch 35: training mse loss = 10.232 / validation mse loss = 12.649
-    Epoch 35: training mae loss = 2.529 / validation mae loss = 2.810
-
-Epoch  36: training
-Epoch: 36, duration for training: 30.08 minutes
-
-Epoch  36: validation
- 90%|█████████ | 36/40 [18:19:42<2:01:34, 1823.57s/it]    Epoch 36: training mse loss = 29.148 / validation mse loss = 362.995
-    Epoch 36: training mae loss = 2.474 / validation mae loss = 9.272
-
-Epoch  37: training
-Epoch: 37, duration for training: 31.01 minutes
-
-Epoch  37: validation
- 92%|█████████▎| 37/40 [18:51:13<1:32:10, 1843.62s/it]    Epoch 37: training mse loss = 44.999 / validation mse loss = 19.992
-    Epoch 37: training mae loss = 4.874 / validation mae loss = 3.559
-
-Epoch  38: training
-Epoch: 38, duration for training: 31.10 minutes
-
-Epoch  38: validation
- 95%|█████████▌| 38/40 [19:21:55<1:01:26, 1843.06s/it]    Epoch 38: training mse loss = 14.155 / validation mse loss = 14.261
-    Epoch 38: training mae loss = 2.977 / validation mae loss = 2.983
-
-Epoch  39: training
-Epoch: 39, duration for training: 30.36 minutes
-
-Epoch  39: validation
- 98%|█████████▊| 39/40 [19:53:09<30:52, 1852.38s/it]      Epoch 39: training mse loss = 9.756 / validation mse loss = 12.505
-    Epoch 39: training mae loss = 2.469 / validation mae loss = 2.806
-
-Epoch  40: training
-Epoch: 40, duration for training: 31.27 minutes
-
-Epoch  40: validation
-100%|██████████| 40/40 [20:23:49<00:00, 1848.60s/it]100%|██████████| 40/40 [20:23:49<00:00, 1835.73s/it]
-    Epoch 40: training mse loss = 8.838 / validation mse loss = 13.125
-    Epoch 40: training mae loss = 2.352 / validation mae loss = 2.891
-[ End of Epoch ]
-Epoch: 40, duration for validation: 7.12 minutes
-train_mse_list:  [51.6586499811272, 65.21930576622232, 54.62710265161193, 54.68280296094724, 53.09718144711902, 38.861878644972776, 31.29942706153269, 28.98441845952083, 25.78276224232255, 23.250002342768894, 21.84033004082906, 20.299174849765983, 19.25560176070509, 18.145553883298707, 17.034171191000688, 16.5529713503441, 15.533274953720825, 15.402738348907214, 14.965305802697216, 14.007956325986159, 13.64948582176842, 13.08180078675142, 14.07488651223161, 12.479033283908654, 11.973474319813226, 11.425724594375719, 11.020522279244563, 10.469254755116392, 10.111992316774922, 9.952903597899576, 9.453118598328881, 8.651511586133092, 12.215240177280156, 22.375821697217564, 10.23245267222232, 29.147554401739256, 44.99867196304581, 14.155481017691567, 9.756475301614895, 8.837529431155387]
-train_mae_list:  [5.674219794412646, 6.404146842532291, 6.235920313403062, 6.24910117112578, 6.116050119720196, 5.090199829250645, 4.510025855273445, 4.333118397881516, 4.077671986956468, 3.8458022254505324, 3.7235321014788108, 3.577280242804145, 3.489385490469025, 3.3800045890082515, 3.277608355220917, 3.2175922857700274, 3.122385946879849, 3.113895170233401, 3.0585491470655697, 2.9667432323313467, 2.936337468133698, 2.8624722159908758, 2.9608081533735127, 2.7827517235183676, 2.73835382797579, 2.6746088612192374, 2.6267052838688594, 2.5578965507343177, 2.5174742852212884, 2.495076346330491, 2.3917454020816686, 2.334370718070715, 2.7326971632367965, 3.7216098285021224, 2.528987754866978, 2.4743747039119293, 4.873624696960545, 2.9771699710120756, 2.4685422459011477, 2.3515471740047027]
-valid_mse_list:  [24.801460852560165, 55.1634453842489, 53.76493436055351, 53.98055806433556, 45.06648320381538, 38.69251952670912, 50.557988784229195, 32.41092193628495, 23.680157761522494, 22.479846999193228, 21.6203312326721, 25.437538615957315, 19.2953608670932, 18.637461505019484, 23.32702494987194, 19.07116437854613, 17.592349749712472, 18.59084770299952, 18.77710931060245, 17.648757818855152, 14.676006614255838, 15.30282822860237, 19.782999350417246, 14.824385184953805, 16.66770343294313, 15.207394042210598, 13.312618511216382, 15.106244974802468, 13.117536428341213, 13.390725365821023, 13.281124592347794, 19.1369193099093, 13.272364598161378, 18.467118873973856, 12.649148635289771, 362.99521055985804, 19.992184594027304, 14.260562258194941, 12.504715457061462, 13.124713093664997]
-valid_mae_list:  [3.9546130762912046, 6.319277964688031, 6.228830091299801, 6.212359310348791, 5.540259476350333, 4.931543820068626, 5.868525970454226, 4.483881151932662, 3.8906497092941374, 3.7314861393956185, 3.721547436335022, 4.030392200433097, 3.44177772086619, 3.4000555418494485, 3.8522464185999605, 3.5104155253501634, 3.3217263086436133, 3.4001697680643126, 3.444147569723578, 3.3600918633342345, 3.0516260514052664, 3.066182382462885, 3.51168160041545, 3.061091491133021, 3.2417095494783292, 3.1278339400260218, 2.899304591869691, 3.096936608609805, 2.891448485133876, 2.926590410689903, 2.8751753773464754, 3.506655989534802, 2.863760758754729, 3.3905782310026695, 2.8100151351058003, 9.272013464411136, 3.5590240626012495, 2.9834253747105635, 2.806344257993493, 2.8913771263862422]
-
-Elapsed time for one epoch in cv: 1224 minutes
-
-<<< StratifiedKFold: 3/4 >>>
-Train Dataset & Validation Dataset size:  4811 1604
-[    6     7    10 ... 25629 25653 25655]
-[ Start ]
-  0%|          | 0/40 [00:00<?, ?it/s]
-Epoch   1: training
-Epoch: 1, duration for training: 25.29 minutes
-
-Epoch   1: validation
-  2%|▎         | 1/40 [32:28<21:06:23, 1948.30s/it]    Epoch  1: training mse loss = 48.335 / validation mse loss = 27.113
-    Epoch  1: training mae loss = 5.442 / validation mae loss = 4.106
-
-Epoch   2: training
-Epoch: 2, duration for training: 30.33 minutes
-
-Epoch   2: validation
-  5%|▌         | 2/40 [1:02:15<19:33:57, 1853.61s/it]    Epoch  2: training mse loss = 54.380 / validation mse loss = 31.817
-    Epoch  2: training mae loss = 6.075 / validation mae loss = 4.482
-
-Epoch   3: training
-Epoch: 3, duration for training: 29.69 minutes
-
-Epoch   3: validation
-  8%|▊         | 3/40 [1:31:31<18:35:36, 1809.09s/it]    Epoch  3: training mse loss = 29.595 / validation mse loss = 26.904
-    Epoch  3: training mae loss = 4.326 / validation mae loss = 4.149
-
-Epoch   4: training
-Epoch: 4, duration for training: 30.57 minutes
-
-Epoch   4: validation
- 10%|█         | 4/40 [2:02:16<18:13:57, 1823.26s/it]    Epoch  4: training mse loss = 25.161 / validation mse loss = 23.910
-    Epoch  4: training mae loss = 3.995 / validation mae loss = 3.902
-
-Epoch   5: training
-Epoch: 5, duration for training: 30.44 minutes
-
-Epoch   5: validation
- 12%|█▎        | 5/40 [2:32:22<17:39:55, 1817.03s/it]    Epoch  5: training mse loss = 22.077 / validation mse loss = 23.142
-    Epoch  5: training mae loss = 3.731 / validation mae loss = 3.886
-
-Epoch   6: training
-Epoch: 6, duration for training: 30.29 minutes
-
-Epoch   6: validation
- 15%|█▌        | 6/40 [3:04:52<17:35:10, 1862.06s/it]    Epoch  6: training mse loss = 19.842 / validation mse loss = 19.105
-    Epoch  6: training mae loss = 3.533 / validation mae loss = 3.501
-
-Epoch   7: training
-Epoch: 7, duration for training: 33.11 minutes
-
-Epoch   7: validation
- 18%|█▊        | 7/40 [3:37:03<17:16:34, 1884.70s/it]    Epoch  7: training mse loss = 17.251 / validation mse loss = 18.685
-    Epoch  7: training mae loss = 3.277 / validation mae loss = 3.396
-
-Epoch   8: training
-Epoch: 8, duration for training: 32.01 minutes
-
-Epoch   8: validation
- 20%|██        | 8/40 [4:09:02<16:50:57, 1895.53s/it]    Epoch  8: training mse loss = 15.587 / validation mse loss = 17.663
-    Epoch  8: training mae loss = 3.108 / validation mae loss = 3.298
-
-Epoch   9: training
-Epoch: 9, duration for training: 32.65 minutes
-
-Epoch   9: validation
- 22%|██▎       | 9/40 [4:45:17<17:04:28, 1982.85s/it]    Epoch  9: training mse loss = 17.351 / validation mse loss = 17.286
-    Epoch  9: training mae loss = 3.269 / validation mae loss = 3.334
-
-Epoch  10: training
-Epoch: 10, duration for training: 43.70 minutes
-
-Epoch  10: validation
- 25%|██▌       | 10/40 [5:25:55<17:41:48, 2123.60s/it]    Epoch 10: training mse loss = 17.349 / validation mse loss = 17.121
-    Epoch 10: training mae loss = 3.105 / validation mae loss = 3.291
-
-Epoch  11: training
-Epoch: 11, duration for training: 36.28 minutes
-
-Epoch  11: validation
- 28%|██▊       | 11/40 [6:01:59<17:12:22, 2135.93s/it]    Epoch 11: training mse loss = 13.756 / validation mse loss = 21.780
-    Epoch 11: training mae loss = 2.915 / validation mae loss = 3.667
-
-Epoch  12: training
-Epoch: 12, duration for training: 30.93 minutes
-
-Epoch  12: validation
- 30%|███       | 12/40 [6:34:45<16:12:37, 2084.18s/it]    Epoch 12: training mse loss = 13.509 / validation mse loss = 15.464
-    Epoch 12: training mae loss = 2.888 / validation mae loss = 3.104
-
-Epoch  13: training
-Epoch: 13, duration for training: 34.64 minutes
-
-Epoch  13: validation
- 32%|███▎      | 13/40 [7:06:22<15:12:19, 2027.40s/it]    Epoch 13: training mse loss = 12.381 / validation mse loss = 21.272
-    Epoch 13: training mae loss = 2.774 / validation mae loss = 3.692
-
-Epoch  14: training
-Epoch: 14, duration for training: 29.21 minutes
-
-Epoch  14: validation
- 35%|███▌      | 14/40 [7:35:42<14:03:37, 1946.82s/it]    Epoch 14: training mse loss = 11.506 / validation mse loss = 23.364
-    Epoch 14: training mae loss = 2.683 / validation mae loss = 3.868
-
-Epoch  15: training
-Epoch: 15, duration for training: 30.46 minutes
-
-Epoch  15: validation
- 38%|███▊      | 15/40 [8:05:52<13:13:59, 1905.59s/it]    Epoch 15: training mse loss = 10.986 / validation mse loss = 13.014
-    Epoch 15: training mae loss = 2.610 / validation mae loss = 2.824
-
-Epoch  16: training
-Epoch: 16, duration for training: 30.10 minutes
-
-Epoch  16: validation
- 40%|████      | 16/40 [8:36:10<12:31:38, 1879.09s/it]    Epoch 16: training mse loss = 9.984 / validation mse loss = 12.720
-    Epoch 16: training mae loss = 2.492 / validation mae loss = 2.780
-
-Epoch  17: training
-Epoch: 17, duration for training: 30.02 minutes
-
-Epoch  17: validation
- 42%|████▎     | 17/40 [9:06:31<11:53:40, 1861.76s/it]    Epoch 17: training mse loss = 10.176 / validation mse loss = 13.317
-    Epoch 17: training mae loss = 2.427 / validation mae loss = 2.838
-
-Epoch  18: training
-Epoch: 18, duration for training: 30.45 minutes
-
-Epoch  18: validation
- 45%|████▌     | 18/40 [9:35:34<11:09:32, 1826.04s/it]    Epoch 18: training mse loss = 10.483 / validation mse loss = 16.425
-    Epoch 18: training mae loss = 2.528 / validation mae loss = 3.188
-
-Epoch  19: training
-Epoch: 19, duration for training: 28.28 minutes
-
-Epoch  19: validation
- 48%|████▊     | 19/40 [10:04:13<10:27:50, 1793.84s/it]    Epoch 19: training mse loss = 9.115 / validation mse loss = 15.904
-    Epoch 19: training mae loss = 2.368 / validation mae loss = 3.142
-
-Epoch  20: training
-Epoch: 20, duration for training: 29.33 minutes
-
-Epoch  20: validation
- 50%|█████     | 20/40 [10:33:19<9:53:07, 1779.39s/it]     Epoch 20: training mse loss = 8.632 / validation mse loss = 12.544
-    Epoch 20: training mae loss = 2.324 / validation mae loss = 2.811
-
-Epoch  21: training
-Epoch: 21, duration for training: 28.06 minutes
-
-Epoch  21: validation
- 52%|█████▎    | 21/40 [11:01:06<9:12:46, 1745.58s/it]    Epoch 21: training mse loss = 8.030 / validation mse loss = 12.210
-    Epoch 21: training mae loss = 2.242 / validation mae loss = 2.720
-
-Epoch  22: training
-Epoch: 22, duration for training: 27.63 minutes
-
-Epoch  22: validation
- 55%|█████▌    | 22/40 [11:29:23<8:39:21, 1731.18s/it]    Epoch 22: training mse loss = 7.501 / validation mse loss = 12.529
-    Epoch 22: training mae loss = 2.163 / validation mae loss = 2.787
-
-Epoch  23: training
-Epoch: 23, duration for training: 27.95 minutes
-
-Epoch  23: validation
- 57%|█████▊    | 23/40 [11:56:47<8:03:06, 1705.09s/it]    Epoch 23: training mse loss = 6.852 / validation mse loss = 13.493
-    Epoch 23: training mae loss = 2.066 / validation mae loss = 2.865
-
-Epoch  24: training
-Epoch: 24, duration for training: 27.45 minutes
-
-Epoch  24: validation
- 60%|██████    | 24/40 [12:23:37<7:27:04, 1676.51s/it]    Epoch 24: training mse loss = 6.620 / validation mse loss = 13.547
-    Epoch 24: training mae loss = 2.029 / validation mae loss = 2.903
-
-Epoch  25: training
-Epoch: 25, duration for training: 26.92 minutes
-
-Epoch  25: validation
- 62%|██████▎   | 25/40 [12:51:31<6:58:54, 1675.63s/it]    Epoch 25: training mse loss = 6.089 / validation mse loss = 12.727
-    Epoch 25: training mae loss = 1.940 / validation mae loss = 2.790
-
-Epoch  26: training
-Epoch: 26, duration for training: 28.15 minutes
-
-Epoch  26: validation
- 65%|██████▌   | 26/40 [13:18:56<6:28:51, 1666.52s/it]    Epoch 26: training mse loss = 5.499 / validation mse loss = 11.860
-    Epoch 26: training mae loss = 1.847 / validation mae loss = 2.701
-
-Epoch  27: training
-Epoch: 27, duration for training: 27.52 minutes
-
-Epoch  27: validation
- 68%|██████▊   | 27/40 [13:45:58<5:58:09, 1653.03s/it]    Epoch 27: training mse loss = 5.091 / validation mse loss = 12.043
-    Epoch 27: training mae loss = 1.780 / validation mae loss = 2.742
-
-Epoch  28: training
-Epoch: 28, duration for training: 26.74 minutes
-
-Epoch  28: validation
- 70%|███████   | 28/40 [14:13:17<5:29:45, 1648.79s/it]    Epoch 28: training mse loss = 4.767 / validation mse loss = 13.915
-    Epoch 28: training mae loss = 1.719 / validation mae loss = 2.960
-
-Epoch  29: training
-Epoch: 29, duration for training: 27.31 minutes
-
-Epoch  29: validation
- 72%|███████▎  | 29/40 [14:40:25<5:01:08, 1642.56s/it]    Epoch 29: training mse loss = 9.383 / validation mse loss = 13.625
-    Epoch 29: training mae loss = 2.317 / validation mae loss = 2.898
-
-Epoch  30: training
-Epoch: 30, duration for training: 26.92 minutes
-
-Epoch  30: validation
- 75%|███████▌  | 30/40 [15:07:44<4:33:35, 1641.59s/it]    Epoch 30: training mse loss = 5.084 / validation mse loss = 12.001
-    Epoch 30: training mae loss = 1.772 / validation mae loss = 2.716
-
-Epoch  31: training
-Epoch: 31, duration for training: 27.49 minutes
-
-Epoch  31: validation
- 78%|███████▊  | 31/40 [15:35:13<4:06:35, 1643.91s/it]    Epoch 31: training mse loss = 4.252 / validation mse loss = 11.909
-    Epoch 31: training mae loss = 1.625 / validation mae loss = 2.723
-
-Epoch  32: training
-Epoch: 32, duration for training: 27.68 minutes
-
-Epoch  32: validation
- 80%|████████  | 32/40 [16:02:35<3:39:06, 1643.30s/it]    Epoch 32: training mse loss = 3.789 / validation mse loss = 12.722
-    Epoch 32: training mae loss = 1.527 / validation mae loss = 2.767
-
-Epoch  33: training
-Epoch: 33, duration for training: 27.48 minutes
-
-Epoch  33: validation
- 82%|████████▎ | 33/40 [16:29:54<3:11:33, 1641.92s/it]    Epoch 33: training mse loss = 3.512 / validation mse loss = 11.911
-    Epoch 33: training mae loss = 1.468 / validation mae loss = 2.729
-
-Epoch  34: training
-Epoch: 34, duration for training: 27.31 minutes
-
-Epoch  34: validation
- 85%|████████▌ | 34/40 [16:58:19<2:46:05, 1660.89s/it]    Epoch 34: training mse loss = 3.322 / validation mse loss = 12.529
-    Epoch 34: training mae loss = 1.429 / validation mae loss = 2.790
-
-Epoch  35: training
-Epoch: 35, duration for training: 28.32 minutes
-
-Epoch  35: validation
- 88%|████████▊ | 35/40 [17:26:34<2:19:15, 1671.11s/it]    Epoch 35: training mse loss = 3.116 / validation mse loss = 12.871
-    Epoch 35: training mae loss = 1.391 / validation mae loss = 2.817
-
-Epoch  36: training
-Epoch: 36, duration for training: 28.89 minutes
-
-Epoch  36: validation
- 90%|█████████ | 36/40 [17:55:58<1:53:16, 1699.11s/it]    Epoch 36: training mse loss = 868.333 / validation mse loss = 19.355
-    Epoch 36: training mae loss = 2.632 / validation mae loss = 3.466
-
-Epoch  37: training
-Epoch: 37, duration for training: 29.86 minutes
-
-Epoch  37: validation
- 92%|█████████▎| 37/40 [18:26:44<1:27:09, 1743.19s/it]    Epoch 37: training mse loss = 12.706 / validation mse loss = 14.790
-    Epoch 37: training mae loss = 2.818 / validation mae loss = 3.022
-
-Epoch  38: training
-Epoch: 38, duration for training: 32.47 minutes
-
-Epoch  38: validation
- 95%|█████████▌| 38/40 [18:58:35<59:46, 1793.47s/it]      Epoch 38: training mse loss = 8.034 / validation mse loss = 14.754
-    Epoch 38: training mae loss = 2.241 / validation mae loss = 3.045
-
-Epoch  39: training
-Epoch: 39, duration for training: 31.02 minutes
-
-Epoch  39: validation
- 98%|█████████▊| 39/40 [19:28:54<30:00, 1800.99s/it]    Epoch 39: training mse loss = 5.504 / validation mse loss = 12.365
-    Epoch 39: training mae loss = 1.852 / validation mae loss = 2.764
-
-Epoch  40: training
-Epoch: 40, duration for training: 30.76 minutes
-
-Epoch  40: validation
-100%|██████████| 40/40 [20:01:39<00:00, 1850.38s/it]100%|██████████| 40/40 [20:01:39<00:00, 1802.50s/it]
-    Epoch 40: training mse loss = 10.456 / validation mse loss = 13.421
-    Epoch 40: training mae loss = 2.426 / validation mae loss = 2.900
-[ End of Epoch ]
-Epoch: 40, duration for validation: 7.96 minutes
-train_mse_list:  [48.33545637618924, 54.380474365484865, 29.594702499201635, 25.16136941037125, 22.077048750159623, 19.842420058350296, 17.251484404177962, 15.587036417850449, 17.3505275674972, 17.348610862208286, 13.756101089903055, 13.509196634475703, 12.380981069202607, 11.505838168092074, 10.985894994641983, 9.98395306159114, 10.176258768479377, 10.482947026534966, 9.114745238708949, 8.631855636425437, 8.030126872165896, 7.50142610259722, 6.8518165585241, 6.620033733211415, 6.089112646581167, 5.499192849121443, 5.090842561626519, 4.767085087369353, 9.382922588813988, 5.084440446633483, 4.251878235329795, 3.7894791666448904, 3.5122262492710865, 3.3222062969637407, 3.116203434558572, 868.3329578409936, 12.705792102081068, 8.033726996311522, 5.503664825035348, 10.45556913889854]
-train_mae_list:  [5.441869624302127, 6.07491781418914, 4.325830587663245, 3.995289637707658, 3.731049532801604, 3.5332035625343967, 3.2771221886874606, 3.108229586890006, 3.2692479515333406, 3.104553081899829, 2.914733030483562, 2.8877477036259944, 2.773573781358342, 2.6826981020226524, 2.6102102565339145, 2.492154642296809, 2.426661631258346, 2.5275032026407662, 2.368468568201385, 2.3241588133385815, 2.2422359332933257, 2.162752238520341, 2.0660934888353815, 2.028920009197905, 1.9398714158133799, 1.8466894232846387, 1.7801228858195202, 1.7193359816697615, 2.3166847562061355, 1.7716006935293294, 1.6245637383583418, 1.526909138182198, 1.4679345421453558, 1.4285978418962213, 1.3907300407680079, 2.631787180863402, 2.818210324060519, 2.2406225625745795, 1.8521643728714774, 2.426174489342365]
-valid_mse_list:  [27.112550379453435, 31.816744632282507, 26.90436703055902, 23.9103087172874, 23.142482157154248, 19.104637263337512, 18.68537616395192, 17.662763775630946, 17.285889762496424, 17.120525956646393, 21.78020416480342, 15.463882759626982, 21.271658132724536, 23.36377492347238, 13.014189144756179, 12.720312977751579, 13.31691894302273, 16.42514579285704, 15.903872705087656, 12.544450885286055, 12.209827697226887, 12.528591762980755, 13.49279710656949, 13.546946529597555, 12.726820051521388, 11.859893334722237, 12.042926427356766, 13.9145690397678, 13.625098193280973, 12.00088249901754, 11.908873496994744, 12.721594486386746, 11.910535208978477, 12.529273120588256, 12.871363009624403, 19.354785408321703, 14.789745271912162, 14.754454008730766, 12.364672110697395, 13.420936394470074]
-valid_mae_list:  [4.10609835228297, 4.4820124665115495, 4.148738912826838, 3.901779438276918, 3.8860730895900932, 3.5012445583646827, 3.395708879875847, 3.297764478682877, 3.3337329850228063, 3.2913428920059515, 3.66669792827134, 3.1039331654428803, 3.6919123420917543, 3.8678864906389543, 2.8236509031100105, 2.7802191039353916, 2.8383916778136236, 3.1881730918539324, 3.1417647677862575, 2.810597082220731, 2.720201120593669, 2.787157018867876, 2.8645652007342948, 2.9033451716699887, 2.790467452289235, 2.701308607571884, 2.7416793774473063, 2.9596618649964768, 2.897560703074185, 2.715765813001413, 2.7234383128980704, 2.7666117564368777, 2.7294050888142407, 2.790288264408712, 2.8172058287460855, 3.4664010820189555, 3.0215121472331643, 3.0454825326070853, 2.763980549668686, 2.899646747138294]
-
-Elapsed time for one epoch in cv: 1202 minutes
-wandb: 
-wandb: Run history:
-wandb:     CV Split Number ▁▁▁▁▁▁▁▁▁▁▃▃▃▃▃▃▃▃▃▃▆▆▆▆▆▆▆▆▆▆██████████
-wandb:       Learning rate ▄▄▁▁▁▅▁▄▃▅█▂▄▃▄▂▂▃▁▁▄▅▁▁▂▅▁▄▂▅█▅▄▃▄▃▂▃▁▃
-wandb:      Train MAE Loss █▅▄▅▆▄▄▄▄▄▅▄▃▃▂▂▁▁▁▁█▆▅▄▄▃▃▃▅▄█▄▄▃▃▃▂▂▂▃
-wandb:      Train MSE Loss █▄▃▃▅▃▂▅▄▂▃▂▂▂▁▁▁▁▁▁▇▅▃▃▂▂▂▂▃▂▆▃▃▂▂▂▁▁▁▂
-wandb: Validation MAE Loss ▇▄▃▄▆▃▂▆█▂▅▂▁▁▁▂▁▁▁▁█▅▃▂▂▂▂▂▂▂▅▃▂▃▂▁▁▁▁▁
-wandb: Validation MSE Loss █▃▂▃▆▃▂▅▇▁▅▂▁▁▁▁▁▁▁▁█▅▃▂▂▂▂▁▂▁▄▂▂▃▂▁▁▁▁▁
-wandb: 
-wandb: Run summary:
-wandb:     CV Split Number 3
-wandb:       Learning rate 0.0
-wandb:      Train MAE Loss 2.42617
-wandb:      Train MSE Loss 10.45557
-wandb: Validation MAE Loss 2.89965
-wandb: Validation MSE Loss 13.42094
-wandb: 
-wandb: 🚀 View run smart-rain-251 at: https://wandb.ai/yein-hwang/reg_trial/runs/ti8cfkr8
-wandb: ️⚡ View job at https://wandb.ai/yein-hwang/reg_trial/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDc1Mjc4NA==/version_details/v34
-wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
-wandb: Find logs at: /media/leelabsg-storage1/yein/research/wandb/RegionBAE/wandb/run-20240509_132038-ti8cfkr8/logs
