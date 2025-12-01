@@ -1,6 +1,7 @@
 # Region-Wise Brain Age Estimation
 
-<img width="2796" height="1010" alt="image" src="https://github.com/user-attachments/assets/635a265f-907c-4fb1-90f0-728228cf6a8f" />
+<img width="2868" height="1026" alt="image" src="https://github.com/user-attachments/assets/663e2c1e-a2ef-4412-b98f-d6ecd99b99fd" />
+
 
 ### Relevant Papers
 - Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Aging Jangho Kim, Junhyeong Lee, Seunggeun Lee medRxiv 2022.03.04.22271813; doi: https://doi.org/10.1101/2022.03.04.22271813
