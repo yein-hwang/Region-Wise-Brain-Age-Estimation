@@ -1,0 +1,29 @@
+# Never commit data, weights, predictions or logs
+*.nii
+*.nii.gz
+*.pth
+*.pth.tar
+*.pkl
+*.csv
+!examples/example_cohort.csv
+data/
+models/
+results/
+predictions/
+logs/
+wandb/
+*.log
+*.out
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

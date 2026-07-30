@@ -1,0 +1,14 @@
+# Versions below are the ones the released pipeline was run with.
+# Newer versions generally work; ANTsPy is the most version-sensitive dependency
+# because the region masks are built with ants.morphology / resample_image_to_target.
+torch==2.6.0
+antspyx==0.6.3
+nibabel==5.4.2
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.15.3
+tqdm
+
+# Optional: experiment logging. Without it the pipeline runs with a no-op logger.
+# wandb

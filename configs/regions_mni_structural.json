@@ -1,0 +1,16 @@
+{
+  "atlas": "/path/to/MNI-maxprob-thr0-1mm.nii.gz",
+  "dilate_radius": 4,
+  "regions": {
+    "global": null,
+    "caudate": 1,
+    "cerebellum": 2,
+    "frontal_lobe": 3,
+    "insula": 4,
+    "occipital_lobe": 5,
+    "parietal_lobe": 6,
+    "putamen": 7,
+    "temporal_lobe": 8,
+    "thalamus": 9
+  }
+}

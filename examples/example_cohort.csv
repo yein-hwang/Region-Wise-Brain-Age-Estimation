@@ -1,0 +1,4 @@
+subjectID,imgs,age
+SUBJ0001,/path/to/preprocessed/SUBJ0001/T1w_brain_MNI.nii.gz,63.4
+SUBJ0002,/path/to/preprocessed/SUBJ0002/T1w_brain_MNI.nii.gz,71.2
+SUBJ0003,/path/to/preprocessed/SUBJ0003/T1w_brain_MNI.nii.gz,58.9
