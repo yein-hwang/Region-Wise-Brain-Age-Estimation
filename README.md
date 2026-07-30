@@ -11,6 +11,18 @@ This repository is the cleaned-up release of the research code. Model
 architecture, masking, optimization, cross-validation and the BAG formulas are
 unchanged; only hard-coded paths and the fixed region table were generalized.
 
+## Pipeline overview
+
+This repository implements the core model-development workflow shown below: atlas-based anatomical masking of three-dimensional T1-weighted MRI, separate training of independently parameterized whole-brain and regional 3D-CNN models, cross-validation, brain-age prediction, and BAG post-processing.
+
+<p align="center">
+  <img width="2830" height="830" alt="image" src="https://github.com/user-attachments/assets/7d4868a2-8303-437d-85c6-85ba3ee6ed84" 
+       alt="Overview of whole-brain and region-wise brain-age model development"
+       width="100%">
+</p>
+
+*Overview of the model-development workflow implemented in this repository. Each whole-brain or region-masked 3D MRI input is used to train a separate 3D-CNN brain-age model.*
+
 ## What the pipeline does
 
 1. **Region definition** — a JSON config maps region names to atlas label values
@@ -199,13 +211,13 @@ researchers through the respective data-access processes. The atlas file is not
 redistributed here — supply your own (e.g. the FSL MNI structural atlas) and note
 its own licence terms.
 
-## Citation
+## Related prior work
 
-- Kim J, Lee J, Lee S. *Investigation of Genetic Variants and Causal Biomarkers
-  Associated with Brain Aging.* medRxiv 2022.03.04.22271813.
-  https://doi.org/10.1101/2022.03.04.22271813
-- *A Multitask Deep Learning Model for Voxel-level Brain Age Estimation.*
-  MLMI workshop @ MICCAI 2023. https://arxiv.org/abs/2310.11385
+This repository builds on methodological work developed in the following prior studies:
+
+- Kim J, Lee J, Lee S. Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Aging. *medRxiv*. 2022.03.04.22271813. https://doi.org/10.1101/2022.03.04.22271813
+
+- *A Multitask Deep Learning Model for Voxel-level Brain Age Estimation.* MLMI Workshop at MICCAI 2023. https://arxiv.org/abs/2310.11385
 
 ## License
 
