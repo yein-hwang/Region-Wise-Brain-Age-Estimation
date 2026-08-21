@@ -201,7 +201,17 @@ scripts/
   compute_bag.py    bias correction + INT with calibration provenance
 configs/            example region configuration
 examples/           example cohort table and end-to-end shell scripts
+gwas/               genetic analysis of the brain-age gaps (see gwas/README.md)
 ```
+
+## Genetic analysis
+
+Everything downstream of the model — the GWAS of each regional brain-age gap in
+UK Biobank, its replication in ADNI, LD score regression, and MAGMA cell-type
+enrichment — is in [`gwas/`](gwas/), with its own
+[README](gwas/README.md) covering the order of execution, what data access each
+stage needs, the FUMA dependency, and how to verify that the released scripts
+reproduce the published tables.
 
 ## Data availability
 

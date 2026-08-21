@@ -1,0 +1,19 @@
+# One row per trait, in table order:
+#   display name <TAB> path to the standalone LDSC --h2 log <TAB> [verbatim]
+# $VARS are expanded from the environment.
+#
+# "verbatim" keeps the log's own printed precision. The ten brain rows went
+# through a builder that fixed the decimals; the two external-trait rows were
+# transcribed from their logs, and the Ratio column shows it.
+Whole Brain	$LDSC_WORK_DIR/results/heritability_pad_global.log
+Caudate	$LDSC_WORK_DIR/results/heritability_pad_caudate.log
+Cerebellum	$LDSC_WORK_DIR/results/heritability_pad_cerebellum.log
+Frontal Lobe	$LDSC_WORK_DIR/results/heritability_pad_frontal_lobe.log
+Insula	$LDSC_WORK_DIR/results/heritability_pad_insula.log
+Occipital Lobe	$LDSC_WORK_DIR/results/heritability_pad_occipital_lobe.log
+Parietal Lobe	$LDSC_WORK_DIR/results/heritability_pad_parietal_lobe.log
+Putamen	$LDSC_WORK_DIR/results/heritability_pad_putamen.log
+Temporal Lobe	$LDSC_WORK_DIR/results/heritability_pad_temporal_lobe.log
+Thalamus	$LDSC_WORK_DIR/results/heritability_pad_thalamus.log
+Telomere Length PC1	$LDSC_TELOMERE_H2_LOG	verbatim
+ProtAge-204	$LDSC_PROTEIN_AGE_H2_LOG	verbatim

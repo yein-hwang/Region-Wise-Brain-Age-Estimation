@@ -1,0 +1,13 @@
+# Region codes used throughout the GWAS pipeline.
+# code             display              cohorts
+global	Whole Brain	ukb,adni
+caudate	Caudate	ukb,adni
+cerebellum	Cerebellum	ukb,adni
+frontal_lobe	Frontal Lobe	ukb,adni
+insula	Insula	ukb,adni
+occipital_lobe	Occipital Lobe	ukb,adni
+parietal_lobe	Parietal Lobe	ukb,adni
+putamen	Putamen	ukb,adni
+temporal_lobe	Temporal Lobe	ukb,adni
+thalamus	Thalamus	ukb,adni
+hippocampus	Hippocampus	adni

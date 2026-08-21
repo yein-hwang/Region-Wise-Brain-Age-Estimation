@@ -1,0 +1,6 @@
+; Read by FUMA's ConfigParser.R, which magma_celltype.R sources.
+; magmadir   = directory holding the MAGMA binary (named `magma`)
+; magmafiles = directory holding celltype/*.txt, i.e. the parent of FUMA_SCRNA_DIR
+[magma]
+magmadir=/path/to/magma_root
+magmafiles=/path/to/FUMA_scRNA_data_v2

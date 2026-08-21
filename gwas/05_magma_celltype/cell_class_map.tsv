@@ -1,0 +1,39 @@
+# Curated broad class for each cell-type label in the retained set.
+# Hand-assigned rather than rule-derived, so it ships as a lookup table.
+# Labels are exactly as published in the supplementary table.
+cell_type_original	cell_class
+AS_8	Astrocyte
+Committed_oligodendrocyte_precursor	OPC
+Fibroblast	Fibroblast / VLMC
+Glia	Unresolved
+Non.Neu	Non-neuronal
+Non.Neuronal	Non-neuronal
+Non.neuronal	Non-neuronal
+Non_neuronal	Non-neuronal
+Olig_ENPP6_LUCAT1	Oligodendrocyte
+Oligo	Oligodendrocyte
+Oligo.2	Oligodendrocyte
+Oligo.3	Oligodendrocyte
+Oligo.4	Oligodendrocyte
+Oligo1	Oligodendrocyte
+Oligo_1	Oligodendrocyte
+Oligo_2	Oligodendrocyte
+Oligo_4	Oligodendrocyte
+Oligo_L1.6_OPALIN	Oligodendrocyte
+Oligo_L4_6_MOBP_COL18A1	Oligodendrocyte
+Oligo_L4_6_OPALIN	Oligodendrocyte
+Oligo_MAG	Oligodendrocyte
+Oligo_MOG_GSN	Oligodendrocyte
+Oligodendrocyte	Oligodendrocyte
+Oligodendrocytes	Oligodendrocyte
+Oligos	Oligodendrocyte
+Peri_L1_6_MUSTN1	Pericyte / mural
+VLMC	Fibroblast / VLMC
+VLMC_COL1A2_SLC13A3	Fibroblast / VLMC
+Vas	Vascular (unspecified)
+Vas_TBX18	Vascular (unspecified)
+fibroblast	Fibroblast / VLMC
+non_neuronal	Non-neuronal
+oligodendrocyte	Oligodendrocyte
+unknown	Unresolved
+vascular_leptomeningeal_cell	Fibroblast / VLMC

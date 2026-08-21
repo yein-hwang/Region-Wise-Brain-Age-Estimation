@@ -1,0 +1,179 @@
+Allele convention check -- LDSC branch
+======================================
+
+Why this file exists
+--------------------
+The released 04_ldsc code does not carry the allele labelling that produced the
+summary statistics behind ST14 and ST15. The earlier runs passed
+`--a1 Allele1 --a2 Allele2` to munge_sumstats.py, which puts SAIGE's NON-effect
+allele in the column LDSC reads as the effect allele. The released code passes
+`--a1 Allele2 --a2 Allele1`, and 01_preprocess.py writes the matching
+merge-alleles list. This file is the measurement behind the README's statement
+that the correction changes no reported number.
+
+Everything below was measured on chromosome 22 of the whole-brain (global) BAG
+GWAS, N = 41,067. The old-convention side was READ from the existing munged
+files; nothing under the LDSC work tree was regenerated.
+
+
+Input
+-----
+Source              $GWAS_UKB_DIR/global/results/global_imputed_sumstats.txt
+                    SAIGE step-2 output, columns
+                    CHR POS MarkerID Allele1 Allele2 AC_Allele2 AF_Allele2
+                    imputationInfo BETA SE Tstat var p.value N
+                    Allele2 is the effect allele: BETA and AF_Allele2 are on it.
+chr22 rows          499,619 (header excluded)
+
+01_preprocess.py on that chr22-only extract reproduces the existing
+per-chromosome file exactly:
+  sha256 33211c0546dfa479c1c63bb51c44a7ca65ca86b33355e6bb9e5ceb6d33f9cb22
+  new     <work>/files/global/chr22_global_GWAS_SummaryStatistics.txt
+  existing $LDSC_WORK_DIR/files/global/chr22_global_GWAS_SummaryStatistics.txt
+Only the three-column snplist differs, and only by column order:
+  old   rs12172168  A  G          new   rs12172168  G  A
+  old   rs62224609  C  T          new   rs62224609  T  C
+
+
+munge_sumstats.py (LDSC v1.0.1), chr22
+--------------------------------------
+                                     old convention        new convention
+  --N                                41067.0               41067.0
+  --a1 / --a2                        Allele1 / Allele2     Allele2 / Allele1
+  LDSC's reading of the signed
+  statistic ("ref allele")           Allele1               Allele2
+  duplicated rs numbers removed      25                    25
+  alleles not matching
+    --merge-alleles                  75                    75
+  median BETA                        -0.000189851          -0.000189851
+  rows with non-missing Z            105,260               105,260
+  rows in file incl. merge-allele
+    placeholders                     140,242               140,242
+
+
+A1 and Z against the source
+---------------------------
+Every munged SNP was matched back to the source row carrying the same unordered
+allele pair, so multi-allelic markers resolve unambiguously. 105,260 of 105,260
+resolved in both files; 0 unresolved.
+
+                                         old convention     new convention
+  A1 == source Allele2 (effect allele)   0 / 105,260        105,260 / 105,260
+                                         0.00 %             100.00 %
+  Z == source BETA/SE (tol 6e-4)         105,260 / 105,260  105,260 / 105,260
+                                         100.00 %           100.00 %
+  sign(Z) == sign(source BETA)           105,227 / 105,227  105,227 / 105,227
+    (excluding 33 SNPs whose Z rounds
+     to 0.000 in the munged file)        100.00 %           100.00 %
+
+So the correction moves the A1 label onto the effect allele and leaves Z alone.
+That is expected from the LDSC source: munge_sumstats.py's allele_merge only
+drops SNPs that fail to match --merge-alleles, it has no sign-flip branch.
+
+
+Column-level comparison of the two munged files
+-----------------------------------------------
+  SNP, Z, N columns    byte-identical
+  A1, A2 columns       differ (swapped, by construction)
+
+
+SNP heritability, chr22 only
+----------------------------
+ldsc.py --h2 on each chr22 munged file, same EUR panels
+($LDSC_REF_LD_CHR, $LDSC_W_LD_CHR).
+
+                                   old convention      new convention
+  SNPs after merging with the
+    regression LD panel            17,267              17,267
+  Total observed-scale h2          0.3566 (0.126)      0.3566 (0.126)
+  Lambda GC                        1.2431              1.2431
+  Mean Chi^2                       1.248               1.248
+  Intercept                        1.0186 (0.0454)     1.0186 (0.0454)
+  Ratio                            0.075 (0.1832)      0.075 (0.1832)
+
+Diffing the two log bodies with the file paths and timestamps removed gives no
+differences at all.
+
+
+rs429358 (APOE), worked through by hand
+---------------------------------------
+rs429358 is on chromosome 19, so it is NOT in the chr22 artefacts above
+(grep count in the new chr22 munged file: 0). It is worked out here from the
+released whole-brain sumstats and the source row, both read only.
+
+  source row ($LDSC_WORK_DIR/files/global/chr19_global_GWAS_SummaryStatistics.txt)
+    CHR 19  POS 45411941  MarkerID rs429358
+    Allele1 C   Allele2 T   AF_Allele2 0.848991
+    BETA -0.0523891   SE 0.0098071   BETA/SE = -5.3420
+
+  released sumstats ($LDSC_WORK_DIR/sumstats/pad_global.sumstats.gz)
+    SNP rs429358   A1 C   A2 T   Z -5.342   N 41067.0
+
+  Z equals BETA/SE to the printed precision, and A1 holds Allele1.
+  BETA is on Allele2 = T, so the released file labels A1 = C while its Z
+  describes T. Under the released code the same row would read A1 = T, A2 = C,
+  Z = -5.342: the label moves onto the effect allele, the number does not move.
+  In allele terms both files say the same thing, beta(T) < 0, equivalently
+  beta(C) > 0, i.e. the APOE e4 allele C raises the brain-age gap.
+
+
+What this does and does not establish
+-------------------------------------
+Measured: on chr22 of the global BAG GWAS, the correction leaves the Z column
+byte-identical and every h2 statistic unchanged to the printed precision.
+
+Not measured here: the other nine regions, the other 21 chromosomes, the two
+external traits, and any rg value. No genetic correlation was recomputed for
+this check.
+
+Derivation, not measurement: LDSC's rg depends on the two files' Z vectors only
+through the products Z1*Z2, so relabelling A1 without changing Z cannot move an
+rg estimate. h2 is built from chi-square and carries no sign at all.
+
+The summary statistics deposited with the paper were produced under the old
+convention and have been left exactly as they were.
+
+
+How to re-run this check
+------------------------
+Needs config/paths.env (GWAS_UKB_DIR, LDSC_DIR, LDSC_PYTHON, LDSC_WORK_DIR,
+LDSC_REF_LD_CHR, LDSC_W_LD_CHR). Pick a scratch directory outside this
+repository and outside $LDSC_WORK_DIR; nothing below writes to either.
+
+  set -a; . gwas/config/paths.env; set +a
+  WORK=<scratch directory>
+  mkdir -p "$WORK/new/files/global" "$WORK/new/sumstats" "$WORK/old/sumstats"
+
+  # 1. chr22 of the source sumstats
+  awk -F'\t' 'NR==1{print;next} $1+0==22{print}' \
+      "$GWAS_UKB_DIR/global/results/global_imputed_sumstats.txt" \
+      > "$WORK/chr22_raw_global.txt"
+
+  # 2. per-chromosome split + snplist, new convention
+  "$LDSC_PYTHON" gwas/04_ldsc/01_preprocess.py \
+      --save_path         "$WORK/new/files/global" \
+      --save_file_name    global \
+      --gwas_results_path "$WORK/chr22_raw_global.txt"
+
+  # 3. munge. Write a copy of paths.env whose LDSC_WORK_DIR is "$WORK/new" and
+  #    point GWAS_CONFIG at it. 02_munge.sh loops over all 22 chromosomes; only
+  #    chr22 has an input here, so the other 21 jobs exit with an error and are
+  #    expected to.
+  GWAS_CONFIG="$WORK/new.env" bash gwas/04_ldsc/02_munge.sh global 41067
+
+  # 4. the old-convention file is read, never rebuilt
+  cp "$LDSC_WORK_DIR/munge_output/global/global_chr22_munge.sumstats.gz" \
+     "$WORK/old/sumstats/pad_global_chr22.sumstats.gz"
+  cp "$WORK/new/munge_output/global/global_chr22_munge.sumstats.gz" \
+     "$WORK/new/sumstats/pad_global_chr22.sumstats.gz"
+
+  # 5. heritability on each, with GWAS_CONFIG pointing at "$WORK/old" then
+  #    "$WORK/new"
+  GWAS_CONFIG="$WORK/old.env" bash gwas/04_ldsc/05_heritability.sh pad_global_chr22
+  GWAS_CONFIG="$WORK/new.env" bash gwas/04_ldsc/05_heritability.sh pad_global_chr22
+
+  # 6. column comparison
+  diff <(zcat "$WORK/old/sumstats/pad_global_chr22.sumstats.gz" | cut -f1,4,5) \
+       <(zcat "$WORK/new/sumstats/pad_global_chr22.sumstats.gz" | cut -f1,4,5)
+
+03_merge_munged.py is not needed: one chromosome is enough for this comparison.
