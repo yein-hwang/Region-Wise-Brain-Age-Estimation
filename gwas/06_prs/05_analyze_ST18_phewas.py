@@ -1,5 +1,5 @@
 """ST18: PheWAS of the regional BAG polygenic scores over UK Biobank non-imaging
-phenotypes (n = 446,342).
+phenotypes (n = 446,092).
 
     Logit(phecode ~ PRS_region + Age + Sex + PC1..PC10)
 

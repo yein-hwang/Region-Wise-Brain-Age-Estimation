@@ -19,10 +19,12 @@ the whole-brain region from a byte-identical `.ma` input with the same seed:
 | `--thread 4` | 5 (across three nodes) | **3** |
 | `--thread 1` | 2 | **1** — byte-identical |
 
-The single-threaded result is also byte-identical to the `--thread 4` weight set
-we deposited, so the deposited weights are the deterministic answer rather than
-one parallel run's draw. Single-threaded cost is about twice: 1 h 51 m against
-56 m for four threads, per region.
+Every deposited weight set was itself produced by a `--thread 4` run at
+`--seed 20260821`, one run per region. For the whole-brain region both
+single-threaded runs reproduce that deposited file byte for byte, so there the
+deposit is the deterministic answer rather than one parallel run's draw.
+Single-threaded cost is about twice: 1 h 51 m against 56 m for four threads, per
+region.
 
 Two things the parallel variation is **not**, because the obvious explanations
 are wrong:
@@ -57,9 +59,10 @@ individual's score is not: about half of the sample moves decile between chains,
 and roughly a third of the top 10 % is replaced. Per-participant scores should
 be taken from the deposited weights rather than regenerated.
 
-This was measured for the whole-brain region: the other nine regions were each
-run once at `--thread 4`, so neither the spread above nor the agreement with a
-single-threaded run has been checked for them.
+This was measured for the whole-brain region. The remaining regional weights are
+the archived canonical outputs of one `--thread 4` run each; their single-thread
+bitwise reproducibility was not independently tested, and neither was the spread
+above.
 
 `07_export_weights.py` remains the practical answer: deposit the weights and
 nothing downstream depends on re-running the sampler at all. Scoring, ST17,
