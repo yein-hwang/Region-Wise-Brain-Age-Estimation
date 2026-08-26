@@ -63,7 +63,10 @@ single-threaded run has been checked for them.
 
 `07_export_weights.py` remains the practical answer: deposit the weights and
 nothing downstream depends on re-running the sampler at all. Scoring, ST17,
-ST18 and ST21-23 are deterministic given the weights.
+ST18 and ST21-23 are deterministic given the weights. It is create-only: it
+refuses to overwrite an existing weight file or an existing `MANIFEST.txt`, so a
+second run against a directory that already holds an export stops with exit 1
+rather than replacing a package that may already have been deposited.
 
 ## Order
 
@@ -76,7 +79,7 @@ ST18 and ST21-23 are deterministic given the weights.
           ▼
   02_gctb_commands.sh        impute to the LD reference → SBayesRC   [per region]
           │
-          ├─────────────► 07_export_weights.py   deposit package + md5 manifest
+          ├─────────────► 07_export_weights.py   deposit package + sha256 manifest
           │
           ▼
   03_score.sh ukb            plink2 --score, chr1-22
@@ -128,7 +131,7 @@ do not change.
 | `03_score.sh` | `plink2 --score` for UK Biobank (per chromosome) or ADNI |
 | `04_analyze_ST17.py` | held-out UKB validation, OLS BAG ~ PRS (ST17) |
 | `04a_build_adni_weights.py` | rewrite the weights against ADNI variant IDs |
-| `05_analyze_ST18_phewas.py` | UKB non-imaging PheWAS (ST18) |
+| `05_analyze_ST18_phewas.py` | UKB non-imaging PheWAS (ST18); a phecode's exclusion range is dropped from that phecode's test rather than counted as a control, and the within-region BH is NaN-safe |
 | `06_analyze_adni.py` | ADNI correlation and case-control models (ST21-23) |
-| `07_export_weights.py` | deposit package: per-region weights + md5 manifest |
+| `07_export_weights.py` | deposit package: per-region weights + sha256 manifest |
 | `_regions.py` | region codes and display names, from `config/regions.tsv` |

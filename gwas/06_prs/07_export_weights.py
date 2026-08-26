@@ -33,7 +33,12 @@ PRS_WORK_DIR = require("PRS_WORK_DIR")
 OUT = os.environ.get("PRS_EXPORT_DIR", os.path.join(PRS_WORK_DIR, "weights_export"))
 EXPECTED_N = int(os.environ.get("PRS_EXPORT_EXPECTED_N", "0"))  # 0 = do not check
 
+MANIFEST = f"{OUT}/MANIFEST.txt"
+
 os.makedirs(OUT, exist_ok=True)
+if os.path.exists(MANIFEST):
+    print(f"ABORT: {MANIFEST} already exists (create-only)")
+    sys.exit(1)
 manifest, fail = [], False
 
 for region in REGIONS:
@@ -53,19 +58,20 @@ for region in REGIONS:
             # snpRes columns: 2=Name 3=Chrom 4=Position 5=A1 6=A2 8=A1Effect
             o.write(f"{c[1]}\t{c[2]}\t{c[3]}\t{c[4]}\t{c[5]}\t{c[7]}\n")
             n += 1
-    h = hashlib.md5(open(dst, "rb").read()).hexdigest()
+    h = hashlib.sha256(open(dst, "rb").read()).hexdigest()
     manifest.append((region, n, h))
-    print(f"  {region:16s} {n:>9,} SNP  md5={h}", flush=True)
+    print(f"  {region:16s} {n:>9,} SNP  sha256={h}", flush=True)
     if EXPECTED_N and n != EXPECTED_N:
         print(f"  FAIL: {region} wrote {n:,} rows, expected {EXPECTED_N:,}")
         fail = True
 
-with open(f"{OUT}/MANIFEST.txt", "w") as m:
+with open(MANIFEST, "w") as m:
     m.write("Regional brain-age gap PRS weights (SBayesRC posterior means)\n")
     m.write("effect allele: A1   effect size: BETA (per allele)\n")
     m.write("build: GRCh37/hg19, from the LD reference panel\n")
-    m.write("scoring: plink2 --score <file> 1 4 6 header cols=+scoresums no-mean-imputation\n\n")
-    m.write(f"{'region':16s} {'n_snp':>10s}  md5\n")
+    m.write("scoring: plink2 --score <file> 1 4 6 header cols=+scoresums no-mean-imputation\n")
+    m.write("checksum algorithm: SHA-256\n\n")
+    m.write(f"{'region':16s} {'n_snp':>10s}  sha256\n")
     for region, n, h in manifest:
         m.write(f"{region:16s} {n:>10,}  {h}\n")
 

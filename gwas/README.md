@@ -246,7 +246,7 @@ config/
   04a_build_adni_weights.py   rewrite the weights against ADNI variant IDs
   05_analyze_ST18_phewas.py   UKB non-imaging PheWAS
   06_analyze_adni.py          ADNI correlation and case-control models
-  07_export_weights.py        deposit package: weights + md5 manifest
+  07_export_weights.py        deposit package: weights + sha256 manifest
   _regions.py                 region codes and display names
 
 05_magma_celltype/
