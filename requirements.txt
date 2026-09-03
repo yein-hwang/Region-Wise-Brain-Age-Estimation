@@ -1,6 +1,8 @@
-# Versions below are the ones the released pipeline was run with.
-# Newer versions generally work; ANTsPy is the most version-sensitive dependency
-# because the region masks are built with ants.morphology / resample_image_to_target.
+# Tested with the versions below. The ten region-wise models reported in the
+# manuscript were trained with torch 2.4.0, antspyx 0.5.4, numpy 1.26.4 on
+# Python 3.10.15; later runs used the versions pinned here.
+# ANTsPy is the most version-sensitive dependency because the region masks are
+# built with ants.morphology / resample_image_to_target.
 torch==2.6.0
 antspyx==0.6.3
 nibabel==5.4.2
