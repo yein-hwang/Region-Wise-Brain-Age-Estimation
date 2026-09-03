@@ -151,16 +151,18 @@ SNPs that fail to match the merge-alleles list — so this setting controls the
 Earlier runs passed `--a1 Allele1`, which put the *other* allele in `A1` and
 inverted every sign relative to the label. That did not corrupt any published
 number. `validation/allele_convention_check.txt` is the measurement behind that
-sentence: on chromosome 22 of the whole-brain GWAS the correction puts `A1` on
-the effect allele for 105,260 of 105,260 SNPs (0 of 105,260 before) while
-leaving the `Z` column byte-identical and heritability at 0.3566 (0.126) either
-way. The same inversion was carried by every file this pipeline correlates —
-`pad_<region>`, the proteomic-age munge, and the telomere munge (its `A1` came
-from `other_allele`) — and rg depends only on the product `Z1*Z2`, so two files
-sharing the inversion give an unchanged result; heritability is built from
-chi-square and involves no sign at all. The summary statistics released with the
-paper were produced under the old convention and are left as they are; the
-change above applies to any future run.
+sentence: re-munging all 220 region-chromosome files of the N=41,067 input set
+under the corrected convention leaves the SNP set identical in 220 of 220 files
+and the `Z` column bit-identical (max |dZ| = 0 over 72,963,690 SNPs), while
+moving `A1` onto the effect allele for 100% of rows. On chromosome 22 of the
+whole-brain GWAS, where `--h2` was run both ways, heritability is 0.3566 (0.126)
+either way. Because LDSC reads only `SNP`, `Z` and `N` from a munged file and
+all three are unchanged, no h2 or rg estimate can move. The same inversion was
+carried by every file this pipeline correlates — `pad_<region>`, the
+proteomic-age munge, and the telomere munge (its `A1` came from
+`other_allele`). The summary statistics released with the paper were produced
+under the old convention and are left as they are; the change above applies to
+any future run.
 
 A separate matter, which does bite, is **allele order**. Whether a GWAS reports a
 variant as `Allele1=C, Allele2=T` or the reverse is a property of the genotype

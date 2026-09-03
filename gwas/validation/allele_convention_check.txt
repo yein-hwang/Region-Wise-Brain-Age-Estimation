@@ -11,9 +11,11 @@ allele in the column LDSC reads as the effect allele. The released code passes
 merge-alleles list. This file is the measurement behind the README's statement
 that the correction changes no reported number.
 
-Everything below was measured on chromosome 22 of the whole-brain (global) BAG
-GWAS, N = 41,067. The old-convention side was READ from the existing munged
-files; nothing under the LDSC work tree was regenerated.
+The comparison was run at two scales against the same N = 41,067 input set:
+in detail on chromosome 22 of the whole-brain (global) BAG GWAS, which is the
+worked example below, and then across all 220 region-chromosome files. In both
+passes the old-convention side was READ from the existing munged files; nothing
+under the LDSC work tree was regenerated or modified.
 
 
 Input
@@ -117,18 +119,52 @@ released whole-brain sumstats and the source row, both read only.
   beta(C) > 0, i.e. the APOE e4 allele C raises the brain-age gap.
 
 
+All 220 region-chromosome files
+-------------------------------
+The chr22 comparison was extended to the whole N = 41,067 LDSC input set: 10
+regions x 22 autosomes. Each region's per-chromosome files were re-munged with
+the released 02_munge.sh (--a1 Allele2 --a2 Allele1, --N 41067) into a separate
+scratch work tree.
+
+The new-convention merge-alleles lists were rebuilt from the same
+per-chromosome sumstats the old run consumed. Before any of them was written,
+the same generator was run under the OLD convention and required to reproduce
+all 220 existing snplists byte for byte; that gate passed 220/220, which is
+what licenses treating the flipped lists as 01_preprocess.py's own output.
+
+  files compared                          220 / 220
+  SNP set identical (old vs new)          220 / 220
+  max |Z_new - Z_old| across all files    0
+  A1 == source Allele2                    72,963,690 / 72,963,690   (100.00 %)
+
+The SNP-set test compares every row, merge-allele placeholders included, so the
+row counts agree per file as well as in total. The A1 test matches each munged
+row to the source row carrying the same unordered allele pair, so multi-allelic
+markers resolve unambiguously; 0 rows were left unresolved in any file. The
+max |dZ| figure is an exact 0, not a tolerance: the Z column is bit-identical
+in all 220 files, over the same 72,963,690 SNPs.
+
+The per-file table -- SNP counts, max |dZ| and the A1 tallies for each of the
+220 region-chromosome pairs -- was written as compare_220.tsv next to the
+re-munged files. It is held on the analysis server and is not part of this
+repository.
+
+
 What this does and does not establish
 -------------------------------------
-Measured: on chr22 of the global BAG GWAS, the correction leaves the Z column
-byte-identical and every h2 statistic unchanged to the printed precision.
+Measured: across all 220 region-chromosome files of the N = 41,067 input set,
+the correction leaves the SNP set unchanged and the Z column bit-identical
+while moving the A1 label onto the effect allele for 100.00 % of rows. On chr22
+of the global GWAS, where --h2 was run under both conventions, every h2
+statistic is unchanged to the printed precision.
 
-Not measured here: the other nine regions, the other 21 chromosomes, the two
-external traits, and any rg value. No genetic correlation was recomputed for
-this check.
+h2 and rg were not recomputed for the remaining files, and do not need to be:
+LDSC reads only SNP, Z and N from a munged file, and all three are identical
+here, so its output is unchanged by definition.
 
-Derivation, not measurement: LDSC's rg depends on the two files' Z vectors only
-through the products Z1*Z2, so relabelling A1 without changing Z cannot move an
-rg estimate. h2 is built from chi-square and carries no sign at all.
+Not measured here: the two external traits, telomere length PC1 and
+ProtAge-204. Both are munged by this same 02_munge.sh and carry the same
+labelling, but neither was included in the 220-file sweep.
 
 The summary statistics deposited with the paper were produced under the old
 convention and have been left exactly as they were.
@@ -177,3 +213,8 @@ repository and outside $LDSC_WORK_DIR; nothing below writes to either.
        <(zcat "$WORK/new/sumstats/pad_global_chr22.sumstats.gz" | cut -f1,4,5)
 
 03_merge_munged.py is not needed: one chromosome is enough for this comparison.
+
+The 220-file sweep is the same steps 2-4 run for each region in turn over all
+22 chromosomes, with the snplist gate of the previous section applied before
+step 2. Step 5 is not part of it -- see "What this does and does not
+establish" for why h2 was not recomputed.
